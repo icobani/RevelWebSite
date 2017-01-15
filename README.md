@@ -1,5 +1,16 @@
 # Welcome to Revel
 
+##Installation
+>go get github.com/revel/revel
+
+>go get github.com/revel/cmd/revel
+
+>revel new github.com/icobani/RevelWebSite
+
+>make
+
+>http://local.co:9000/
+
 ## Getting Started
 
 A high-productivity web framework for the [Go language](http://www.golang.org/).

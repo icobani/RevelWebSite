@@ -1,0 +1,145 @@
+{{define "base"}}
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/img/favicon180.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>{{.Title}}</title>
+
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&subset=latin,latin-ext">
+
+    <!-- build:css welcome/styles.css -->
+    <link rel="stylesheet" href="welcome/assets/toastr.min.css"/>
+    <link rel="stylesheet" href="welcome/assets/three-quarters.css"/>
+    <link rel="stylesheet" href="welcome/assets/scripts/fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="welcome/assets/scripts/animate.css"/>
+    <link rel="stylesheet" href="welcome/assets/styles/main.css"/>
+    <!-- endbuild -->
+
+    <!--scripts-->
+    <!-- build:js welcome/scripts.js -->
+    <script type="text/javascript" src="welcome/assets/scripts/jquery.js"></script>
+    <script type="text/javascript" src="welcome/assets/scripts/wow.min.js"></script>
+    <script type="text/javascript" src="welcome/assets/toastr.min.js"></script>
+    <script type="text/javascript" src="welcome/assets/scripts/main.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body>
+    {{if .PromotedLang}}
+    <div class="lang-note">
+      {{if eq .PromotedLang "tr"}}
+      <div class="text">aExpense'i <strong>Türkçe</strong> görüntülemek ister misiniz?</div>
+      <div class="lang-button"><a href="?lang=en">{{ "Hayır"  }}</a></div>
+      <div class="lang-button"><a href="?lang={{ .PromotedLang }}">{{ "Evet"  }}</a></div>
+      {{end}}
+    </div>
+    {{end}}
+
+    <!--header-->
+    <div class="header index ">
+        <div class="container">
+            <!--logo-->
+            <div class="logo">
+                <a href="/">
+                    <img src="welcome/assets/images/logo-white.png" alt=""/>
+                </a>
+            </div>
+            <!--toggle-bar-->
+            <div class="toggle-bar">
+                <a href="javascript:void(0)">
+                    <i class="fa fa-bars"></i> Menü
+                </a>
+            </div>
+            <!--menu-->
+            <ul class="menu">
+                <li>
+                    <a href="/">{{ "Main Page"  }}</a>
+                </li>
+                <li>
+                    <a href="/tour">{{ "Tour"  }}</a>
+                </li>
+                <li>
+                    <a href="/why">{{ "Why"  }}?</a>
+                </li>
+                <li>
+                    <a href="/pricing">{{ "Pricing"  }}</a>
+                </li>
+                <li>
+                    <a href="/us">{{ "Us"  }}</a>
+                </li>
+                <li>
+                    <a href="/contact">{{ "Contact"  }}</a>
+                </li>
+            </ul>
+            <div class="right">
+              <a class="button login" href="/login">{{ "Login"  }}</a>
+              <span class="button lang" href="/login"><i class="fa fa-globe"></i></span>
+              <ul class="lang-menu">
+                <li><a href="?lang=tr">{{ "Türkçe"  }}</a></li>
+                <li><a href="?lang=en">{{ "İngilizce"  }}</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+		{{template "content" .}}
+
+    <div class="clear"></div>
+		<!--footer-->
+		<div class="footer">
+		  <div class="container">
+		      <!--logo-->
+		      <div class="logo">
+		          <a href="#">
+		              <img src="welcome/assets/images/logo.png" alt=""/>
+		          </a>
+		      </div>
+		      <div class="copyright">
+		          © Copyright 2015. aExpense. All Rights Reserved.
+		      </div>
+		      <ul class="social">
+		          <li>
+		              <a href="#" class="fa fa-facebook-f"></a>
+		          </li>
+		          <li>
+		              <a href="#" class="fa fa-twitter"></a>
+		          </li>
+		          <li>
+		              <a href="#" class="fa fa-youtube"></a>
+		          </li>
+		          <li>
+		              <a href="#" class="fa fa-instagram"></a>
+		          </li>
+		      </ul>
+		      <div class="clear"></div>
+		      <div class="border">
+		          <div class="blue"></div>
+		          <div class="green"></div>
+		      </div>
+		  </div>
+		</div>
+
+    {{if .Env.Prod}}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-33617425-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {{end}}
+</body>
+</html>
+{{end}}

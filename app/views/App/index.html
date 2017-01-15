@@ -1,0 +1,144 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<div class="banner">
+  <form class="register-form container">
+    <!--search-->
+    <div class="search wow bounceInDown">
+      <label>
+        <input type="email" placeholder="{{ " Place your e-mail address" }}" autofocus required/>
+        <i class="fa fa-envelope"></i>
+      </label>
+      <button class="button" type="submit"><span class="spinner"></span><span
+          class="text">{{ "Register for Free"  }}</span></button>
+      <h2 class="white">{{ "A better expense management with aExpense at all times, everywhere…" }}</h2>
+      <div class="arrow-down"></div>
+    </div>
+  </form>
+</div>
+<!--main-->
+<div class="main">
+  <div class="container">
+    <div class="border">
+      <div class="blue"></div>
+      <div class="green"></div>
+    </div>
+    <!--row-->
+    <div class="row r1">
+      <div class="image1 removeimage wow slideInLeft"></div>
+      <div class="content">
+                 <span class="icon green">
+                    <span class="image-wrap">
+                        <span class="fa fa-clipboard"></span>
+                    </span>
+                </span>
+        <h1 class="blue">{{ "welcome_cost_reporting_head" }}</h1>
+        <span class="info green">{{ "welcome_cost_reporting_title"  }}</span>
+        <p class="gray">{{ "welcome_cost_reporting_message" }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row r2">
+    <div class="m-left greenbg">
+      <div class="bg"></div>
+      <div class="content">
+                 <span class="icon blue left">
+                    <span class="image-wrap">
+                        <span class="fa fa-folder-open-o"></span>
+                    </span>
+                </span>
+        <h1 class="white">{{ "welcome_digital_invoices_head" }}</h1>
+        <span class="info lightgreen">{{ "welcome_digital_invoices_title"  }}</span>
+        <p class="white">{{ "welcome_digital_invoices_message" }}</p>
+      </div>
+      <div class="image2 removeimage wow slideInLeft"></div>
+    </div>
+    <div class="m-left bluebg">
+      <div class="bg"></div>
+      <div class="content">
+                 <span class="icon green left">
+                    <span class="image-wrap">
+                        <span class="fa fa-line-chart"></span>
+                    </span>
+                </span>
+        <h1 class="white">{{ "welcome_analysis_head" }}</h1>
+        <span class="info lightblue">{{ "welcome_analysis_title"  }}</span>
+        <p class="white">{{ "welcome_analysis_message" }}</p>
+      </div>
+      <div class="image3 removeimage wow slideInRight"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="container">
+    <!--row-->
+    <div class="row r1" style="margin-top: 70px">
+      <div class="image4 removeimage wow bounceInDown"></div>
+      <div class="content" style="padding-left: 470px">
+                 <span class="icon green left" style="left: 390px">
+                    <span class="image-wrap">
+                        <span class="fa fa-check"></span>
+                    </span>
+                </span>
+        <h1 class="blue">{{ "welcome_approvals_and_compatibility_head" }}</h1>
+        <span class="info green">{{ "welcome_approvals_and_compatibility_title"  }}</span>
+        <ul class="style1">
+          <li>
+            <span>{{ "welcome_approvals_and_compatibility_item_1"  }}</span>
+          </li>
+          <li>
+            <span>{{ "welcome_approvals_and_compatibility_item_2"  }}</span>
+          </li>
+          <li>
+            <span>{{ "welcome_approvals_and_compatibility_item_3"  }}</span>
+          </li>
+          <li>
+            <span>{{ "welcome_approvals_and_compatibility_item_4"  }}</span>
+          </li>
+          <li>
+            <span>{{ "welcome_approvals_and_compatibility_item_5"  }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--row-->
+    <div class="row r3">
+      <div class="m-box">
+        <div class="content">
+                 <span class="icon green">
+                    <span class="image-wrap">
+                        <span class="fa fa-money"></span>
+                    </span>
+                </span>
+          <h2 class="blue">{{ "welcome_advance_payment_management_head" }}</h2>
+          <span class="info green">{{ "welcome_advance_payment_management_title"  }}</span>
+          <p class="gray">{{ "welcome_advance_payment_management_message" }}</p>
+        </div>
+      </div>
+      <div class="m-box">
+        <div class="content">
+                 <span class="icon green">
+                    <span class="image-wrap">
+                        <span class="fa fa-mobile"></span>
+                    </span>
+                </span>
+          <h2 class="blue">{{ "welcome_mobile_head" }}</h2>
+          <span class="info green">{{ "welcome_mobile_title"  }}</span>
+          <p class="gray">{{ "welcome_mobile_message" }}</p>
+        </div>
+      </div>
+      <div class="m-box">
+        <div class="content">
+                 <span class="icon green">
+                    <span class="image-wrap">
+                        <span class="fa fa-random"></span>
+                    </span>
+                </span>
+          <h2 class="blue">{{ "welcome_integration_head" }}</h2>
+          <p class="gray">{{ "welcome_integration_message" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{template "footer.html" .}}

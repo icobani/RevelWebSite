@@ -1,0 +1,5 @@
+run:
+	../../../../bin/revel run github.com/icobani/RevelWebSite
+
+fresh:
+	cd app && fresh *.go

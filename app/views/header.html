@@ -1,19 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
 
-<html>
-  <head>
-    <title>{{.title}}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css">
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <script src="/public/js/jquery-2.2.4.min.js"></script>
-    <script src="/public/js/bootstrap-3.3.6.min.js"></script>
-    {{range .moreStyles}}
-      <link rel="stylesheet" type="text/css" href="/public/{{.}}">
-    {{end}}
-    {{range .moreScripts}}
-      <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
-    {{end}}
-  </head>
-  <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="public/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="public/assets/img/favicon180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <title>{{.Title}}</title>
+
+  <!--styles-->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&subset=latin,latin-ext">
+
+  <!-- build:css welcome/styles.css -->
+  <link rel="stylesheet" href="public/welcome/assets/toastr.min.css"/>
+  <link rel="stylesheet" href="public/welcome/assets/three-quarters.css"/>
+  <link rel="stylesheet" href="public/welcome/assets/scripts/fontawesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="public/welcome/assets/scripts/animate.css"/>
+  <link rel="stylesheet" href="public/welcome/assets/styles/main.css"/>
+  <!-- endbuild -->
+
+  <!--scripts-->
+  <!-- build:js welcome/scripts.js -->
+  <script type="text/javascript" src="public/welcome/assets/scripts/jquery.js"></script>
+  <script type="text/javascript" src="public/welcome/assets/scripts/wow.min.js"></script>
+  <script type="text/javascript" src="public/welcome/assets/toastr.min.js"></script>
+  <script type="text/javascript" src="public/welcome/assets/scripts/main.js"></script>
+  <!-- endbuild -->
+
+</head>
+<body>
+{{if .PromotedLang}}
+<div class="lang-note">
+  {{if eq .PromotedLang "tr"}}
+  <div class="text">aExpense'i <strong>Türkçe</strong> görüntülemek ister misiniz?</div>
+  <div class="lang-button"><a href="?lang=en">{{ "Hayır"  }}</a></div>
+  <div class="lang-button"><a href="?lang={{ .PromotedLang }}">{{ "Evet"  }}</a></div>
+  {{end}}
+</div>
+{{end}}
+
+<!--header-->
+<div class="header index ">
+  <div class="container">
+    <!--logo-->
+    <div class="logo">
+      <a href="/">
+        <img src="public/welcome/assets/images/logo-white.png" alt=""/>
+      </a>
+    </div>
+    <!--toggle-bar-->
+    <div class="toggle-bar">
+      <a href="javascript:void(0)">
+        <i class="fa fa-bars"></i> Menü
+      </a>
+    </div>
+    <!--menu-->
+    <ul class="menu">
+      <li>
+        <a href="/">{{ "Main Page"  }}</a>
+      </li>
+      <li>
+        <a href="/tour">{{ "Tour"  }}</a>
+      </li>
+      <li>
+        <a href="/why">{{ "Why"  }}?</a>
+      </li>
+      <li>
+        <a href="/pricing">{{ "Pricing"  }}</a>
+      </li>
+      <li>
+        <a href="/us">{{ "Us"  }}</a>
+      </li>
+      <li>
+        <a href="/contact">{{ "Contact"  }}</a>
+      </li>
+    </ul>
+    <div class="right">
+      <a class="button login" href="/login">{{ "Login"  }}</a>
+      <span class="button lang" href="/login"><i class="fa fa-globe"></i></span>
+      <ul class="lang-menu">
+        <li><a href="?lang=tr">{{ "Türkçe"  }}</a></li>
+        <li><a href="?lang=en">{{ "İngilizce"  }}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
