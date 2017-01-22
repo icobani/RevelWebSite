@@ -1,0 +1,61 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+<div class="contact-page-container">
+
+  <div class="row row-same-height">
+  	<div class="col-md-5 b-r b-dashed b-grey ">
+  		<div class="padding-30 m-t-50 contact-area">
+  			<h2>Contact</h2>
+  			<p><a href="mailto:support@aexpense.com">support@aexpense.com</a></p>
+  			<p><a href="tel:+902123665726">+90 212 366 57 26</a></p>
+  			<p>
+          <strong>Turkey</strong><br/>
+          B1 Yönetim Sistemleri ve Danışmanlık <br/>
+          Spring Giz Plaza Büyükdere Cad <br/>
+          Meydan Sokak No:11 Maslak-Istanbul<br/>
+        </p>
+  		</div>
+  	</div>
+  	<div class="col-md-7">
+  		<div class="padding-30">
+        <h2>Email Us</h2>
+  			<form role="form" class="clerfix">
+          <p>Message</p>
+          <div class="form-group-attached">
+            <div class="form-group form-group-default form-group-default-select2">
+              <label class="">Subject</label>
+              <select class="full-width field-subject" data-placeholder="Select Topic">
+                <option value="Information">Information</option>
+                <option value="Sales">Sales</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          	<div class="form-group form-group-default">
+          		<label>Message</label>
+          		<textarea type="text" class="form-control field-message" rows="5" required=""></textarea>
+          	</div>
+           </div>
+   				<br>
+  				<p>Your</p>
+  				<div class="form-group-attached">
+            <div class="form-group form-group-default">
+  						<label>Name</label>
+  						<input type="text" class="form-control field-name" required="">
+  					</div>
+  					<div class="form-group form-group-default">
+  						<label>Email</label>
+  						<input type="email" class="form-control field-email" required="">
+  					</div>
+  				</div>
+          <button class="btn btn-complete btn-cons m-t-20 pull-right" type="submit">
+            <span>Send</span>
+          </button>
+        </form>
+  		</div>
+  	</div>
+  </div>
+
+</div>
+
+{{template "footer.html" .}}

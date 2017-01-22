@@ -1,6 +1,8 @@
 package app
 
-import "github.com/revel/revel"
+import (
+	"github.com/revel/revel"
+)
 
 func init() {
 	// Filters is the default set of global filters.
@@ -23,6 +25,14 @@ func init() {
 	// ( order dependent )
 	// revel.OnAppStart(InitDB)
 	// revel.OnAppStart(FillCache)
+	//revel.OnAppStart(func() {
+	//	jobs.Schedule("@midnight",MyJob())
+	//	jobs.Every(8 * time.Hour,MyJob())
+	//	Asynch olarak bir job çalıştır.
+	//	jobs.Now(MyJob{})
+	//  5 dakika sonra çalıştır.
+	//  jobs.In(5 * time.minute,MyJob{})
+	//})
 }
 
 // TODO turn this into revel.HeaderFilter

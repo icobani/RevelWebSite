@@ -1,0 +1,73 @@
+{{set . "title" "Login"}}
+{{template "_head.html" .Title}}
+
+<!-- START PAGE CONTENT -->
+
+<div class="login-wrapper ">
+  <!-- START Login Background Pic Wrapper-->
+  <div class="bg-pic">
+    <!-- START Background Pic-->
+    <img src="/public/assets/img/demo/Istanbul_taksi.jpg" data-src="/public/assets/img/demo/Istanbul_taksi.jpg"
+         data-src-retina="/public/assets/img/demo/Istanbul_taksi.jpg" alt="" class="lazy">
+    <!-- END Background Pic-->
+    <!-- START Background Caption-->
+    <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+      <h2 class="semi-bold text-white">
+        {{msg . "AExpense make it easy to manage your expenses and saves your time"}}</h2>
+      <p class="small">
+        B1 © 2017 AExpense.com
+      </p>
+    </div>
+    <!-- END Background Caption-->
+  </div>
+  <!-- END Login Background Pic Wrapper-->
+  <!-- START Login Right Container-->
+  <div class="login-container bg-white">
+    <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+      <a href="/">
+        <img src="/public/welcome/assets/images/logo.png" alt="logo" data-src="/public/welcome/assets/images/logo.png"
+             data-src-retina="/public/welcome/assets/images/logo.png"
+             width="155" height="29">
+      </a>
+      <p class="p-t-35">{{msg . "Sign into your AExpense account"}}</p>
+      <!-- START Login Form -->
+      <form id="form-login" class="p-t-15" role="form" method="post" action="">
+        <!-- START Form Control-->
+        <div class="form-group form-group-default">
+          <label>{{msg . "E-mail"}}</label>
+          <div class="controls">
+            <input type="text" name="email" id="username" class="form-control" autofocus required>
+          </div>
+        </div>
+        <!-- END Form Control-->
+        <!-- START Form Control-->
+        <div class="form-group form-group-default">
+          <label>{{msg . "Password"}}</label>
+          <div class="controls">
+            <input type="password" class="form-control" name="password" required>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-cons m-t-10" type="submit">{{msg . "Sign In"}}</button>
+      </form>
+      <!--END Login Form-->
+      <div class="pull-bottom sm-pull-bottom">
+        <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
+          <a href="http://www.b1.com.tr"><img alt="B1 Digital" title="B1 Digital"
+                                              data-src="/public/assets/img/login/b1.png"/></a>
+          <p class="b1">
+            <small>
+              <a href="#" class="text-info">{{msg . "Support"}}</a> ·
+              <a href="#" class="text-info">{{msg . "Terms"}}</a> ·
+              <a href="#" class="text-info">{{msg . "Privacy"}}</a></small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Login Right Container-->
+</div>
+
+
+<!-- END PAGE CONTENT -->
+{{template "_footer.html"}}

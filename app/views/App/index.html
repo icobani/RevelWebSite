@@ -6,12 +6,12 @@
     <!--search-->
     <div class="search wow bounceInDown">
       <label>
-        <input type="email" placeholder="{{ " Place your e-mail address" }}" autofocus required/>
+        <input type="email" placeholder="{{msg . "Place your e-mail address" }}" autofocus required/>
         <i class="fa fa-envelope"></i>
       </label>
       <button class="button" type="submit"><span class="spinner"></span><span
-          class="text">{{ "Register for Free"  }}</span></button>
-      <h2 class="white">{{ "A better expense management with aExpense at all times, everywhere…" }}</h2>
+          class="text">{{msg . "Register for Free"  }}</span></button>
+      <h2 class="white">{{msg . "A better expense management with aExpense at all times, everywhere…" }}</h2>
       <div class="arrow-down"></div>
     </div>
   </form>
@@ -32,9 +32,9 @@
                         <span class="fa fa-clipboard"></span>
                     </span>
                 </span>
-        <h1 class="blue">{{ "welcome_cost_reporting_head" }}</h1>
-        <span class="info green">{{ "welcome_cost_reporting_title"  }}</span>
-        <p class="gray">{{ "welcome_cost_reporting_message" }}</p>
+        <h1 class="blue">{{msg . "welcome_cost_reporting_head" }}</h1>
+        <span class="info green">{{msg . "welcome_cost_reporting_title"  }}</span>
+        <p class="gray">{{msg . "welcome_cost_reporting_message" }}</p>
       </div>
     </div>
   </div>
@@ -47,9 +47,9 @@
                         <span class="fa fa-folder-open-o"></span>
                     </span>
                 </span>
-        <h1 class="white">{{ "welcome_digital_invoices_head" }}</h1>
-        <span class="info lightgreen">{{ "welcome_digital_invoices_title"  }}</span>
-        <p class="white">{{ "welcome_digital_invoices_message" }}</p>
+        <h1 class="white">{{msg . "welcome_digital_invoices_head" }}</h1>
+        <span class="info lightgreen">{{msg .  "welcome_digital_invoices_title"  }}</span>
+        <p class="white">{{msg . "welcome_digital_invoices_message" }}</p>
       </div>
       <div class="image2 removeimage wow slideInLeft"></div>
     </div>
@@ -61,9 +61,9 @@
                         <span class="fa fa-line-chart"></span>
                     </span>
                 </span>
-        <h1 class="white">{{ "welcome_analysis_head" }}</h1>
-        <span class="info lightblue">{{ "welcome_analysis_title"  }}</span>
-        <p class="white">{{ "welcome_analysis_message" }}</p>
+        <h1 class="white">{{msg . "welcome_analysis_head" }}</h1>
+        <span class="info lightblue">{{msg .  "welcome_analysis_title"  }}</span>
+        <p class="white">{{msg . "welcome_analysis_message" }}</p>
       </div>
       <div class="image3 removeimage wow slideInRight"></div>
     </div>
@@ -79,23 +79,23 @@
                         <span class="fa fa-check"></span>
                     </span>
                 </span>
-        <h1 class="blue">{{ "welcome_approvals_and_compatibility_head" }}</h1>
-        <span class="info green">{{ "welcome_approvals_and_compatibility_title"  }}</span>
+        <h1 class="blue">{{msg . "welcome_approvals_and_compatibility_head" }}</h1>
+        <span class="info green">{{msg .  "welcome_approvals_and_compatibility_title"  }}</span>
         <ul class="style1">
           <li>
-            <span>{{ "welcome_approvals_and_compatibility_item_1"  }}</span>
+            <span>{{msg .  "welcome_approvals_and_compatibility_item_1"  }}</span>
           </li>
           <li>
-            <span>{{ "welcome_approvals_and_compatibility_item_2"  }}</span>
+            <span>{{msg .  "welcome_approvals_and_compatibility_item_2"  }}</span>
           </li>
           <li>
-            <span>{{ "welcome_approvals_and_compatibility_item_3"  }}</span>
+            <span>{{msg . "welcome_approvals_and_compatibility_item_3"  }}</span>
           </li>
           <li>
-            <span>{{ "welcome_approvals_and_compatibility_item_4"  }}</span>
+            <span>{{msg . "welcome_approvals_and_compatibility_item_4"  }}</span>
           </li>
           <li>
-            <span>{{ "welcome_approvals_and_compatibility_item_5"  }}</span>
+            <span>{{msg . "welcome_approvals_and_compatibility_item_5"  }}</span>
           </li>
         </ul>
       </div>
@@ -109,9 +109,9 @@
                         <span class="fa fa-money"></span>
                     </span>
                 </span>
-          <h2 class="blue">{{ "welcome_advance_payment_management_head" }}</h2>
-          <span class="info green">{{ "welcome_advance_payment_management_title"  }}</span>
-          <p class="gray">{{ "welcome_advance_payment_management_message" }}</p>
+          <h2 class="blue">{{msg . "welcome_advance_payment_management_head" }}</h2>
+          <span class="info green">{{msg . "welcome_advance_payment_management_title"  }}</span>
+          <p class="gray">{{msg . "welcome_advance_payment_management_message" }}</p>
         </div>
       </div>
       <div class="m-box">
@@ -121,9 +121,9 @@
                         <span class="fa fa-mobile"></span>
                     </span>
                 </span>
-          <h2 class="blue">{{ "welcome_mobile_head" }}</h2>
-          <span class="info green">{{ "welcome_mobile_title"  }}</span>
-          <p class="gray">{{ "welcome_mobile_message" }}</p>
+          <h2 class="blue">{{msg . "welcome_mobile_head" }}</h2>
+          <span class="info green">{{msg . "welcome_mobile_title"  }}</span>
+          <p class="gray">{{msg . "welcome_mobile_message" }}</p>
         </div>
       </div>
       <div class="m-box">
@@ -133,8 +133,8 @@
                         <span class="fa fa-random"></span>
                     </span>
                 </span>
-          <h2 class="blue">{{ "welcome_integration_head" }}</h2>
-          <p class="gray">{{ "welcome_integration_message" }}</p>
+          <h2 class="blue">{{msg . "welcome_integration_head" }}</h2>
+          <p class="gray">{{msg . "welcome_integration_message" }}</p>
         </div>
       </div>
     </div>

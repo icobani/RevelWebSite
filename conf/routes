@@ -5,9 +5,25 @@
 module:testrunner
 
 GET     /                                       App.Index
+GET     /Why                                    App.Why
+GET     /Pricing                                App.Pricing
+GET     /Tour                                   App.Tour
+GET     /Us                                     App.Us
+GET     /Contact                                Contact.Index
+GET     /Pet                                    App.Pet
+GET     /Met                                    App.Met
+GET     /Login                                  Login.Index
+GET     /SetLang_TR                             App.SetLang_TR
+GET     /SetLang_EN                             App.SetLang_EN
+
+GET     /orders/:orderID/pay                    Orders.GetPayments
+POST    /Orders/Create                          Orders.Create_POST
+
+POST    /orders/api/create                      Orders.Create_Api_POST
+
 
 # Ignore favicon requests
-GET     /favicon.ico                            404
+GET     /favicon.ico                            Static.Serve("public/favicon.ico")
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/*filepath                       Static.Serve("public")

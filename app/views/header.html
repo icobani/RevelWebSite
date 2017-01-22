@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="public/assets/img/favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="public/assets/img/favicon180.png">
+  <link rel="icon" href="/public/assets/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/public/assets/img/favicon180.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -17,19 +17,19 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700&subset=latin,latin-ext">
 
   <!-- build:css welcome/styles.css -->
-  <link rel="stylesheet" href="public/welcome/assets/toastr.min.css"/>
-  <link rel="stylesheet" href="public/welcome/assets/three-quarters.css"/>
-  <link rel="stylesheet" href="public/welcome/assets/scripts/fontawesome/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="public/welcome/assets/scripts/animate.css"/>
-  <link rel="stylesheet" href="public/welcome/assets/styles/main.css"/>
+  <link rel="stylesheet" href="/public/welcome/assets/toastr.min.css"/>
+  <link rel="stylesheet" href="/public/welcome/assets/three-quarters.css"/>
+  <link rel="stylesheet" href="/public/welcome/assets/scripts/fontawesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/public/welcome/assets/scripts/animate.css"/>
+  <link rel="stylesheet" href="/public/welcome/assets/styles/main.css"/>
   <!-- endbuild -->
 
   <!--scripts-->
   <!-- build:js welcome/scripts.js -->
-  <script type="text/javascript" src="public/welcome/assets/scripts/jquery.js"></script>
-  <script type="text/javascript" src="public/welcome/assets/scripts/wow.min.js"></script>
-  <script type="text/javascript" src="public/welcome/assets/toastr.min.js"></script>
-  <script type="text/javascript" src="public/welcome/assets/scripts/main.js"></script>
+  <script type="text/javascript" src="/public/welcome/assets/scripts/jquery.js"></script>
+  <script type="text/javascript" src="/public/welcome/assets/scripts/wow.min.js"></script>
+  <script type="text/javascript" src="/public/welcome/assets/toastr.min.js"></script>
+  <script type="text/javascript" src="/public/welcome/assets/scripts/main.js"></script>
   <!-- endbuild -->
 
 </head>
@@ -38,8 +38,8 @@
 <div class="lang-note">
   {{if eq .PromotedLang "tr"}}
   <div class="text">aExpense'i <strong>Türkçe</strong> görüntülemek ister misiniz?</div>
-  <div class="lang-button"><a href="?lang=en">{{ "Hayır"  }}</a></div>
-  <div class="lang-button"><a href="?lang={{ .PromotedLang }}">{{ "Evet"  }}</a></div>
+  <div class="lang-button"><a href="/SetLang_EN">{{ "Hayır"  }}</a></div>
+  <div class="lang-button"><a href="/SetLang_TR">{{ "Evet"  }}</a></div>
   {{end}}
 </div>
 {{end}}
@@ -50,7 +50,7 @@
     <!--logo-->
     <div class="logo">
       <a href="/">
-        <img src="public/welcome/assets/images/logo-white.png" alt=""/>
+        <img src="/public/welcome/assets/images/logo-white.png" alt=""/>
       </a>
     </div>
     <!--toggle-bar-->
@@ -62,30 +62,30 @@
     <!--menu-->
     <ul class="menu">
       <li>
-        <a href="/">{{ "Main Page"  }}</a>
+        <a href="/">{{msg . "Main Page"  }}</a>
       </li>
       <li>
-        <a href="/tour">{{ "Tour"  }}</a>
+        <a href="/Tour">{{msg . "Tour"  }}</a>
       </li>
       <li>
-        <a href="/why">{{ "Why"  }}?</a>
+        <a href="/Why">{{msg . "Why"  }}?</a>
       </li>
       <li>
-        <a href="/pricing">{{ "Pricing"  }}</a>
+        <a href="/Pricing">{{msg . "Pricing"  }}</a>
       </li>
       <li>
-        <a href="/us">{{ "Us"  }}</a>
+        <a href="/Us">{{msg . "Us"  }}</a>
       </li>
       <li>
-        <a href="/contact">{{ "Contact"  }}</a>
+        <a href="/Contact">{{msg . "Contact"  }}</a>
       </li>
     </ul>
     <div class="right">
-      <a class="button login" href="/login">{{ "Login"  }}</a>
+      <a class="button login" href="/Login">{{msg . "Login"  }}</a>
       <span class="button lang" href="/login"><i class="fa fa-globe"></i></span>
       <ul class="lang-menu">
-        <li><a href="?lang=tr">{{ "Türkçe"  }}</a></li>
-        <li><a href="?lang=en">{{ "İngilizce"  }}</a></li>
+        <li><a href="/SetLang_TR">{{msg . "Turkish"  }}</a></li>
+        <li><a href="/SetLang_EN">{{msg . "English"  }}</a></li>
       </ul>
     </div>
   </div>

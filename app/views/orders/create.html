@@ -1,0 +1,93 @@
+{{set . "title" "Login"}}
+{{template "_head.html" .Title}}
+{{template "_header.html" .Title}}
+<!-- START PAGE CONTENT -->
+
+<!-- START CONTAINER FLUID -->
+<div class="container-fluid container-fixed-lg">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- START PANEL -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            Option #one
+          </div>
+        </div>
+        <div class="panel-body">
+          <h5>
+            {{msg . "Create Order"}}
+          </h5>
+
+          {{if .errors}}
+            <div style="color: orangered">
+              <ul>
+                {{range .errors}}
+                <li>{{.Key}} - {{.Message}}</li>
+                {{end}}
+              </ul>
+            </div>
+          {{end}}
+          <p>
+          <p>My Locale is: {{.currentLocale}}</p>
+
+
+          <form class="" role="form" method="POST" action="/Orders/Create">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group form-group-default required">
+                  <label>{{msg . "First Name"}}</label>
+                  <input name="order.FirstName" type="text" class="form-control" autofocus>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group form-group-default">
+                  <label>{{msg . "Last Name"}}</label>
+                  <input name="order.LastName" type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group-default ">
+              <label>{{msg . "Address"}}</label>
+              <input name="order.Address1" type="text" class="form-control">
+            </div>
+            <div class="form-group form-group-default ">
+              <label>{{msg . "Address 2"}}</label>
+              <input name="order.Address2" type="text" class="form-control">
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group form-group-default">
+                  <label>{{msg . "City"}}</label>
+                  <input name="order.City" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group form-group-default">
+                  <label>{{msg . "County"}}</label>
+                  <input name="order.County" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group form-group-default">
+                  <label>{{msg . "Post Code"}}</label>
+                  <input name="order.PostCode" type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
+
+            <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- END PANEL -->
+    </div>
+
+  </div>
+</div>
+<!-- END CONTAINER FLUID -->
+
+
+<!-- END PAGE CONTENT -->
+{{template "_footer.html"}}
