@@ -10,7 +10,7 @@
 * Developer : ibrahimcobani
 *
 *******/
-package models
+package model
 
 type Order struct {
 	ID        int

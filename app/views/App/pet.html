@@ -1,81 +1,70 @@
-{{set . "title" "Home"}}
-{{template "header.html" .}}
-<!--banner-->
-<div class="banner-small" style="margin-bottom: 25px">
-  <div class="container">
-    <h2 class="white wow fadeInDown">{{ "Masraflarınızı yönetin, verimliliğinizi arttırın." }}</h2>
-  </div>
-  <h4 class="button">{{ "NEDEN AEXPENSE?" }}</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Sample</title>
+  <script src="/public/js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <input type="text" v-on:input="changeTitle">
+  <p v-once>{{`{{title}}`}}</p>
+  <span>{{`{{sayHello()}}`}}</span>
+  <a v-bind:href = "googlelink">google</a>
+  <a v-bind:href="b1DigitalLine">b1 digital</a>
+  <hr>
+  <span v-html="finishedLink"></span>
+  <br>
+  <p>{{`{{ counter }}`}}</p>
+  <button v-on:click="increase(2, $event)">Add</button>
+
+  <p v-on:mousemove="updateCoordinates">Coordinated : {{`{{ X }}`}} / {{`{{ Y }}`}}</p> - <span v-on:mousemove.stop>STOP MOUSE</span>
+
+  <input type="text" @keyup.enter.67 = "alertMe">
+
+  <p @click="show = !show">You can see me</p>
+
+  <p v-if="show">Hello</p>
+  <p v-else>Do you se me</p>
+  <button @click="show = !show">Switch</button>
 </div>
-<!--main-->
-<div class="main">
-  <div class="white-content">
-    <div class="container">
-      <!--row-->
-      <div class="row overflow">
-        <div class="image10 removeimage wow bounceInDown"></div>
-        <div class="content" style="padding-left: 650px">
-                     <span class="icon green">
-                        <span class="image-wrap">
-                            <span class="fa fa-bullseye"></span>
-                        </span>
-                    </span>
-          <h1 class="blue" style="margin-top: 10px">{{ "welcome_why_automation_head" }}</h1>
-          <p class="gray">{{ "welcome_why_automation_message" }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="graybg">
-    <div class="container">
-      <!--row-->
-      <div class="row">
-        <div class="image11 removeimage wow fadeInRight "></div>
-        <div class="content" style="width: 600px;padding: 100px 0">
-                     <span class="icon green">
-                        <span class="image-wrap">
-                            <span class="fa fa-binoculars"></span>
-                        </span>
-                    </span>
-          <h1 class="blue">{{ "welcome_why_visibility_head" }}</h1>
-          <p>{{ "welcome_why_visibility_message" }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="white-content">
-    <div class="container">
-      <!--row-->
-      <div class="row overflow">
-        <div class="image12 removeimage wow bounceInDown"></div>
-        <div class="content" style="padding-left: 680px">
-                     <span class="icon green">
-                        <span class="image-wrap">
-                            <span class="fa fa-flag"></span>
-                        </span>
-                    </span>
-          <h1 class="blue" style="margin-top: 10px">{{ "welcome_why_control_head" }}</h1>
-          <p class="gray">{{ "welcome_why_control_message" }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="graybg">
-    <div class="container">
-      <!--row-->
-      <div class="row">
-        <div class="image13 removeimage wow fadeInRight "></div>
-        <div class="content" style="width: 600px;padding: 100px 0">
-                     <span class="icon green">
-                        <span class="image-wrap">
-                            <span class="fa fa-life-ring"></span>
-                        </span>
-                    </span>
-          <h1 class="blue">{{ "welcome_why_know_head" }}</h1>
-          <p>{{ "welcome_why_know_message" }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{{template "footer.html" .}}
+
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      title: 'Hello from Vue',
+      googlelink: 'http://www.google.com',
+      b1DigitalLine: 'http://www.b1digital.com',
+      finishedLink : '<a href="index.html">bidi</a>',
+      counter : 0,
+      X : 0,
+      Y : 0,
+      show: true
+    },
+    methods: {
+      changeTitle: function (event) {
+        this.title = event.target.value;
+      },
+      sayHello: function () {
+        this.title = "Hello";
+        return this.title + " where are you from?"
+      },
+      increase: function (step, event) {
+        this.counter += step;
+      },
+      updateCoordinates: function (e) {
+        this.X = e.clientX;
+        this.Y = e.clientY;
+      },
+      alertMe: function () {
+        alert("Alert!")
+      }
+    }
+  });
+
+
+</script>
+</body>
+</html>

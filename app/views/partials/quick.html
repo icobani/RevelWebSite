@@ -1,0 +1,210 @@
+<!-- START PAGE CONTENT WRAPPER -->
+
+<div class="modal-content-wrapper">
+  <div class="modal-body expense-multiple">
+    <div id="rootwizard" class="m-t-10">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-tabs-linetriangle nav-tabs-separator nav-stack-sm">
+        <li class="active" data-tab="1">
+          <a data-toggle="tab" href="#tab1"><i class="fa fa-file-text tab-icon"></i> <span>Basic</span></a>
+        </li>
+        <li class="" data-tab="2">
+          <a data-toggle="tab" href="#tab2"><i class="fa fa-building tab-icon"></i> <span>Company</span></a>
+        </li>
+        <li class="" data-tab="3">
+          <a data-toggle="tab" href="#tab3"><i class="fa fa-users tab-icon"></i> <span>Invite</span></a>
+        </li>
+        <li class="" data-tab="4">
+          <a data-toggle="tab" href="#tab4"><i class="fa fa-check tab-icon"></i> <span>Finish</span></a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane padding-20 slide-left active" data-tab="1" id="tab1">
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey sm-b-b">
+              <div class="padding-30 m-t-20">
+                <i class="fa fa-file-text fa-2x hint-text"></i>
+                <h2>Basic Informations</h2>
+                <p>Help us to get you know better.</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30">
+                <div class="wizard-right">
+                  <p>Company's</p>
+                  <div class="form-group form-group-default ">
+                    <label>Name</label>
+                    <input type="text" class="field-company-name form-control" required>
+                  </div>
+
+                  </br>
+                  <p>Your's</p>
+                  <div class="form-group-attached">
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default ">
+                        <label>Name</label>
+                        <input type="text" class="field-name form-control" required>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default ">
+                        <label>Email</label>
+                        <input type="text" name="email" class="field-email form-control"
+                               value="ibrahim@cobani.com" required>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default ">
+                        <label>Phone Number</label>
+                        <input type="text" class="field-phone-number form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane slide-left padding-20" data-tab="2" id="tab2">
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey ">
+              <div class="padding-30 m-t-50">
+                <i class="fa fa-building fa-2x hint-text"></i>
+                <h2>About Your Company</h2>
+                <p>Setup some of your company spesific informations. You can pass any of them if you don't
+                  need.</p>
+                <p class="small hint-text">Tip: You can make more customization on your settings by visiting
+                  administration page after you logged-in.</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30">
+                <p class="small hint-text">Hit enter after each single information you typed in</p>
+                <form role="form">
+                  <div class="form-group-attached">
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default">
+                        <label>Expense Categories</label>
+                        <input class="field-expense-categories" type="text" value=""/>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default">
+                        <label>Branches</label>
+                        <input class="field-branches" type="text" value=""/>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default">
+                        <label>Departments</label>
+                        <input class="field-departments" type="text" value=""/>
+                      </div>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default">
+                        <label>Projects</label>
+                        <input class="field-projects" type="text" value=""/>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane slide-left padding-20" data-tab="3" id="tab3">
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey ">
+              <div class="padding-30 m-t-50">
+                <i class="fa fa-users fa-2x hint-text"></i>
+                <h2>Invite Your Staff</h2>
+                <p>We'll send them an email to invite AExpense under your company. After that, they'll be able
+                  to register and use AExpense by following the link we've sent.</p>
+                <p class="small hint-text">Tip: You can manage your users on your administration page.</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30">
+                <p class="small hint-text">Hit enter after each email address you typed in</p>
+                <p>Stuff's</p>
+                <form role="form">
+                  <div class="form-group-attached">
+                    <div class="row clearfix">
+                      <div class="form-group form-group-default ">
+                        <label>Email Addresses</label>
+                        <input class="field-stuff-emails" type="text" value=""/>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane slide-left padding-20" data-tab="4" id="tab4">
+          <div class="row row-same-height">
+            <div class="col-md-5 b-r b-dashed b-grey ">
+              <div class="padding-30 m-t-50">
+                <i class="fa fa-check fa-2x hint-text"></i>
+                <h2>Finish</h2>
+                <p class="small">By pressing Finish You will Agree to the <a href="/terms" target="_blank">Terms
+                  &amp; Conditions</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="padding-30">
+                <p>Choose a min 6 characters long password</p>
+                <div class="form-group-attached">
+                  <div class="row clearfix">
+                    <div class="form-group form-group-default ">
+                      <label>New Password</label>
+                      <input type="password" name="password" class="field-password form-control" required>
+                    </div>
+                  </div>
+                </div>
+                </br>
+                <p>
+                <h2>Thank You!</h2></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="padding-20">
+          <ul class="pager wizard">
+            <li class="next">
+              <button class="btn btn-complete btn-cons btn-animated from-left fa fa-truck pull-right"
+                      type="button">
+                <span>İleri</span>
+              </button>
+            </li>
+            <li class="next finish hidden">
+              <button
+                  class="button-finish btn btn-complete btn-cons btn-animated from-left fa fa-cog pull-right"
+                  type="button">
+                <span>Finish</span>
+              </button>
+            </li>
+            <li class="previous first hidden">
+              <button class="btn btn-default btn-cons btn-animated from-left fa fa-cog pull-right"
+                      type="button">
+                <span>First</span>
+              </button>
+            </li>
+            <li class="previous">
+              <button class="btn btn-default btn-cons pull-right" type="button">
+                <span>Geri</span>
+              </button>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- END PAGE CONTENT WRAPPER -->

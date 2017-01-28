@@ -2,7 +2,26 @@ package app
 
 import (
 	"github.com/revel/revel"
+	"github.com/jinzhu/gorm"
+	_ "github.com/lib/pq"
+	"fmt"
+	"database/sql"
 )
+
+var DB *gorm.DB
+
+func InitDB() {
+	cnnString := fmt.Sprintf("host=%s user=%s password='%s' dbname=%s sslmode=disable","localhost", "postgres", "azura777", "aexpense")
+
+	var err error
+	DB, err = sql.Open("postgres", cnnString)
+	if err != nil {
+		revel.INFO.Println("DB Error", err)
+	}
+	revel.INFO.Println("DB Connected")
+
+}
+
 
 func init() {
 	// Filters is the default set of global filters.
@@ -33,6 +52,11 @@ func init() {
 	//  5 dakika sonra çalıştır.
 	//  jobs.In(5 * time.minute,MyJob{})
 	//})
+
+	revel.OnAppStart(func() {
+		InitDB()
+	})
+
 }
 
 // TODO turn this into revel.HeaderFilter

@@ -15,8 +15,8 @@ package controllers
 import (
 	"github.com/revel/revel"
 	"fmt"
-	"github.com/icobani/RevelWebSite/app/models"
 	"encoding/json"
+	"github.com/icobani/RevelWebSite/app/model"
 )
 
 type Orders struct {
@@ -39,17 +39,12 @@ func (c Orders)Create() revel.Result {
 	//c.RenderArgs["controllerCurrentLocale"] = c.Request.Locale
 
 
-
-
-
-
-
 	return c.Render()
 }
 
 func (c Orders)Create_POST() revel.Result {
 	fmt.Println("Coming Create_POST")
-	var order models.Order
+	var order model.Order
 	//Bind özelliği çok iyi
 	//gelen parametreleri harika bir şekilde bizim modelimize uyguluyor.
 	c.Params.Bind(&order, "order")
@@ -69,7 +64,7 @@ func (c Orders)Create_POST() revel.Result {
 
 func (c Orders) Create_Api_POST() revel.Result {
 	fmt.Println("api create order")
-	var order models.Order
+	var order model.Order
 
 	dec := json.NewDecoder(c.Request.Body)
 	dec.Decode(&order)

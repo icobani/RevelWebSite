@@ -11,7 +11,7 @@ GET     /Tour                                   App.Tour
 GET     /Us                                     App.Us
 GET     /Contact                                Contact.Index
 GET     /Pet                                    App.Pet
-GET     /Met                                    App.Met
+GET     /QuickRegister                          App.QuickRegister
 GET     /Login                                  Login.Index
 GET     /SetLang_TR                             App.SetLang_TR
 GET     /SetLang_EN                             App.SetLang_EN
@@ -20,6 +20,11 @@ GET     /orders/:orderID/pay                    Orders.GetPayments
 POST    /Orders/Create                          Orders.Create_POST
 
 POST    /orders/api/create                      Orders.Create_Api_POST
+
+
+POST    /QuickRegister                          App.QuickRegister_POST
+
+
 
 
 # Ignore favicon requests

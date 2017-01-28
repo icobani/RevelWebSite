@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List Sample</title>
+  <!-- BEGIN Vendor CSS-->
+  <link href="/public/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css"/>
+  <link href="/public/assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/public/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="/public/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css"
+        media="screen"/>
+  <link href="/public/assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen"/>
+  <link href="/public/assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen"/>
+  <!-- BEGIN Pages CSS-->
+  <link href="/public/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+  <link class="main-stylesheet" href="/public/pages/css/pages.css" rel="stylesheet" type="text/css"/>
+  <!--[if lte IE 9]>
+  <link href="/public/pages/css/ie9.css" rel="stylesheet" type="text/css"/>
+  <![endif]-->
+
+  <script src="/public/js/vue.js"></script>
+</head>
+<body>
+<h1>List Sample</h1>
+
+<div id="listapp">
+  <button @click="addFoods()">Add Food</button>
+  <ul>
+    <li v-for="(yemek, i) in foods">{{ i+1 }}.{{yemek}} yemeği</li>
+  </ul>
+
+  <br>
+  <template v-for="(yemek, index) in foods">
+    <span>{{ index }}</span> - <span>{{ yemek }}</span><br>
+    <hr>
+  </template>
+
+
+  <table>
+    <tr v-for="user in users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.jobtitle }}</td>
+      <td>{{ user.branch }}</td>
+      <td>{{ user.mail }}</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </table>
+
+
+  <ul>
+    <li v-for="user in users">
+      <div v-for="(value, key, index) in user">{{index}}.{{ key }} ==> {{value}}</div>
+    </li>
+  </ul>
+  ----------------------------------------<br>
+  | <span v-for="n in 10"> {{ n }} | </span><br>
+  ----------------------------------------
+
+</div>
+
+
+<script>
+  new Vue({
+    el: '#listapp',
+    data: {
+      foods: ['pırasa', 'ıspanak', 'pazı', 'patlıcan', 'kereviz', 'enginar'],
+      users: [
+        {
+          name: 'Ibrahim ÇOBANİ',
+          jobtitle: 'Manager',
+          branch: 'Esentepe',
+          mail: 'ibrahim@cobani.com',
+          phone: '0532 540 1194'
+        },
+        {name: 'Salih ÇOBANİ', jobtitle: 'IT', branch: 'Esentepe', mail: 'salih@cobani.com', phone: '0532 540 1194'},
+        {
+          name: 'Gökhan MERCANOĞLU',
+          jobtitle: 'Consultant',
+          branch: 'Kozyatağı',
+          mail: 'gokhan@cobani.com',
+          phone: '0532 540 3333'
+        },
+        {
+          name: 'Müge KISAALİOĞLU',
+          jobtitle: 'Consultant',
+          branch: 'Maslak',
+          mail: 'muge@cobani.com',
+          phone: '0532 540 4334'
+        },
+        {
+          name: 'Başak Gül UÇAR',
+          jobtitle: 'Consultant',
+          branch: 'Teknokent',
+          mail: 'basak@cobani.com',
+          phone: '0532 540 1142'
+        },
+        {
+          name: 'Bahadır ÇAKAR',
+          jobtitle: 'Social Media Manager',
+          branch: 'Bayrampaşa',
+          mail: 'bahadır@cobani.com',
+          phone: '0532 540 1234'
+        },
+        {
+          name: 'Yunus Emre TOPRAK',
+          jobtitle: 'Graphics Designer',
+          branch: 'Bayrampaşa',
+          mail: 'yunus@cobani.com',
+          phone: '0532 540 2222'
+        }
+      ]
+    },
+    methods: {
+      addFoods: function () {
+        var max = 10;
+        var min = 4;
+        var rndVal = Math.max(Math.floor(Math.random() * max) + 1, min);
+        this.foods.push(rndVal.toString());
+      }
+    }
+  });
+
+
+</script>
+</body>
+</html>

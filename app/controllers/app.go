@@ -4,12 +4,12 @@ import (
 	"github.com/revel/revel"
 	"fmt"
 	"net/http"
+	"github.com/icobani/RevelWebSite/app"
 )
 
 type App struct {
 	*revel.Controller
 }
-
 
 func (c App) Index() revel.Result {
 	fmt.Println("Incoming Index")
@@ -39,10 +39,16 @@ func (c App) Pet() revel.Result {
 	return c.Render()
 }
 
-func (c App) Met() revel.Result {
-	fmt.Println("Met....")
+func (c App) QuickRegister() revel.Result {
+	fmt.Println("QuickRegister....")
 	return c.Render()
 }
+
+func (c App) QuickRegister_POST() revel.Result {
+	fmt.Println("QuickRegister_POST")
+	return c.RenderTemplate("Login/Index.html")
+}
+
 
 // Set for Turkish Lang
 func (c App)SetLang_TR() revel.Result {
