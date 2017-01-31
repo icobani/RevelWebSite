@@ -7,8 +7,8 @@ import (
 
 
 type TokenStorage struct {
-	Id   string `json:"email"`
-	Hash string `json:"hash"`
+	Id   string `json:"email" CaptionML:"enu=ID;trk=ID"`
+	Hash string `json:"hash" CaptionML:"enu=Hash;trk=Bilet"`
 }
 
 func (this TokenStorage) CreateTable() {

@@ -1,0 +1,16 @@
+
+# --------------------------------------------
+# [Group] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Group.Id = ID
+Group.CompanyId = Şirket
+Group.BranchId = Şube
+Group.DepartmentId = Departman
+Group.Name = Grup Adı
+Group.Code = Grup Kodu
+Group.Email = E-Mail
+Group.Branch = Şube
+Group.Members = Üyeler

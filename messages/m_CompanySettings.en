@@ -1,0 +1,16 @@
+
+# --------------------------------------------
+# [CompanySettings] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:29
+# --------------------------------------------
+
+
+CompanySettings.Id = ID
+CompanySettings.CompanyId = Company ID
+CompanySettings.IsCategoryFieldRequired = Is Category Field Required
+CompanySettings.IsProjectFieldRequired = Make the project field required
+CompanySettings.IsPaidWithFieldRequired = Is Paid With Field Required
+CompanySettings.ActiveApprovalModule =
+CompanySettings.ActiveControllerModule =
+CompanySettings.RemoveProjectField =
+CompanySettings.ActivateAllowances =

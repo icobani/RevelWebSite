@@ -1,0 +1,9 @@
+
+# --------------------------------------------
+# [TokenStorage] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+TokenStorage.Id = ID
+TokenStorage.Hash = Hash

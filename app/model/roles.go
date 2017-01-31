@@ -9,8 +9,8 @@ import (
 )
 
 type Role struct {
-	Id   null.Int    `json:"id" option:"id"`
-	Name null.String `json:"name" option:"value" sql:"type:varchar(150)"`
+	Id   null.Int    `json:"id" option:"id" CaptionML:"enu=ID;trk=ID"`
+	Name null.String `json:"name" option:"value" sql:"type:varchar(150)" CaptionML:"enu=Name;trk=Ad"`
 }
 
 func (this Role) CreateTable() {
@@ -22,8 +22,8 @@ func (this Role) CreateTable() {
 }
 
 type Permission struct {
-	Id   null.Int
-	Name null.String
+	Id   null.Int      `CaptionML:"enu=ID;trk=ID"`
+	Name null.String  `CaptionML:"enu=Name;trk=Ad"`
 }
 
 func (this Permission) CreateTable() {
@@ -34,7 +34,6 @@ func (this Permission) CreateTable() {
 	app.MakeCaptionML(this)
 }
 
-
 func (p Permission) MarshalJSON() ([]byte, error) {
 	if p.Id.Int64 == 0 {
 		return []byte("null"), nil
@@ -43,9 +42,10 @@ func (p Permission) MarshalJSON() ([]byte, error) {
 }
 
 type RolePermission struct {
-	RoleId       int64
-	PermissionId int64
+	RoleId       int64 ` CaptionML:"enu=ID;trk=ID"`
+	PermissionId int64 ` CaptionML:"enu=Permission ID;trk=Yetki"`
 }
+
 func (this RolePermission) CreateTable() {
 	app.DB.DropTable(this)
 	fmt.Println("RolePermission Table Dropped")

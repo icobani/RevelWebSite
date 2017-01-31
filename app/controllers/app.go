@@ -146,14 +146,6 @@ func GetMD5Hash(text string) string {
 func (c App) AutoMigrate() revel.Result {
 
 	model.Company{}.CreateTable()
-
-
-
-
-
-
-
-	/*
 	model.Branch{}.CreateTable()
 	model.CompanySettings{}.CreateTable()
 	model.Currency{}.CreateTable()
@@ -184,7 +176,7 @@ func (c App) AutoMigrate() revel.Result {
 	model.UserRole{}.CreateTable()
 	model.UserProject{}.CreateTable()
 	model.UserGroup{}.CreateTable()
-	*/
+
 	return c.Render()
 }
 

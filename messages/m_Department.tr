@@ -1,0 +1,14 @@
+
+# --------------------------------------------
+# [Department] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Department.Id = ID
+Department.CompanyId = Şirket ID
+Department.BranchId = Şirket ID
+Department.Name = Adı
+Department.Code = Code
+Department.Branch = Şube
+Department.Members = Personeller

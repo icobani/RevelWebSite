@@ -1,0 +1,38 @@
+
+# --------------------------------------------
+# [Preferences] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Preferences.Id =
+Preferences.UserId =
+Preferences.AddExpenseType =
+Preferences.MainMenuPinStatus =
+Preferences.DashboardChart =
+Preferences.ExpenseFiltersVisibility =
+Preferences.ReportsFiltersVisibility =
+Preferences.ExpenseCategory =
+Preferences.ExpenseProject =
+Preferences.ExpenseDepartment =
+Preferences.ExpenseTag =
+Preferences.ExpenseCurrency =
+Preferences.ExpensePaymentType =
+Preferences.ExpenseFilterMerchant =
+Preferences.ExpenseFilterScope =
+Preferences.ExpenseFilterCategories =
+Preferences.ExpenseFilterProjects =
+Preferences.ExpenseFilterPaymentType =
+Preferences.ExpenseFilterStartDate =
+Preferences.ExpenseFilterEndDate =
+Preferences.ReportFilterStatus =
+Preferences.ReportFilters =
+Preferences.UserFilterName =
+Preferences.UserFilterGroup =
+Preferences.UserFilterDepartment =
+Preferences.UserFilterBranch =
+Preferences.UserFilterStatus =
+Preferences.UserFilterOrder =
+Preferences.UserFilters =
+Preferences.ExpenseCategoryOrder =
+Preferences.ExpenseCategoryFilters =

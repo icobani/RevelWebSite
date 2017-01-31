@@ -1,0 +1,26 @@
+
+# --------------------------------------------
+# [Report] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Report.Id = ID
+Report.UserId = Kullanıcı
+Report.CompanyId = Şirket
+Report.Date = Rapor Tarihi
+Report.Name = Rapor Adı
+Report.Description = Rapor Açıklaması
+Report.Total = Toplam Tutar
+Report.Status = Rapor Durumu
+Report.ApprovalState = Onay Durumu
+Report.ExpensesCount = Masraf Adedi
+Report.ApprovedExpensesCount = Onaylanan Masraf Adedi
+Report.RefusedExpensesCount = Reddedilen Masraf Adedi
+Report.PendingExpensesCount = Reddedilen Masraf Adedi
+Report.SubmittedBy = Gönderen
+Report.ApprovedBy = Onaylayan
+Report.UserApprovalMode = Onay Modu
+Report.UserEditMode = Düzenleme Modu
+Report.CreatedAt = Oluşturulma Tarihi
+Report.UpdatedAt = Güncelleme Tarihi

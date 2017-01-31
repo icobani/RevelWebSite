@@ -1,0 +1,12 @@
+
+# --------------------------------------------
+# [ReportHistoryUser] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+ReportHistoryUser.Id = ID
+ReportHistoryUser.Name = Ad
+ReportHistoryUser.LastName = Soyad
+ReportHistoryUser.ProfileImage = Profil Resmi
+ReportHistoryUser.ProfileImageUrl = Profile Resmi URL

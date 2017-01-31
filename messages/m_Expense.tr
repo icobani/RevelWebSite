@@ -1,0 +1,49 @@
+
+# --------------------------------------------
+# [Expense] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Expense.Id = ID
+Expense.Type = Tip
+Expense.Date = Tarih
+Expense.CurrencyCode = Döviz Kodu
+Expense.InvoiceNumber = Fiş/Fatura No.
+Expense.MileageDistance = Mesafe
+Expense.CompanyId = Şirket
+Expense.DepartmentId = Departman
+Expense.ReportId = Rapor
+Expense.UserId = Personel
+Expense.CategoryId = Kategori
+Expense.Category = Kategori
+Expense.Vat = KDV %
+Expense.VatAmount = Kdv Tutarı
+Expense.Amount = Tutar
+Expense.AmountLCY = Tutar (LPB)
+Expense.PaymentTypeId = Ödeme Türü
+Expense.Reimbursable = Geri Ödenebilir
+Expense.Billable = Faturalanabilir
+Expense.MerchantName = Satıcı No.
+Expense.MerchantTaxOffice = Satıcı Vergi Dairesi
+Expense.MerchantTaxId = Satıcı Vergi No.
+Expense.MileageCategoryId =
+Expense.ProjectId =
+Expense.Country =
+Expense.MileageFrom =
+Expense.MileageTo =
+Expense.Note =
+Expense.TagId =
+Expense.TtHours =
+Expense.TtHoursRate =
+Expense.DocumentUrl =
+Expense.DocumentUrl2 =
+Expense.DocumentUrl3 =
+Expense.ApprovalDate =
+Expense.ApprovedUser =
+Expense.Status =
+Expense.GhostStatus =
+Expense.Receipt =
+Expense.User =
+Expense.CreatedAt =
+Expense.UpdatedAt =

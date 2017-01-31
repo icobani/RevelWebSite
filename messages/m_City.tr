@@ -1,0 +1,10 @@
+
+# --------------------------------------------
+# [City] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+City.Id = ID
+City.Name = Şehir Adı
+City.CountryCode = Ülke Kodu

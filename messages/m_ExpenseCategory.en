@@ -1,0 +1,24 @@
+
+# --------------------------------------------
+# [ExpenseCategory] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+ExpenseCategory.Id = ID
+ExpenseCategory.Name = Category Name
+ExpenseCategory.Code = Category Code
+ExpenseCategory.CompanyId = Company
+ExpenseCategory.BranchId = Branch
+ExpenseCategory.DepartmentId = Department
+ExpenseCategory.ExpenseTypes = Expense Type
+ExpenseCategory.MainCategoryId = Main Category
+ExpenseCategory.AccountingNumber = Accounting Number
+ExpenseCategory.MaximumAmountPerReport = Maximum Amount Per Report
+ExpenseCategory.MaximumAmountPerMonth = Maximum Amount Per Month
+ExpenseCategory.Branch = Branch
+ExpenseCategory.Parent = Parent Category
+ExpenseCategory.IsPublic = Public
+ExpenseCategory.ReceiptsCheck = Receipts Check
+ExpenseCategory.ProjectCheck = Project Check
+ExpenseCategory.CommentsCheck = Comments Check

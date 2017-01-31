@@ -1,0 +1,24 @@
+
+# --------------------------------------------
+# [Branch] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:29
+# --------------------------------------------
+
+
+Branch.Id = ID
+Branch.CompanyId = Company ID
+Branch.Code = Code
+Branch.Name = Name
+Branch.Address = Address
+Branch.PostalCode = Post Code
+Branch.CityId = City ID
+Branch.City = City
+Branch.CountryCode = Country Code
+Branch.Country = Counrty
+Branch.CurrencyCode = Currency Code
+Branch.Currency = Currency
+Branch.Active = Active
+Branch.AccountantId = Accountant ID
+Branch.Accountant = Accountant
+Branch.CreatedAt = Created At
+Branch.UpdatedAt = Updated Date

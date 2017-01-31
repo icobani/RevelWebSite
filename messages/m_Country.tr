@@ -1,0 +1,10 @@
+
+# --------------------------------------------
+# [Country] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Country.Code = Kod
+Country.Description = Açıklama
+Country.CurrencyCode = Döviz Kodu

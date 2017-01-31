@@ -1,0 +1,9 @@
+
+# --------------------------------------------
+# [ReportDepartment] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+ReportDepartment.Id = ID
+ReportDepartment.Name = Ad

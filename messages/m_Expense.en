@@ -1,0 +1,49 @@
+
+# --------------------------------------------
+# [Expense] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Expense.Id = ID
+Expense.Type = Type
+Expense.Date = Date
+Expense.CurrencyCode = Currency Code
+Expense.InvoiceNumber = Invoice Number
+Expense.MileageDistance = Mileage Distange
+Expense.CompanyId = Company
+Expense.DepartmentId = Department
+Expense.ReportId = Report
+Expense.UserId = User
+Expense.CategoryId = Category
+Expense.Category = Category
+Expense.Vat = VAT %
+Expense.VatAmount = VAT Amount
+Expense.Amount = Amount
+Expense.AmountLCY = Amount LCY
+Expense.PaymentTypeId = Paymet Type
+Expense.Reimbursable = Reimbursable
+Expense.Billable = Billable
+Expense.MerchantName = Merchant Name
+Expense.MerchantTaxOffice = Merhant Tax Office
+Expense.MerchantTaxId = Merchant Tax ID
+Expense.MileageCategoryId =
+Expense.ProjectId =
+Expense.Country =
+Expense.MileageFrom =
+Expense.MileageTo =
+Expense.Note =
+Expense.TagId =
+Expense.TtHours =
+Expense.TtHoursRate =
+Expense.DocumentUrl =
+Expense.DocumentUrl2 =
+Expense.DocumentUrl3 =
+Expense.ApprovalDate =
+Expense.ApprovedUser =
+Expense.Status =
+Expense.GhostStatus =
+Expense.Receipt =
+Expense.User =
+Expense.CreatedAt =
+Expense.UpdatedAt =

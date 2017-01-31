@@ -1,0 +1,14 @@
+
+# --------------------------------------------
+# [ReportHistory] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+ReportHistory.Id = ID
+ReportHistory.ReportId = Rapor ID
+ReportHistory.UserId = Kullanıcı
+ReportHistory.Action = İşlem
+ReportHistory.Comment = Açıklamalar
+ReportHistory.User = Rapor Kullanıcısı
+ReportHistory.CreatedAt = Oluşturma Tarihi

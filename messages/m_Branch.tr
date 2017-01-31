@@ -1,0 +1,24 @@
+
+# --------------------------------------------
+# [Branch] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:29
+# --------------------------------------------
+
+
+Branch.Id = ID
+Branch.CompanyId = Şirket ID
+Branch.Code = Kod
+Branch.Name = Ad
+Branch.Address = Adres
+Branch.PostalCode = Posta Kodu
+Branch.CityId = Şehir ID
+Branch.City = Şehir
+Branch.CountryCode = Ülke Kodu
+Branch.Country = Ülke
+Branch.CurrencyCode = Döviz Kodu
+Branch.Currency = Döviz
+Branch.Active = Aktif
+Branch.AccountantId = Muhasebe ID
+Branch.Accountant = Muhasebeci
+Branch.CreatedAt = Oluşturma Tarihi
+Branch.UpdatedAt = Değiştirme Tarihi

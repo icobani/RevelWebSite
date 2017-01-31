@@ -1,0 +1,9 @@
+
+# --------------------------------------------
+# [UserDepartment] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+UserDepartment.UserId = Kullanıcı ID
+UserDepartment.DepartmentId = Departman ID

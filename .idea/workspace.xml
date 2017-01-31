@@ -2,35 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f63ab248-74cf-42c6-b33f-50bcdfb997f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/b1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/App/AutoMigrate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/app.go" afterPath="$PROJECT_DIR$/app/controllers/app.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/orders.go" afterPath="$PROJECT_DIR$/app/controllers/orders.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/init.go" afterPath="$PROJECT_DIR$/app/init.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/branches.go" afterPath="$PROJECT_DIR$/app/model/branches.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/companies.go" afterPath="$PROJECT_DIR$/app/model/companies.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/currencies.go" afterPath="$PROJECT_DIR$/app/model/currencies.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/departments.go" afterPath="$PROJECT_DIR$/app/model/departments.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/expense_categories.go" afterPath="$PROJECT_DIR$/app/model/expense_categories.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/expenses.go" afterPath="$PROJECT_DIR$/app/model/expenses.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/exports.go" afterPath="$PROJECT_DIR$/app/model/exports.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/geo.go" afterPath="$PROJECT_DIR$/app/model/geo.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/groups.go" afterPath="$PROJECT_DIR$/app/model/groups.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/mileage_categories.go" afterPath="$PROJECT_DIR$/app/model/mileage_categories.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/order.go" afterPath="$PROJECT_DIR$/app/model/order.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/payment_types.go" afterPath="$PROJECT_DIR$/app/model/payment_types.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/preferences.go" afterPath="$PROJECT_DIR$/app/model/preferences.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/projects.go" afterPath="$PROJECT_DIR$/app/model/projects.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/quick.go" afterPath="$PROJECT_DIR$/app/model/quick.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/reports.go" afterPath="$PROJECT_DIR$/app/model/reports.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/roles.go" afterPath="$PROJECT_DIR$/app/model/roles.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/token.go" afterPath="$PROJECT_DIR$/app/model/token.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/users.go" afterPath="$PROJECT_DIR$/app/model/users.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/App/QuickRegister.html" afterPath="$PROJECT_DIR$/app/views/App/QuickRegister.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Login/index.html" afterPath="$PROJECT_DIR$/app/views/Login/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/m_Company.en" afterPath="$PROJECT_DIR$/messages/m_Company.en" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/m_Company.tr" afterPath="$PROJECT_DIR$/messages/m_Company.tr" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,14 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reports.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/model/reports.go">
+      <file leaf-file-name="users.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/model/users.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
-              <folding>
-                <element signature="e#15#79#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="106" column="54" lean-forward="false" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,17 +135,13 @@
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/views/Login/index.html" />
         <option value="$PROJECT_DIR$/app/views/App/QuickRegister.html" />
-        <option value="$PROJECT_DIR$/app/model/users.go" />
         <option value="$PROJECT_DIR$/messages/Company_Model.tr" />
-        <option value="$PROJECT_DIR$/app/controllers/app.go" />
         <option value="$PROJECT_DIR$/messages/Company.en" />
         <option value="$PROJECT_DIR$/messages/Company.tr" />
         <option value="$PROJECT_DIR$/messages/m_Company.en" />
         <option value="$PROJECT_DIR$/app/init.go" />
         <option value="$PROJECT_DIR$/app/model/companies.go" />
         <option value="$PROJECT_DIR$/app/model/exports.go" />
-        <option value="$PROJECT_DIR$/app/model/roles.go" />
-        <option value="$PROJECT_DIR$/app/model/token.go" />
         <option value="$PROJECT_DIR$/app/model/branches.go" />
         <option value="$PROJECT_DIR$/app/model/currencies.go" />
         <option value="$PROJECT_DIR$/app/model/departments.go" />
@@ -185,6 +156,10 @@
         <option value="$PROJECT_DIR$/app/model/projects.go" />
         <option value="$PROJECT_DIR$/app/model/quick.go" />
         <option value="$PROJECT_DIR$/app/model/reports.go" />
+        <option value="$PROJECT_DIR$/app/model/roles.go" />
+        <option value="$PROJECT_DIR$/app/model/token.go" />
+        <option value="$PROJECT_DIR$/app/model/users.go" />
+        <option value="$PROJECT_DIR$/app/controllers/app.go" />
       </list>
     </option>
   </component>
@@ -327,7 +302,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -452,12 +427,12 @@
       <workItem from="1485450977827" duration="227000" />
       <workItem from="1485451309398" duration="884000" />
       <workItem from="1485452452894" duration="2569000" />
-      <workItem from="1485534572093" duration="51409000" />
+      <workItem from="1485534572093" duration="53423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132068000" />
+    <option name="totallyTimeSpent" value="134082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,14 +448,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2192216" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890411" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Serial Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42054793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42054793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -523,43 +498,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="28" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/App/pet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Pages Template/demo/html/assets/js/form_wizard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Pages Template/demo/html/form_wizard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="2698" column="4" lean-forward="false" selection-start-line="2698" selection-start-column="4" selection-end-line="2698" selection-end-column="75" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/form_wizard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -684,14 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/users.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messages/labels.tr">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -784,14 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/token.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -914,18 +836,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/reports.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+          <folding>
+            <element signature="e#15#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/roles.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="365">
+          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/app.go">
+    <entry file="file://$PROJECT_DIR$/app/model/token.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -940,13 +872,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/reports.go">
+    <entry file="file://$PROJECT_DIR$/messages/m_Expense.en">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+        <state relative-caret-position="-375">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/m_Branch.tr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/m_Branch.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/m_Report.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
-            <element signature="e#15#79#0" expanded="true" />
+            <element signature="e#21#190#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/users.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="106" column="54" lean-forward="false" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

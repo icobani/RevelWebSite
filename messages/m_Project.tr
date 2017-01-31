@@ -1,0 +1,17 @@
+
+# --------------------------------------------
+# [Project] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Project.Id = ID
+Project.CompanyId = Şirket
+Project.BranchId = Şube
+Project.DepartmentId = Departman
+Project.Name = Proje Adı
+Project.Code = Proje Kodu
+Project.StartDate = Başlangıç Tarihi
+Project.EndDate = Bitiş Tarihi
+Project.IsActive = Aktif
+Project.Branch = Şube

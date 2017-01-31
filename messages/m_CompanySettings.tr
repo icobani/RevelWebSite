@@ -1,0 +1,16 @@
+
+# --------------------------------------------
+# [CompanySettings] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:29
+# --------------------------------------------
+
+
+CompanySettings.Id = ID
+CompanySettings.CompanyId = Şirket ID
+CompanySettings.IsCategoryFieldRequired = Kategory Alanı Zorunlu
+CompanySettings.IsProjectFieldRequired = Proje Kodu Zorunlu
+CompanySettings.IsPaidWithFieldRequired =
+CompanySettings.ActiveApprovalModule =
+CompanySettings.ActiveControllerModule =
+CompanySettings.RemoveProjectField =
+CompanySettings.ActivateAllowances =

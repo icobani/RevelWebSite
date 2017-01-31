@@ -1,0 +1,16 @@
+
+# --------------------------------------------
+# [MileageCategory] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+MileageCategory.Id = ID
+MileageCategory.CompanyId = Şirket
+MileageCategory.BranchId = Şube
+MileageCategory.DepartmentId = Departman
+MileageCategory.Name = Mil Kategori Adı
+MileageCategory.RatePerKm = Oran/Km
+MileageCategory.CurrencyCode = Döviz Kodu
+MileageCategory.StartDate = Başlangıç Tarihi
+MileageCategory.IsActive = Aktif

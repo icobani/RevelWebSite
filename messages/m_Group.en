@@ -1,0 +1,16 @@
+
+# --------------------------------------------
+# [Group] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Group.Id = ID
+Group.CompanyId = Company
+Group.BranchId = Branch
+Group.DepartmentId = Department
+Group.Name = Group Name
+Group.Code = Group Code
+Group.Email = E-Mail
+Group.Branch = Branch
+Group.Members = Members

@@ -1,0 +1,24 @@
+
+# --------------------------------------------
+# [ExpenseCategory] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+ExpenseCategory.Id = ID
+ExpenseCategory.Name = Kategori Adı
+ExpenseCategory.Code = Kategori Kod
+ExpenseCategory.CompanyId = Şirket
+ExpenseCategory.BranchId = Şube
+ExpenseCategory.DepartmentId = Departman
+ExpenseCategory.ExpenseTypes = Masraf Tipi
+ExpenseCategory.MainCategoryId = Ana Kategori
+ExpenseCategory.AccountingNumber = Hesap Kodu
+ExpenseCategory.MaximumAmountPerReport = Maksimum Tutar (Rapor Bazında)
+ExpenseCategory.MaximumAmountPerMonth = Maksimum Tutar (Aylık)
+ExpenseCategory.Branch = Şube
+ExpenseCategory.Parent = Ana Kategori
+ExpenseCategory.IsPublic = Genel
+ExpenseCategory.ReceiptsCheck = Fiş Eklendi mi ?
+ExpenseCategory.ProjectCheck = Proje Eklendi mi ?
+ExpenseCategory.CommentsCheck = Yorum Eklendi mi ?

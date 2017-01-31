@@ -1,0 +1,26 @@
+
+# --------------------------------------------
+# [Report] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+Report.Id = ID
+Report.UserId = User
+Report.CompanyId = Company
+Report.Date = Report Date
+Report.Name = Report Name
+Report.Description = Report Description
+Report.Total = Total Amount
+Report.Status = Report Status
+Report.ApprovalState = Approval State
+Report.ExpensesCount = Expenses Count
+Report.ApprovedExpensesCount = Approved Expenses Count
+Report.RefusedExpensesCount = Refused Expenses Count
+Report.PendingExpensesCount = Pending Expenses Count
+Report.SubmittedBy = Submited By
+Report.ApprovedBy = Approved By
+Report.UserApprovalMode = Approval Mode
+Report.UserEditMode = Edit Mode
+Report.CreatedAt = Created At
+Report.UpdatedAt = Updated At

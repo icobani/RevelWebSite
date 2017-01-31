@@ -1,0 +1,14 @@
+
+# --------------------------------------------
+# [ReportHistory] table defination for English
+# Dev : Ibrahim COBANI 2017-01-31 12:08:30
+# --------------------------------------------
+
+
+ReportHistory.Id = ID
+ReportHistory.ReportId = Report ID
+ReportHistory.UserId = User
+ReportHistory.Action = Action
+ReportHistory.Comment = Comment
+ReportHistory.User = Report History User
+ReportHistory.CreatedAt = Created At
