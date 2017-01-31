@@ -72,22 +72,23 @@
                     <div class="col-sm-12">
                       <div class="form-group form-group-default required">
                         <label>{{msg . "QuickReg.Company Name"}}</label>
-                        <input type="text" class="form-control" required autofocus>
+                        <input type="text" class="form-control" name="quick.Company" required autofocus>
                       </div>
                     </div>
                   </div>
                   <div class="form-group form-group-default required">
                     <label>{{msg . "QuickReg.Your Name"}}</label>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" name="quick.Name" required>
                   </div>
                   <div class="form-group form-group-default required">
                     <label>{{msg . "QuickReg.Email"}}</label>
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control" name="quick.Email" required>
                   </div>
 
                   <div class="form-group form-group-default input-group">
                   <span class="input-group-addon">
-                    <select class="cs-select cs-skin-slide cs-transparent" data-init-plugin="cs-select">
+                    <select class="cs-select cs-skin-slide cs-transparent" name="quick.Country"
+                            data-init-plugin="cs-select">
                       <option data-countryCode="GB" value="44">UK (+44)</option>
                       <option data-countryCode="US" value="1">USA (+1)</option>
                       <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -307,7 +308,7 @@
                     </select>
                   </span>
                     <label>{{msg . "QuickReg.Phone Number"}}</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="quick.PhoneNumber">
                   </div>
                 </div>
                 <br>
@@ -326,40 +327,38 @@
             </div>
             <div class="col-md-7">
               <div class="padding-30">
-                <form role="form">
-                  <p>{{msg . "QuickReg.Company Form Title"}}</p>
-                  <div class="form-group-attached">
-                    <div class="row clearfix">
-                      <div class="col-sm-6">
-                        <div class="form-group form-group-default">
-                          <label>{{msg . "QuickReg.Expense Categories"}}</label>
-                          <input type="text" class="form-control" data-role="tagsinput">
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group form-group-default">
-                          <label>{{msg . "QuickReg.Branches"}}</label>
-                          <input type="text" class="form-control" data-role="tagsinput">
-                        </div>
+                <p>{{msg . "QuickReg.Company Form Title"}}</p>
+                <div class="form-group-attached">
+                  <div class="row clearfix">
+                    <div class="col-sm-6">
+                      <div class="form-group form-group-default">
+                        <label>{{msg . "QuickReg.Expense Categories"}}</label>
+                        <input type="text" class="form-control" data-role="tagsinput" name="quick.ExpenseCategories">
                       </div>
                     </div>
-
-                    <div class="row clearfix">
-                      <div class="col-sm-6">
-                        <div class="form-group form-group-default">
-                          <label>{{msg . "QuickReg.Departments"}}</label>
-                          <input type="text" class="form-control" data-role="tagsinput">
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group form-group-default">
-                          <label>{{msg . "QuickReg.Projects"}}</label>
-                          <input type="text" class="form-control" data-role="tagsinput">
-                        </div>
+                    <div class="col-sm-6">
+                      <div class="form-group form-group-default">
+                        <label>{{msg . "QuickReg.Branches"}}</label>
+                        <input type="text" class="form-control" data-role="tagsinput" name="quick.Branches">
                       </div>
                     </div>
                   </div>
-                </form>
+
+                  <div class="row clearfix">
+                    <div class="col-sm-6">
+                      <div class="form-group form-group-default">
+                        <label>{{msg . "QuickReg.Departments"}}</label>
+                        <input type="text" class="form-control" data-role="tagsinput" name="quick.Departments">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group form-group-default">
+                        <label>{{msg . "QuickReg.Projects"}}</label>
+                        <input type="text" class="form-control" data-role="tagsinput" name="quick.Projects">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -375,21 +374,19 @@
             </div>
             <div class="col-md-7">
               <div class="padding-30">
-                <form role="form">
-                  <p>{{msg . "QuickReg.Invite.H4"}}</p>
-                  <div class="form-group-attached">
+                <p>{{msg . "QuickReg.Invite.H4"}}</p>
+                <div class="form-group-attached">
 
-                    <div class="row clearfix">
-                      <div class="col-sm-12">
-                        <div class="form-group form-group-default">
-                          <label>{{msg . "QuickReg.Email Addresses"}}</label>
-                          <input type="text" class="form-control" data-role="tagsinput">
-                        </div>
+                  <div class="row clearfix">
+                    <div class="col-sm-12">
+                      <div class="form-group form-group-default">
+                        <label>{{msg . "QuickReg.Email Addresses"}}</label>
+                        <input type="text" class="form-control" data-role="tagsinput" name="quick.Invites">
                       </div>
                     </div>
-
                   </div>
-                </form>
+
+                </div>
               </div>
             </div>
           </div>
@@ -412,7 +409,8 @@
                   <div class="row clearfix">
                     <div class="form-group form-group-default ">
                       <label>{{msg . "QuickReg.New Password"}}</label>
-                      <input type="password" name="password" class="field-password form-control" required>
+                      <input type="password" class="field-password form-control" name="quick.Password"
+                             required>
                     </div>
                   </div>
                 </div>

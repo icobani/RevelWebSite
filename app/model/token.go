@@ -16,4 +16,5 @@ func (this TokenStorage) CreateTable() {
 	fmt.Println("TokenStorage Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("TokenStorage Table Created")
+	app.MakeCaptionML(this)
 }

@@ -15,6 +15,7 @@ GET     /QuickRegister                          App.QuickRegister
 GET     /Login                                  Login.Index
 GET     /SetLang_TR                             App.SetLang_TR
 GET     /SetLang_EN                             App.SetLang_EN
+GET     /AutoMigrate                            App.AutoMigrate
 
 GET     /orders/:orderID/pay                    Orders.GetPayments
 POST    /Orders/Create                          Orders.Create_POST

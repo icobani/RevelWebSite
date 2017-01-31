@@ -2,170 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f63ab248-74cf-42c6-b33f-50bcdfb997f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/vue_js.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/branches.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/companies.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/currencies.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/departments.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/expense_categories.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/expenses.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/exports.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/geo.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/groups.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/mileage_categories.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/payment_types.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/preferences.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/projects.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/quick.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/reports.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/roles.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/structs.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/token.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/users.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/App/QuickRegister.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/App/Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/quick.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/aexpense/js/QuickRegister.html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/form_wizard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vuesample/listSample.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/App/met.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/img/login/b1.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/order.go" afterPath="$PROJECT_DIR$/app/model/order.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/profiles/1.jpg" afterPath="$PROJECT_DIR$/public/assets/img/profiles/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/profiles/1x.jpg" afterPath="$PROJECT_DIR$/public/assets/img/profiles/1x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/profiles/2.jpg" afterPath="$PROJECT_DIR$/public/assets/img/profiles/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/profiles/2x.jpg" afterPath="$PROJECT_DIR$/public/assets/img/profiles/2x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/profiles/3.jpg" afterPath="$PROJECT_DIR$/public/assets/img/profiles/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/profiles/3x.jpg" afterPath="$PROJECT_DIR$/public/assets/img/profiles/3x.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RevelWebSite.iml" afterPath="$PROJECT_DIR$/.idea/RevelWebSite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/b1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/App/AutoMigrate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MakeFile" afterPath="$PROJECT_DIR$/MakeFile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/app.go" afterPath="$PROJECT_DIR$/app/controllers/app.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/orders.go" afterPath="$PROJECT_DIR$/app/controllers/orders.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/init.go" afterPath="$PROJECT_DIR$/app/init.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/App/index.html" afterPath="$PROJECT_DIR$/app/views/App/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/App/pet.html" afterPath="$PROJECT_DIR$/app/views/App/pet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/_header.html" afterPath="$PROJECT_DIR$/app/views/_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/footer.html" afterPath="$PROJECT_DIR$/app/views/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/branches.go" afterPath="$PROJECT_DIR$/app/model/branches.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/companies.go" afterPath="$PROJECT_DIR$/app/model/companies.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/currencies.go" afterPath="$PROJECT_DIR$/app/model/currencies.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/departments.go" afterPath="$PROJECT_DIR$/app/model/departments.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/expense_categories.go" afterPath="$PROJECT_DIR$/app/model/expense_categories.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/expenses.go" afterPath="$PROJECT_DIR$/app/model/expenses.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/exports.go" afterPath="$PROJECT_DIR$/app/model/exports.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/geo.go" afterPath="$PROJECT_DIR$/app/model/geo.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/groups.go" afterPath="$PROJECT_DIR$/app/model/groups.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/mileage_categories.go" afterPath="$PROJECT_DIR$/app/model/mileage_categories.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/order.go" afterPath="$PROJECT_DIR$/app/model/order.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/payment_types.go" afterPath="$PROJECT_DIR$/app/model/payment_types.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/preferences.go" afterPath="$PROJECT_DIR$/app/model/preferences.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/projects.go" afterPath="$PROJECT_DIR$/app/model/projects.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/quick.go" afterPath="$PROJECT_DIR$/app/model/quick.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/reports.go" afterPath="$PROJECT_DIR$/app/model/reports.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/roles.go" afterPath="$PROJECT_DIR$/app/model/roles.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/token.go" afterPath="$PROJECT_DIR$/app/model/token.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/users.go" afterPath="$PROJECT_DIR$/app/model/users.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/App/QuickRegister.html" afterPath="$PROJECT_DIR$/app/views/App/QuickRegister.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Login/index.html" afterPath="$PROJECT_DIR$/app/views/Login/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/labels.en" afterPath="$PROJECT_DIR$/messages/labels.en" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/labels.tr" afterPath="$PROJECT_DIR$/messages/labels.tr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/scripts.js" afterPath="$PROJECT_DIR$/public/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/columns.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/complete-callback.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/complete-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/fill-both.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/fill-both.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/fill-horizontal.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/fill-horizontal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/scrolling.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/step-callback.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/AutoFill/examples/step-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/alt_insert.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/alt_insert.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/col_filter.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/col_filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/colvis.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/colvis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/fixedcolumns.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/fixedcolumns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/fixedheader.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/fixedheader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/jqueryui.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/new_init.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/new_init.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/predefined.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/predefined.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/realtime.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/realtime.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/reset.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/reset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/scrolling.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/server_side.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/server_side.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/state_save.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColReorder/examples/state_save.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/button_order.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/button_order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/exclude_columns.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/exclude_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/group_columns.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/group_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/jqueryui.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/mouseover.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/mouseover.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/new_init.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/new_init.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/restore.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/restore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/text.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/title_callback.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/title_callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/two_tables.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/two_tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/two_tables_identical.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/ColVis/examples/two_tables_identical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/bootstrap.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/col_filter.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/col_filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/colvis.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/colvis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/css_size.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/css_size.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/index_column.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/index_column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/left_right_columns.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/left_right_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/right_column.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/right_column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/rowspan.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/rowspan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/server-side-processing.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/server-side-processing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/size_fixed.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/size_fixed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/size_fluid.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/size_fluid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/two_columns.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedColumns/examples/two_columns.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/header_footer.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/header_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/top_left_right.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/top_left_right.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/two_tables.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/two_tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/zIndexes.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/FixedHeader/examples/zIndexes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/events.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/html.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/html.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/scrolling.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/KeyTable/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/column-control.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/column-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/custom-renderer.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/custom-renderer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/disable-child-rows.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/right-column.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/right-column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/whole-row-control.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/child-rows/whole-row-control.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/auto.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/auto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/classes.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/complexHeader.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/complexHeader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/fixedHeader.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/fixedHeader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/init-classes.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/display-control/init-classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/ajax.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/className.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/className.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/default.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/new.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/option.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/initialisation/option.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/bootstrap.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/compact.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/compact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/foundation.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/foundation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/scrolling.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Responsive/examples/styling/scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/api_scrolling.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/api_scrolling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/large_js_source.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/large_js_source.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/server-side_processing.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/server-side_processing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/state_saving.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/Scroller/examples/state_saving.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/ajax.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/alter_buttons.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/alter_buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/bootstrap.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/button_text.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/button_text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/collection.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/defaults.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/defaults.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/index.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/jqueryui.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/multi_instance.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/multi_instance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/multiple_tables.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/multiple_tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/new_init.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/new_init.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/pdf_message.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/pdf_message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/plug-in.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/plug-in.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_column.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_column.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_multi.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_multi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_os.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_os.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_single.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/select_single.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/simple.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/swf_path.html" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery-datatable/extensions/TableTools/examples/swf_path.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/welcome/assets/scripts/main.js" afterPath="$PROJECT_DIR$/public/welcome/assets/scripts/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -186,103 +51,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="payment_types.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/payment_types.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="e#15#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preferences.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/preferences.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
-              <folding>
-                <element signature="e#15#96#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/projects.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="23" column="17" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="e#15#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reports.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reports.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/model/reports.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-840">
-              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roles.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/roles.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/model/users.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state relative-caret-position="267">
+              <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
               <folding>
-                <element signature="e#15#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quick.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/quick.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="e#15#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="structs.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/structs.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="token.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/token.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding>
-                <element signature="e#15#71#0" expanded="true" />
+                <element signature="e#15#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -294,21 +69,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;assets</find>
-      <find>pace</find>
-      <find>&quot;pages</find>
-      <find>{{#n}}</find>
-      <find>{{/n}}</find>
-      <find>simply add the class</find>
-      <find>btnToggleSlideUpSize</find>
-      <find>modalSlideUpSmall</find>
       <find>Payment Information</find>
       <find>myModal</find>
       <find>All the mock data will</find>
@@ -331,6 +98,14 @@
       <find>root</find>
       <find>Ini</find>
       <find>db.go</find>
+      <find>deve</find>
+      <find>dev</find>
+      <find>Environment</find>
+      <find>.Develop</find>
+      <find>Form</find>
+      <find>&lt;Form</find>
+      <find>B1.</find>
+      <find>Country</find>
     </findStrings>
     <replaceStrings>
       <replace>/*| T*/</replace>
@@ -359,14 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/Login/index.html" />
-        <option value="$PROJECT_DIR$/app/views/App/tour.html" />
-        <option value="$PROJECT_DIR$/app/views/App/why.html" />
-        <option value="$PROJECT_DIR$/app/views/App/us.html" />
-        <option value="$PROJECT_DIR$/app/views/Login/QuickRegister.html" />
-        <option value="$PROJECT_DIR$/app/views/App/met.html" />
-        <option value="$PROJECT_DIR$/public/welcome/assets/scripts/main.js" />
-        <option value="$PROJECT_DIR$/app/views/footer.html" />
         <option value="$PROJECT_DIR$/app/views/header.html" />
         <option value="$PROJECT_DIR$/app/views/_header.html" />
         <option value="$USER_HOME$/Downloads/Pages Template/demo/html/modals.html" />
@@ -384,32 +151,40 @@
         <option value="$PROJECT_DIR$/public/vuesample/listSample.html" />
         <option value="$PROJECT_DIR$/public/assets/js/form_wizard.js" />
         <option value="$PROJECT_DIR$/public/aexpense/js/QuickRegister.html.js" />
-        <option value="$PROJECT_DIR$/app/model/order.go" />
-        <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/controllers/orders.go" />
         <option value="$PROJECT_DIR$/app/controllers/gorm.go" />
         <option value="$PROJECT_DIR$/app/controllers/db.go" />
-        <option value="$PROJECT_DIR$/app/views/App/QuickRegister.html" />
-        <option value="$PROJECT_DIR$/app/controllers/app.go" />
-        <option value="$PROJECT_DIR$/app/init.go" />
         <option value="$PROJECT_DIR$/app/model/charts.go" />
-        <option value="$PROJECT_DIR$/app/model/branches.go" />
+        <option value="$PROJECT_DIR$/app/controllers/contact.go" />
+        <option value="$PROJECT_DIR$/app/controllers/orders.go" />
+        <option value="$PROJECT_DIR$/app/views/App/AutoMigrate.html" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/views/Login/index.html" />
+        <option value="$PROJECT_DIR$/app/views/App/QuickRegister.html" />
+        <option value="$PROJECT_DIR$/app/model/users.go" />
+        <option value="$PROJECT_DIR$/messages/Company_Model.tr" />
+        <option value="$PROJECT_DIR$/app/controllers/app.go" />
+        <option value="$PROJECT_DIR$/messages/Company.en" />
+        <option value="$PROJECT_DIR$/messages/Company.tr" />
+        <option value="$PROJECT_DIR$/messages/m_Company.en" />
+        <option value="$PROJECT_DIR$/app/init.go" />
         <option value="$PROJECT_DIR$/app/model/companies.go" />
+        <option value="$PROJECT_DIR$/app/model/exports.go" />
+        <option value="$PROJECT_DIR$/app/model/roles.go" />
+        <option value="$PROJECT_DIR$/app/model/token.go" />
+        <option value="$PROJECT_DIR$/app/model/branches.go" />
         <option value="$PROJECT_DIR$/app/model/currencies.go" />
         <option value="$PROJECT_DIR$/app/model/departments.go" />
         <option value="$PROJECT_DIR$/app/model/expense_categories.go" />
         <option value="$PROJECT_DIR$/app/model/expenses.go" />
-        <option value="$PROJECT_DIR$/app/model/exports.go" />
         <option value="$PROJECT_DIR$/app/model/geo.go" />
         <option value="$PROJECT_DIR$/app/model/groups.go" />
         <option value="$PROJECT_DIR$/app/model/mileage_categories.go" />
+        <option value="$PROJECT_DIR$/app/model/order.go" />
         <option value="$PROJECT_DIR$/app/model/payment_types.go" />
         <option value="$PROJECT_DIR$/app/model/preferences.go" />
         <option value="$PROJECT_DIR$/app/model/projects.go" />
+        <option value="$PROJECT_DIR$/app/model/quick.go" />
         <option value="$PROJECT_DIR$/app/model/reports.go" />
-        <option value="$PROJECT_DIR$/app/model/roles.go" />
-        <option value="$PROJECT_DIR$/app/model/token.go" />
-        <option value="$PROJECT_DIR$/app/model/users.go" />
       </list>
     </option>
   </component>
@@ -491,7 +266,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
+              <option name="myItemId" value="messages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,148 +281,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RevelWebSite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -713,11 +346,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/img" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/app/model" />
       <recent name="$PROJECT_DIR$/app/models" />
       <recent name="$PROJECT_DIR$/public/assets/js" />
-      <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/app/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -819,12 +452,12 @@
       <workItem from="1485450977827" duration="227000" />
       <workItem from="1485451309398" duration="884000" />
       <workItem from="1485452452894" duration="2569000" />
-      <workItem from="1485534572093" duration="20278000" />
+      <workItem from="1485534572093" duration="51409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100937000" />
+    <option name="totallyTimeSpent" value="132068000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,17 +470,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15965052" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2192216" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890411" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Serial Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42054793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42054793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -890,94 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Pages Template/demo/html/assets/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../bitbucket.org/aexpense/web/frontend/dev/assets/js/component/ui/quick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="204" column="54" lean-forward="true" selection-start-line="204" selection-start-column="54" selection-end-line="204" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Pages Template/demo/html/modals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="677" column="54" lean-forward="false" selection-start-line="677" selection-start-column="47" selection-end-line="677" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="89" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/App/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/quick.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="171" column="16" lean-forward="true" selection-start-line="145" selection-start-column="10" selection-end-line="171" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/labels.en">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="170" column="21" lean-forward="false" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/labels.tr">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="175" column="21" lean-forward="false" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/App/Test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/pet.vue" />
-    <entry file="file://$PROJECT_DIR$/public/js/ppet.vue" />
-    <entry file="file://$PROJECT_DIR$/public/vuesample/listSample.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="115" column="19" lean-forward="false" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/_head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1031,30 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/order.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2857">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../bitbucket.org/aexpense/api/app/conf/db.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1071,233 +592,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/orders/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/App/QuickRegister.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="58" column="51" lean-forward="false" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
-          <folding>
-            <element signature="n#ul#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/app.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding>
-            <element signature="e#21#115#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding>
-            <element signature="e#13#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/orders.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/charts.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
           <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/branches.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/companies.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-          <folding>
-            <element signature="e#15#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/currencies.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/departments.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/expense_categories.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/expenses.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="118" column="20" lean-forward="true" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-          <folding>
-            <element signature="e#15#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/exports.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/geo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/groups.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/mileage_categories.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/payment_types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/preferences.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/projects.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/quick.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#15#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/reports.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/roles.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/structs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/token.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#15#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,12 +608,344 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2160">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tmp/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/contact.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/App/AutoMigrate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/orders/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../bitbucket.org/aexpense/web/frontend/views/login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="64" column="108" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="56" column="74" lean-forward="false" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/orders.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding>
+            <element signature="e#223#328#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/App/QuickRegister.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="411" column="45" lean-forward="false" selection-start-line="411" selection-start-column="45" selection-end-line="411" selection-end-column="45" />
+          <folding>
+            <element signature="n#ul#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/users.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        <state relative-caret-position="-60">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/labels.tr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="175" column="21" lean-forward="false" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/routes.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/Company_Model.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/Company_Model.tr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/labels.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/Company.tr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/Company.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/m_Company.tr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/m_Company.en">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/exports.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/structs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/token.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/companies.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="60" column="67" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="67" />
           <folding>
-            <element signature="e#15#124#0" expanded="true" />
+            <element signature="e#15#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/branches.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/currencies.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/departments.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/expense_categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="24" column="97" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/geo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="24" column="103" lean-forward="false" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/expenses.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="e#15#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/groups.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="98" lean-forward="false" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/mileage_categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/order.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/payment_types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/preferences.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-453">
+          <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/projects.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="19" column="78" lean-forward="false" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/quick.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/roles.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/reports.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+          <folding>
+            <element signature="e#15#79#0" expanded="true" />
           </folding>
         </state>
       </provider>

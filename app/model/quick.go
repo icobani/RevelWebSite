@@ -11,15 +11,17 @@ type QuickSettingUp struct {
 
 	Step int `json:"step"`
 
-	Company           string `json:"company_name"`
-	Name              string `json:"name"`
-	Email             string `json:"email"`
-	PhoneNumber       string `json:"phone_number"`
-	ExpenseCategories string `json:"expense_categories"`
-	Branches          string `json:"branches"`
-	Projects          string `json:"projects"`
-	Departments       string `json:"departments"`
-	Invites           string `json:"stuff_emails"`
+	Company           string `json:"company_name" CaptionML:"enu=Company Name;trk=Firma Adı"`
+	Name              string `json:"name" CaptionML:"enu=Name;trk=Surname"`
+	Email             string `json:"email" CaptionML:"enu=E-Mail;trk=E-Mail"`
+	Country						string	` CaptionML:"enu=Country;trk=Ülke"`
+	PhoneNumber       string `json:"phone_number" CaptionML:"enu=Phone Number;trk=Telefon Numarası"`
+	ExpenseCategories string `json:"expense_categories" CaptionML:"enu=Expense Categories;trk=Masraf Kategorileriniz"`
+	Branches          string `json:"branches" CaptionML:"enu=Branches;trk=Şubeler"`
+	Projects          string `json:"projects" CaptionML:"enu=Projects;trk=Projeler"`
+	Departments       string `json:"departments" CaptionML:"enu=Departments;trk=Departmanlar"`
+	Invites           string `json:"stuff_emails" CaptionML:"enu=Invites;trk=Davetler"`
+	Password					string	` CaptionML:"enu=Password;trk=Şifre"`
 }
 
 type JQuickSettingUp QuickSettingUp

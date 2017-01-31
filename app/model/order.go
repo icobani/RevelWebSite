@@ -8,7 +8,7 @@
 * Date      : 21/01/2017    
 * Time      : 11:45
 * Developer : ibrahimcobani
-*
+*	Dummu bu dikkate almayın
 *******/
 package model
 

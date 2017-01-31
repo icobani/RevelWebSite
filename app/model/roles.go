@@ -18,6 +18,7 @@ func (this Role) CreateTable() {
 	fmt.Println("Role Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("Role Table Created")
+	app.MakeCaptionML(this)
 }
 
 type Permission struct {
@@ -30,6 +31,7 @@ func (this Permission) CreateTable() {
 	fmt.Println("Permission Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("Permission Table Created")
+	app.MakeCaptionML(this)
 }
 
 
@@ -49,4 +51,5 @@ func (this RolePermission) CreateTable() {
 	fmt.Println("RolePermission Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("RolePermission Table Created")
+	app.MakeCaptionML(this)
 }

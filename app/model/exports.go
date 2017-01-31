@@ -22,4 +22,5 @@ func (this Export) CreateTable() {
 	fmt.Println("Export Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("Export Table Created")
+	app.MakeCaptionML(this)
 }

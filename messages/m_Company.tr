@@ -1,0 +1,29 @@
+
+# --------------------------------------------
+# [Company] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-01-30 18:13:31
+# --------------------------------------------
+
+
+Company.Name = Firma Adı
+Company.VatNumber = Vergi No.
+Company.VatArea = Vergi Dairesi
+Company.Address = Adres
+Company.PostalCode = Posta Kodu
+Company.CityId = Şehir Kodu
+Company.Country = Ülke
+Company.StartDateFiscalYear = Mali Yıl Başlangıç Tarihi
+Company.ContactPerson = İlgili Kişi
+Company.ContactFunction = Görevi
+Company.ContactEmail = E-Mail
+Company.ContactPhone = Telefon
+Company.StandardDecimalSeparator = Standart Ondalık Ayıracı
+Company.StandardDateFormat = Standart Tarih Formatı
+Company.SubscriptionPlanId = Abonelik Plan ID
+Company.NextPaymentDate = Bir Sonraki Ödeme Tarihi
+Company.Color = Renk
+Company.Active = Aktif
+Company.Logo = Logo
+Company.LogoUrl = Logo URL
+Company.CreatedAt =  Oluşturulma Tarihi
+Company.UpdatedAt = Güncelleme Tarihi

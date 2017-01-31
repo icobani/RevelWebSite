@@ -83,3 +83,5 @@ func (c Orders) GetPayments(orderID int) revel.Result {
 
 	return c.RenderTemplate("orders/create.html")
 }
+
+

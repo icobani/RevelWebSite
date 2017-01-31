@@ -1,0 +1,29 @@
+
+# --------------------------------------------
+# [Company] table defination for English
+# Dev : Ibrahim COBANI 2017-01-30 18:13:31
+# --------------------------------------------
+
+
+Company.Name = Company Name
+Company.VatNumber = VAT Number
+Company.VatArea = VAT Area
+Company.Address = Address
+Company.PostalCode = Postal Code
+Company.CityId = City ID
+Company.Country = Country
+Company.StartDateFiscalYear = Start Date Fiscal Year
+Company.ContactPerson = Contact Person
+Company.ContactFunction = Function
+Company.ContactEmail = E-Mail
+Company.ContactPhone = Phone
+Company.StandardDecimalSeparator = Standart Decimal Seperator
+Company.StandardDateFormat = Standart Date Format
+Company.SubscriptionPlanId = Subscription Plan ID
+Company.NextPaymentDate = Next Payment Date
+Company.Color = Color
+Company.Active = Active
+Company.Logo = Logo
+Company.LogoUrl = Logo URL
+Company.CreatedAt = Created At
+Company.UpdatedAt = Updated At
