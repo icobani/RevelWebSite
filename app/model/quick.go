@@ -35,28 +35,28 @@ func (q QuickSettingUp) MarshalJSON() ([]byte, error) {
 
 func (q *QuickSettingUp) GetExpenseCategories() []string {
 	if q.ExpenseCategories == "" {
-		return []string{}
+		return []string{"Default"}
 	}
 	return strings.Split(q.ExpenseCategories, ",")
 }
 
 func (q *QuickSettingUp) GetBranches() []string {
 	if q.Branches == "" {
-		return []string{}
+		return []string{"Default"}
 	}
 	return strings.Split(q.Branches, ",")
 }
 
 func (q *QuickSettingUp) GetProjects() []string {
 	if q.Projects == "" {
-		return []string{}
+		return []string{"Default"}
 	}
 	return strings.Split(q.Projects, ",")
 }
 
 func (q *QuickSettingUp) GetDepartments() []string {
 	if q.Departments == "" {
-		return []string{}
+		return []string{"Default"}
 	}
 	return strings.Split(q.Departments, ",")
 }

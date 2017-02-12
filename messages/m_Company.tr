@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Company] table defination for Turkish
-# Dev : Ibrahim COBANI 2017-01-31 12:08:29
+# Dev : Ibrahim COBANI 2017-02-11 22:36:54
 # --------------------------------------------
 
 
@@ -10,7 +10,7 @@ Company.VatNumber = Vergi No.
 Company.VatArea = Vergi Dairesi
 Company.Address = Adres
 Company.PostalCode = Posta Kodu
-Company.CityId = Şehir Kodu
+Company.CityId = Şehir
 Company.Country = Ülke
 Company.StartDateFiscalYear = Mali Yıl Başlangıç Tarihi
 Company.ContactPerson = İlgili Kişi

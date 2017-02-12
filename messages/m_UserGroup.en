@@ -1,0 +1,9 @@
+
+# --------------------------------------------
+# [UserGroup] table defination for English
+# Dev : Ibrahim COBANI 2017-02-11 22:36:55
+# --------------------------------------------
+
+
+UserGroup.UserId = User
+UserGroup.GroupId = Group

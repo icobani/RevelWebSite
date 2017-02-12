@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Company] table defination for English
-# Dev : Ibrahim COBANI 2017-01-31 12:08:29
+# Dev : Ibrahim COBANI 2017-02-11 22:36:54
 # --------------------------------------------
 
 
@@ -10,7 +10,7 @@ Company.VatNumber = VAT Number
 Company.VatArea = VAT Area
 Company.Address = Address
 Company.PostalCode = Postal Code
-Company.CityId = City ID
+Company.CityId = City
 Company.Country = Country
 Company.StartDateFiscalYear = Start Date Fiscal Year
 Company.ContactPerson = Contact Person

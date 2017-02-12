@@ -1,0 +1,9 @@
+
+# --------------------------------------------
+# [UserProject] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-02-11 22:36:55
+# --------------------------------------------
+
+
+UserProject.UserId = Kullanıcı
+UserProject.ProjectId = Proje

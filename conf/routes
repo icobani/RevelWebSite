@@ -12,7 +12,7 @@ GET     /Us                                     App.Us
 GET     /Contact                                Contact.Index
 GET     /Pet                                    App.Pet
 GET     /QuickRegister                          App.QuickRegister
-GET     /Login                                  Login.Index
+
 GET     /SetLang_TR                             App.SetLang_TR
 GET     /SetLang_EN                             App.SetLang_EN
 GET     /AutoMigrate                            App.AutoMigrate
@@ -25,7 +25,22 @@ POST    /orders/api/create                      Orders.Create_Api_POST
 
 POST    /QuickRegister                          App.QuickRegister_POST
 
+# App Routes
+GET     /Login                                  Login.Index
+POST    /Login                                  Login.Post
+GET     /LogOff                                 Login.LogOff
 
+# Home Page
+GET     /HomePage                               HomePage.Index
+
+
+# Company Information
+GET     /CompanyInformation                     CompanyInformation.Index
+POST    /CompanyInformation                     CompanyInformation.Post
+
+# User MySettings
+GET     /MySettings                             MySettings.Index
+POST    /MySettings                             MySettings.Post
 
 
 # Ignore favicon requests

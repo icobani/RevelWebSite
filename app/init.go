@@ -1,7 +1,6 @@
 package app
 
 import (
-
 	"github.com/revel/revel"
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"
@@ -11,12 +10,14 @@ import (
 	"strings"
 	"reflect"
 	"time"
+	"crypto/md5"
+	"encoding/hex"
 )
 
 var DB *gorm.DB
 
 func InitDB() {
-	cnnString := fmt.Sprintf("host=%s user=%s password='%s' dbname=%s sslmode=disable","localhost", "postgres", "azura777", "aexpense")
+	cnnString := fmt.Sprintf("host=%s user=%s password='%s' dbname=%s sslmode=disable", "localhost", "postgres", "azura777", "aexpense")
 
 	var err error
 	DB, err = gorm.Open("postgres", cnnString)
@@ -27,22 +28,35 @@ func InitDB() {
 	//AutoMigrate()
 }
 
+func GetMD5Hash(text string) string {
+	hash := md5.Sum([]byte(text))
+	return hex.EncodeToString(hash[:])
+}
+
 func init() {
+
+	revel.TemplateFuncs["dateDDMMYY"] = func(val time.Time) string {
+		return val.Format("02.01.2006")
+	}
+
 	// Filters is the default set of global filters.
 	revel.Filters = []revel.Filter{
-		revel.PanicFilter,             // Recover from panics and display an error page instead.
-		revel.RouterFilter,            // Use the routing table to select the right Action
+		revel.PanicFilter, // Recover from panics and display an error page instead.
+		revel.RouterFilter, // Use the routing table to select the right Action
 		revel.FilterConfiguringFilter, // A hook for adding or removing per-Action filters.
-		revel.ParamsFilter,            // Parse parameters into Controller.Params.
-		revel.SessionFilter,           // Restore and write the session cookie.
-		revel.FlashFilter,             // Restore and write the flash cookie.
-		revel.ValidationFilter,        // Restore kept validation errors and save new ones from cookie.
-		revel.I18nFilter,              // Resolve the requested language
-		HeaderFilter,                  // Add some security based headers
-		revel.InterceptorFilter,       // Run interceptors around the action.
-		revel.CompressFilter,          // Compress the result.
-		revel.ActionInvoker,           // Invoke the action.
+		revel.ParamsFilter, // Parse parameters into Controller.Params.
+		revel.SessionFilter, // Restore and write the session cookie.
+		revel.FlashFilter, // Restore and write the flash cookie.
+		revel.ValidationFilter, // Restore kept validation errors and save new ones from cookie.
+		revel.I18nFilter, // Resolve the requested language
+		HeaderFilter, // Add some security based headers
+		revel.InterceptorFilter, // Run interceptors around the action.
+		revel.CompressFilter, // Compress the result.
+		revel.ActionInvoker, // Invoke the action.
 	}
+
+
+	//revel.InterceptFunc(checkUser,revel.BEFORE,&controllers.HomePage{})
 
 	// register startup functions with OnAppStart
 	// ( order dependent )
@@ -75,7 +89,6 @@ var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
 	fc[0](c, fc[1:]) // Execute the next filter stage.
 }
 
-
 func WriteLines(lines []string, path string) (err error) {
 	var (
 		file *os.File
@@ -87,7 +100,7 @@ func WriteLines(lines []string, path string) (err error) {
 	defer file.Close()
 
 	//writer := bufio.NewWriter(file)
-	for _,item := range lines {
+	for _, item := range lines {
 		//fmt.Println(item)
 		_, err := file.WriteString(strings.TrimSpace(item) + "\n");
 		//file.Write([]byte(item));
@@ -101,7 +114,6 @@ func WriteLines(lines []string, path string) (err error) {
 	_, err = writer.WriteString(content)*/
 	return
 }
-
 
 func MakeCaptionML(this interface{}) {
 	var ModelLangs_TRK []string
@@ -124,7 +136,6 @@ func MakeCaptionML(this interface{}) {
 	ModelLangs_ENU = append(ModelLangs_ENU, "# --------------------------------------------")
 	ModelLangs_ENU = append(ModelLangs_ENU, "")
 	ModelLangs_ENU = append(ModelLangs_ENU, "")
-
 
 	for i := 0; i < t.NumField(); i++ {
 		tag := t.Field(i).Tag.Get("CaptionML")
@@ -149,3 +160,5 @@ func MakeCaptionML(this interface{}) {
 	WriteLines(ModelLangs_TRK, "messages/m_" + t.Name() + ".tr")
 	WriteLines(ModelLangs_ENU, "messages/m_" + t.Name() + ".en")
 }
+
+

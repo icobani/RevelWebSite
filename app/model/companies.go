@@ -15,15 +15,15 @@ type Company struct {
 	VatArea                  string     `json:"vat_area" sql:"type:varchar(250);" CaptionML:"trk=Vergi Dairesi;enu=VAT Area"`
 	Address                  string     `json:"address" sql:"type:varchar(250);" CaptionML:"trk=Adres;enu=Address"`
 	PostalCode               string     `json:"postal_code" sql:"type:varchar(50);" CaptionML:"trk=Posta Kodu;enu=Postal Code"`
-	CityId                   int64      `json:"city" CaptionML:"trk=Şehir Kodu;enu=City ID"`
-	Country                  string     `json:"country" sql:"type:char(3)" CaptionML:"trk=Ülke;enu=Country"`
-	StartDateFiscalYear      *time.Time `json:"start_date_fiscal_year" CaptionML:"trk=Mali Yıl Başlangıç Tarihi;enu=Start Date Fiscal Year"`
+	CityId                   string      `json:"city" CaptionML:"trk=Şehir;enu=City"`
+	Country                  string     `json:"country" sql:"type:char(50)" CaptionML:"trk=Ülke;enu=Country"`
+	StartDateFiscalYear      time.Time `json:"start_date_fiscal_year" CaptionML:"trk=Mali Yıl Başlangıç Tarihi;enu=Start Date Fiscal Year"`
 	ContactPerson            string     `json:"contact_person" sql:"type:varchar(250);" CaptionML:"enu=Contact Person;trk=İlgili Kişi"`
 	ContactFunction          string     `json:"contact_function" sql:"type:varchar(250);" CaptionML:"enu=Function;trk=Görevi"`
 	ContactEmail             string     `json:"contact_email" sql:"type:varchar(250);" CaptionML:"enu=E-Mail;trk=E-Mail"`
 	ContactPhone             string     `json:"contact_phone" sql:"type:varchar(50);" CaptionML:"enu=Phone;trk=Telefon"`
 	StandardDecimalSeparator string     `json:"standard_decimal_separator" sql:"type:varchar(10);" CaptionML:"enu=Standart Decimal Seperator;trk=Standart Ondalık Ayıracı"`
-	StandardDateFormat       string     `json:"standard_date_format" sql:"type:varchar(50);" CaptionML:"enu=Standart Date Format;trk=Standart Tarih Formatı"`
+	StandardDateFormat       string     `json:"standard_date_format" sql:"type:varchar(50);default:'DayMonth';" CaptionML:"enu=Standart Date Format;trk=Standart Tarih Formatı"`
 	SubscriptionPlanId       int64      `json:"subscription_id" CaptionML:"enu=Subscription Plan ID;trk=Abonelik Plan ID"`
 	NextPaymentDate          time.Time  `json:"-" CaptionML:"enu=Next Payment Date;trk=Bir Sonraki Ödeme Tarihi"`
 	Color                    string     `json:"color" sql:"type:varchar(50);" CaptionML:"enu=Color;trk=Renk"`

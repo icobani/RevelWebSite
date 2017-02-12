@@ -37,6 +37,9 @@ Sign Up Now=Hemen Üye Ol
 Just enter your e-mail address to start using AExpense right away!=Sadece e-posta adresini girerek aExpense'i hemen kullanmaya başla!  
 Already have an account?=Zaten hesabınız var mı?  
 Enter your email address=E-posta hesabını gir
+Welcome = Hoşgeldiniz
+CompanyInformation = Firma Bilgileri
+
 
 aExpense Reporting costs for your employees makes it easier for you to approve the process. = aExpense çalışanlarınız için masraf raporlamayı, sizin için onay süreçlerini kolaylaştırır.
 
@@ -175,3 +178,22 @@ QuickReg.Terms &amp; Conditions = Şartlar &amp; Koşullar
 QuickReg.Choose a min 6 characters long password = Minimum 6 karakter uzunluğunda bir şifre seçin.
 QuickReg.New Password = Yeni Şifre
 QuickReg.Thank You! = Teşekkürler
+
+Menu.Exit = Çıkış
+Menu.MySettings = Ayarlarım
+Menu.CompanyInformation = Şirket Bilgilerimiz
+Menu.Branches = Şubeler
+Menu.Departments = Departmanlar
+Menu.Projects = Projeler
+Menu.ExpenseCategory = Masraf Kategorileri
+Menu.Users = Kullanıcılar
+Menu.HomePage = Ana Sayfa
+
+CompanyInfo.DayMonthYear= (Gün/Ay/Yıl)
+CompanyInfo.MonthDayYear= (Ay/Gün/Yıl)
+CompanyInfo.ChangeTheDateFormat = Tarih formatını değiştirin
+
+
+Login.InvalidUserOrPassword = Hatalı kullanıcı veya şifre
+
+MySettings = Bilgilerim

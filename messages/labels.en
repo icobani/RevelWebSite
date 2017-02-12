@@ -38,6 +38,10 @@ Sign Up Now=Sign Up Now
 Just enter your e-mail address to start using AExpense right away!=Just enter your e-mail address to start using AExpense right away!
 Already have an account?=Already have an account?
 Enter your email address=Enter your email address
+Welcome = Welcome
+CompanyInformation = Company Informations
+
+
 Us=Us
 Why=Why
 Tour=Tour
@@ -141,7 +145,7 @@ Post Code = Post Code
 
 ##Quick Register
 QuickReg.PageTitle = Quick Register
-QuickReg.Basic = Basic
+QuickReg.Basic = Basic Informations
 QuickReg.Company = Company
 QuickReg.Invite = Invite
 QuickReg.Finish = Finish
@@ -170,3 +174,25 @@ QuickReg.Terms &amp; Conditions = Terms &amp; Conditions
 QuickReg.Choose a min 6 characters long password = Choose a min 6 characters long password
 QuickReg.New Password = New Password
 QuickReg.Thank You! = Thank You!
+
+
+
+Menu.Exit = Exit
+Menu.MySettings = My Settings
+Menu.CompanyInformation = Company Information
+Menu.Branches = Branches
+Menu.Departments = Departments
+Menu.Projects = Projects
+Menu.ExpenseCategory = Expense Category
+Menu.Users = Users
+Menu.HomePage = Home Page
+
+
+CompanyInfo.DayMonthYear= Day/Month/Year
+CompanyInfo.MonthDayYear= Month/Day/Year
+CompanyInfo.ChangeTheDateFormat = Change the date format
+
+Login.InvalidUserOrPassword = Invalid user or password
+
+
+MySettings = My Settings

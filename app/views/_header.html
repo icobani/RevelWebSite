@@ -1,3 +1,63 @@
+<!-- BEGIN SIDEBAR -->
+<div class="page-sidebar" data-pages="sidebar">
+  <div id="appMenu" class="sidebar-overlay-slide from-top">
+  </div>
+  <!-- BEGIN SIDEBAR HEADER -->
+  <div class="sidebar-header">
+    <img src="/public/welcome/assets/images/logo-white.png" alt="logo" class="brand"
+         data-src="/public/welcome/assets/images/logo-white.png"
+         data-src-retina="/public/welcome/assets/images/logo-white.png" width="155" height="29">
+    <!--<div class="sidebar-header-controls">
+      <button data-pages-toggle="#appMenu" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" type="button"><i class="fa fa-angle-down fs-16"></i>
+      </button>
+      <button data-toggle-pin="sidebar" class="btn btn-link visible-lg-inline" type="button"><i class="fa fs-12"></i>
+      </button>
+    </div>-->
+  </div>
+  <!-- END SIDEBAR HEADER -->
+  <!-- BEGIN SIDEBAR MENU -->
+  <div class="sidebar-menu">
+    <ul class="menu-items">
+      <li class="m-t-30">
+        <a href="#" class="detailed">
+          <span class="title">Page 1</span>
+          <span class="details">{{msg . "Turkish"}}</span>
+        </a>
+        <span class="icon-thumbnail "><i class="pg-mail"></i></span>
+      </li>
+      <li class="">
+        <a href="#">
+          <span class="title">Page 2</span>
+        </a>
+        <span class="icon-thumbnail "><i class="pg-social"></i></span>
+      </li>
+      <li class="">
+        <a href="javascript:;">
+          <span class="title">Page 3</span>
+          <span class=" arrow"></span>
+        </a>
+        <span class="icon-thumbnail"><i class="pg-grid"></i></span>
+        <ul class="sub-menu">
+          <li class="">
+            <a href="#">Sub Page 1</a>
+            <span class="icon-thumbnail">sp</span>
+          </li>
+          <li class="">
+            <a href="#">Sub Page 2</a>
+            <span class="icon-thumbnail">sp</span>
+          </li>
+          <li class="">
+            <a href="#">Sub Page 3</a>
+            <span class="icon-thumbnail">sp</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <!-- END SIDEBAR MENU -->
+</div>
+<!-- END SIDEBAR -->
 <!-- START PAGE-CONTAINER -->
 <div class="page-container">
   <!-- START PAGE HEADER WRAPPER -->
@@ -20,8 +80,9 @@
       <div class="pull-center hidden-md hidden-lg">
         <div class="header-inner">
           <div class="brand inline">
-            <img src="/public/assets/img/logo.png" alt="logo" data-src="/public/assets/img/logo.png"
-                 data-src-retina="/public/assets/img/logo_2x.png" width="78" height="22">
+            <img src="/public/welcome/assets/images/logo.png" alt="logo"
+                 data-src="/public/welcome/assets/images/logo.png"
+                 data-src-retina="/public/welcome/assets/images/logo_2x.png" width="78" height="22">
           </div>
         </div>
       </div>
@@ -35,32 +96,37 @@
       <!-- START User Info-->
       <div class="visible-lg visible-md m-t-10">
         <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+
+
+
           <span class="semi-bold">Ibrahim</span> <span class="text-master">ÇOBANİ</span>
         </div>
         <div class="dropdown pull-right">
           <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">
                 <span class="thumbnail-wrapper d32 circular inline m-t-5">
-                <img src="/public/assets/img/profiles/avatar.jpg" alt="" data-src="/public/assets/img/profiles/avatar.jpg"
+                <img src="/public/assets/img/profiles/avatar.jpg" alt=""
+                     data-src="/public/assets/img/profiles/avatar.jpg"
                      data-src-retina="/public/assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
             </span>
           </button>
           <ul class="dropdown-menu profile-dropdown" role="menu">
-            <li><a href="#"><i class="pg-mail"></i> Branch</a>
-            </li>
+            <li><a href="#"><i class="pg-mail"></i> Branch</a></li>
+            <li><a href="/SetLang_TR" class="clearfix">
+              <span class="pull-left">{{msg . "Turkish"}}</span>
+              <span class="pull-right"><i class="pg-flag"></i></span>
+            </a></li>
+            <li><a href="/SetLang_EN" class="clearfix">
+              <span class="pull-left">{{msg . "English"}}</span>
+              <span class="pull-right"><i class="pg-flag"></i></span>
+            </a></li>
+            <li>
             <li class="bg-master-lighter">
               <a href="#" class="clearfix">
                 <span class="pull-left">Çıkış</span>
                 <span class="pull-right"><i class="pg-power"></i></span>
               </a>
-              <a href="/SetLang_TR" class="clearfix">
-                <span class="pull-left">Türkçe</span>
-                <span class="pull-right"><i class="pg-flag"></i></span>
-              </a>
-              <a href="/SetLang_EN" class="clearfix">
-                <span class="pull-left">English</span>
-                <span class="pull-right"><i class="pg-flag"></i></span>
-              </a>
+            </li>
             </li>
           </ul>
         </div>

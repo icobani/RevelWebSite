@@ -6,8 +6,6 @@ import (
 	"net/http"
 	"github.com/icobani/RevelWebSite/app/model"
 	"github.com/icobani/RevelWebSite/app"
-	"crypto/md5"
-	"encoding/hex"
 )
 
 type App struct {
@@ -83,32 +81,32 @@ func (c App) QuickRegister_POST() revel.Result {
 				department.Name = departmentname
 				app.DB.Create(&department)
 
-				// Her bir departman bazında Masraf kategorilerini ekleyelim.
-				var expensecats []string = quick.GetExpenseCategories()
-
-				for _, expensecatname := range expensecats {
-					var expensecategory = model.ExpenseCategory{}
-					expensecategory.CompanyId = company.Id
-					expensecategory.BranchId = branch.Id
-					expensecategory.DepartmentId = department.Id
-					expensecategory.Name = expensecatname
-					app.DB.Create(&expensecategory)
-				}
-
-				// Her bir departman bazında Projeler oluşturulur.
-				var projects []string = quick.GetProjects()
-
-				for _, projectname := range projects {
-					var project = model.Project{}
-					project.CompanyId = company.Id
-					project.BranchId = branch.Id
-					project.DepartmentId = department.Id
-					project.Name = projectname
-					app.DB.Create(&project)
-				}
-
 			} // departments loop
 		} // branches loop
+
+
+		// Masraf kategorilerini ekleyelim.
+		var expensecats []string = quick.GetExpenseCategories()
+
+		for _, expensecatname := range expensecats {
+			var expensecategory = model.ExpenseCategory{}
+			expensecategory.CompanyId = company.Id
+			expensecategory.Name = expensecatname
+			app.DB.Create(&expensecategory)
+		}
+
+		// Projeler oluşturulur.
+		var projects []string = quick.GetProjects()
+
+		for _, projectname := range projects {
+			var project = model.Project{}
+			project.CompanyId = company.Id
+			project.Name = projectname
+			app.DB.Create(&project)
+		}
+
+
+
 
 		//Admin kullanısı ekleniyor.
 		var user = model.User{}
@@ -118,7 +116,7 @@ func (c App) QuickRegister_POST() revel.Result {
 		user.Country = quick.Country
 		user.MobilePhone = quick.PhoneNumber
 		user.Password = quick.Password
-		user.Hash = GetMD5Hash(quick.Password)
+		user.Hash = app.GetMD5Hash(quick.Password)
 		user.IsCompanyAdmin = true
 		app.DB.Create(&user)
 
@@ -138,10 +136,7 @@ func (c App) QuickRegister_POST() revel.Result {
 	return c.RenderTemplate("Login/Index.html")
 }
 
-func GetMD5Hash(text string) string {
-	hash := md5.Sum([]byte(text))
-	return hex.EncodeToString(hash[:])
-}
+
 
 func (c App) AutoMigrate() revel.Result {
 
@@ -177,7 +172,7 @@ func (c App) AutoMigrate() revel.Result {
 	model.UserProject{}.CreateTable()
 	model.UserGroup{}.CreateTable()
 
-	return c.Render()
+	return c.Redirect("/QuickRegister")
 }
 
 

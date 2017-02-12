@@ -1,0 +1,57 @@
+
+# --------------------------------------------
+# [User] table defination for English
+# Dev : Ibrahim COBANI 2017-02-11 22:36:55
+# --------------------------------------------
+
+
+User.Id = ID
+User.Email = Email
+User.Name = Name
+User.LastName = Last Name
+User.ProfileImage = Profile Image
+User.ProfileImageUrl = Profile Image URL
+User.Hash = Hash
+User.Password = Password
+User.IsActive = Active
+User.Verified = Verified
+User.CompanyUserVerified = Company User Verified
+User.CompanyAdminVerified = Company Admin Verified
+User.BranchId = Branch
+User.DepartmentId = Department
+User.PositionId = Position
+User.RoleId = Role
+User.IsCompanyAdmin = Company Admin
+User.DefaultProjectId = Default Project
+User.DefaultExpenseCategoryId = Default Expense Category ID
+User.JobTitle = Job Title
+User.BankAccountNo = Bank Account No.
+User.Iban = IBAN
+User.Language = Language
+User.MobilePhone = Mobile Phone
+User.Country = Country
+User.DistanceUnit = Distance Unit
+User.DateFormat = Date Format
+User.DecimalSeparator = Decimal Separator
+User.ApprovalType = Approval Type
+User.ApprovalGroup = Approval Group
+User.ApprovalUser1 = Approval User 1
+User.ApprovalUser2 = Approval User 2
+User.ApprovalUser3 = Approval User 3
+User.ApprovalUser4 = Approval User 4
+User.ApprovalUser5 = Approval User 5
+User.ApprovalUser6 = Approval User 6
+User.IsProfileCompleted = Profile Completed
+User.ShowQuickSettingUp = Show Quick Setting Up
+User.CompanyId = Comapany
+User.Company = Company
+User.Preferences = Preferences
+User.QuickSettingUp = Quick Setting Up
+User.Branch = Branch
+User.Projects = Project
+User.Groups = Groups
+User.Department = Department
+User.Permissions = Permissions
+User.Roles = Roles
+User.CreatedAt = Created At
+User.UpdatedAt = Updated At

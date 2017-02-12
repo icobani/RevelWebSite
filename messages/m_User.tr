@@ -1,0 +1,57 @@
+
+# --------------------------------------------
+# [User] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-02-11 22:36:55
+# --------------------------------------------
+
+
+User.Id = ID
+User.Email = Email
+User.Name = Ad
+User.LastName = Soyadı
+User.ProfileImage = Profil Resmi
+User.ProfileImageUrl = Profil Resmi URL
+User.Hash = Şifre
+User.Password = Şifre
+User.IsActive = Aktif
+User.Verified = Geçerli
+User.CompanyUserVerified = Şirket Kullanıcısı Geçerli
+User.CompanyAdminVerified = Şirket Yetkilisi Geçerli
+User.BranchId = Şube
+User.DepartmentId = Departman
+User.PositionId = Position
+User.RoleId = Role
+User.IsCompanyAdmin = Şirket Yetkilisi
+User.DefaultProjectId = Varsayılan Proje
+User.DefaultExpenseCategoryId = Varsayılan Masraf Kategorisi
+User.JobTitle = İş Ünvanı
+User.BankAccountNo = Banka Hesap No.
+User.Iban = IBAN
+User.Language = Dil
+User.MobilePhone = Cep Telefonu
+User.Country = Ülke
+User.DistanceUnit = Uzaklık Birimi
+User.DateFormat = Tarih Formatı
+User.DecimalSeparator = Ondalık Ayıracı
+User.ApprovalType = Onay Tipi
+User.ApprovalGroup = Onay Grubu
+User.ApprovalUser1 = Onaylayan 1
+User.ApprovalUser2 = Onaylayan 2
+User.ApprovalUser3 = Onaylayan 3
+User.ApprovalUser4 = Onaylayan 4
+User.ApprovalUser5 = Onaylayan 5
+User.ApprovalUser6 = Onaylayan 6
+User.IsProfileCompleted = Profil Tamamlandı
+User.ShowQuickSettingUp = Hızlı Tanımlamayı Göster
+User.CompanyId = Şirket
+User.Company = Şirket
+User.Preferences = Tercihler
+User.QuickSettingUp = Pratik Tanımlama
+User.Branch = Şube
+User.Projects = Proje
+User.Groups = Gruplar
+User.Department = Departman
+User.Permissions = Yetkiler
+User.Roles = Roller
+User.CreatedAt = Oluşturma Tarihi
+User.UpdatedAt = Değiştirme Tarihi

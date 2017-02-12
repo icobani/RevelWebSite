@@ -1,0 +1,199 @@
+{{set . "Title" "Company Informations"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <br>
+
+  <!-- START CONTAINER FLUID -->
+  <form class="" role="form" method="POST" action="/CompanyInformation">
+    <input type="hidden" name="Company.Id" value={{.Company.Id}}>
+    <div class="container-fluid container-fixed-lg">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- START PANEL -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                {{msg . "CompanyInformation"}}
+                <p class="small">{{msg . "QuickReg.Basic"}}</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>
+                .
+              </p>
+
+              {{if .errors}}
+              <div style="color: orangered">
+                <ul>
+                  {{range .errors}}
+                  <li>{{.Key}} - {{.Message}}</li>
+                  {{end}}
+                </ul>
+              </div>
+              {{end}}
+
+
+              <!-- Row 1 -->
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group form-group-default required">
+                    <label class="label-sm fade">{{msg . "Company.Name"}}</label>
+                    <input name="Company.Name" type="text" class="form-control input-sm" value={{.Company.Name}}>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "Company.VatArea"}}</label>
+                    <input name="Company.VatArea" type="text" class="form-control input-sm" value={{.Company.VatArea}}>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "Company.VatNumber"}}</label>
+                    <input name="Company.VatNumber" type="text" class="form-control input-sm"
+                           value={{.Company.VatNumber}}>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Row 2 -->
+              <br><br>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group form-group-default required">
+                    <label class="label-sm fade">{{msg . "Company.Address"}}</label>
+                    <input name="Company.Address" type="text" class="form-control input-sm" value={{.Company.Address}}>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "Company.PostalCode"}}</label>
+                    <input name="Company.PostalCode" type="text" class="form-control input-sm"
+                           value={{.Company.PostalCode}}>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "Company.CityId"}}</label>
+                    <input name="Company.CityId" type="text" class="form-control input-sm" value={{.Company.CityId}}>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "Company.Country"}}</label>
+                    <input name="Company.Country" type="text" class="form-control input-sm" value={{.Company.Country}}>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 3 -->
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="form-group form-group-default input-group col-sm-12">
+                    <label class="fade">{{msg . "Company.StartDateFiscalYear"}}</label>
+                    <input type="text" class="form-control" id="Company.StartDateFiscalYearX"
+                           name="Company.StartDateFiscalYearX" value={{dateDDMMYY .Company.StartDateFiscalYear}}>
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                  </div>
+
+                  <input type="hidden" id="Company.StartDateFiscalYear" name="Company.StartDateFiscalYear" value={{date .Company.StartDateFiscalYear}}>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "Company.StandardDecimalSeparator"}}</label>
+                    <input name="Company.StandardDecimalSeparator" type="text" class="form-control input-sm"
+                           value={{.Company.StandardDecimalSeparator}}>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="form-group form-group-default form-group-default-select2 ">
+                    <label class="label-sm fade">{{msg . "Company.StandardDateFormat"}}</label>
+                    {{with $field := field "Company.StandardDateFormat" .}}
+                    <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
+                      {{range $.StandartDateFormats}}
+                      {{option $field (printf "%d" .Code) (printf "%s" .Value) }}
+                      {{end}}
+                    </select>
+                    {{end}}
+
+
+                  </div>
+
+                </div>
+
+
+                <!-- Row 4 -->
+
+                <br>
+
+                <div class="panel-heading">
+                  <div class="panel-title">
+                    <p class="small">Personel bilgileri</p>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Company.ContactPerson"}}</label>
+                      <input name="Company.ContactPerson" type="text" class="form-control input-sm"
+                             value={{.Company.ContactPerson}}>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Company.ContactFunction"}}</label>
+                      <input name="Company.ContactFunction" type="text" class="form-control input-sm"
+                             value={{.Company.ContactFunction}}>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Company.ContactEmail"}}</label>
+                      <input name="Company.ContactEmail" type="text" class="form-control input-sm"
+                             value={{.Company.ContactEmail}}>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Company.ContactPhone"}}</label>
+                      <input name="Company.ContactPhone" type="text" class="form-control input-sm"
+                             value={{.Company.ContactPhone}}>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+                </div>
+
+              </div>
+
+
+              .
+            </div>
+          </div>
+          <!-- END PANEL -->
+        </div>
+
+      </div>
+    </div>
+  </form>
+  <!-- END CONTAINER FLUID -->
+</div>
+<!-- END PAGE CONTENT -->
+
+<!---{{set . "PageJs" "/public/aexpense/js/CompanyInformation.html.js"}} -->
+
+{{append . "moreScripts" "aexpense/js/CompanyInformation.html.js"}}
+{{append . "moreScripts" "assets/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js"}}
+{{template "_footer.html" .}}

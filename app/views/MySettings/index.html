@@ -1,0 +1,188 @@
+{{set . "Title" "My Settings"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <br>
+
+  <!-- START CONTAINER FLUID -->
+  <form class="" role="form" method="POST" action="/MySettings">
+    <input type="hidden" name="User.Id" value={{.User.Id}}>
+    <div class="container-fluid container-fixed-lg">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- START PANEL -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                {{msg . "MySettings"}}
+                <p class="small">{{msg . "QuickReg.Basic"}}</p>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>
+                .
+              </p>
+
+              {{if .errors}}
+              <div style="color: orangered">
+                <ul>
+                  {{range .errors}}
+                  <li>{{.Key}} - {{.Message}}</li>
+                  {{end}}
+                </ul>
+              </div>
+              {{end}}
+
+
+              <!-- Row 1 -->
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default required">
+                    <label class="label-sm fade">{{msg . "User.Name"}}</label>
+                    <input name="User.Name" type="text" class="form-control input-sm" value={{.User.Name}}>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.LastName"}}</label>
+                    <input name="User.LastName" type="text" class="form-control input-sm"
+                           value={{.User.LastName}}>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.Email"}}</label>
+                    <input name="User.Email" type="text" class="form-control input-sm" value={{.User.Email}}>
+                  </div>
+                </div>
+
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.JobTitle"}}</label>
+                    <input name="User.JobTitle" type="text" class="form-control input-sm" value={{.User.JobTitle}}>
+                  </div>
+                </div>
+              </div>
+              <!-- End Row 1 -->
+
+
+              <!-- Row 2 -->
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default required">
+                    <label class="label-sm fade">{{msg . "User.BankAccountNo"}}</label>
+                    <input name="User.BankAccountNo" type="text" class="form-control input-sm"
+                           value={{.User.BankAccountNo}}>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.Iban"}}</label>
+                    <input name="User.Iban" type="text" class="form-control input-sm" value={{.User.Iban}}>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.MobilePhone"}}</label>
+                    <input name="User.MobilePhone" type="text" class="form-control input-sm"
+                           value={{.User.MobilePhone}}>
+                  </div>
+                </div>
+
+                <div class="col-sm-3">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.DistanceUnit"}}</label>
+                    <input name="User.DistanceUnit" type="text" class="form-control input-sm"
+                           value={{.User.DistanceUnit}}>
+                  </div>
+                </div>
+              </div>
+              <!-- End Row 2 -->
+
+
+              <!-- Row 3 -->
+              <div class="row">
+
+                <div class="panel-heading">
+                  <div class="panel-title">
+                    <p class="small">Onay Bilgileri</p>
+
+                  </div>
+                </div>
+
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default required">
+                    <label class="label-sm fade">{{msg . "User.ApprovalType"}}</label>
+                    <input name="User.ApprovalType" type="text" class="form-control input-sm"
+                           value={{.User.ApprovalType}}>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.ApprovalGroup"}}</label>
+                    <input name="User.ApprovalGroup" type="text" class="form-control input-sm"
+                           value={{.User.ApprovalGroup}}>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.ApprovalUser1"}}</label>
+                    <input name="User.ApprovalUser1" type="text" class="form-control input-sm"
+                           value={{.User.ApprovalUser1}}>
+                  </div>
+                </div>
+
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.ApprovalUser2"}}</label>
+                    <input name="User.ApprovalUser2" type="text" class="form-control input-sm"
+                           value={{.User.ApprovalUser2}}>
+                  </div>
+                </div>
+
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.ApprovalUser3"}}</label>
+                    <input name="User.ApprovalUser3" type="text" class="form-control input-sm"
+                           value={{.User.ApprovalUser3}}>
+                  </div>
+                </div>
+
+                <div class="col-sm-2">
+                  <div class="form-group form-group-default">
+                    <label class="label-sm fade">{{msg . "User.ApprovalUser4"}}</label>
+                    <input name="User.ApprovalUser4" type="text" class="form-control input-sm"
+                           value={{.User.ApprovalUser4}}>
+                  </div>
+                </div>
+
+              </div>
+              <!-- End Row 3 -->
+
+
+              <div class="row">
+                <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+              </div>
+
+            </div>
+
+
+            .
+          </div>
+        </div>
+        <!-- END PANEL -->
+      </div>
+
+    </div>
+</div>
+</form>
+<!-- END CONTAINER FLUID -->
+</div>
+<!-- END PAGE CONTENT -->
+
+<!---{{set . "PageJs" "/public/aexpense/js/CompanyInformation.html.js"}} -->
+
+{{append . "moreScripts" "aexpense/js/MySettings.html.js"}}
+{{template "_footer.html" .}}

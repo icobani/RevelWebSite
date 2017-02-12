@@ -1,0 +1,9 @@
+
+# --------------------------------------------
+# [UserRole] table defination for Turkish
+# Dev : Ibrahim COBANI 2017-02-11 22:36:55
+# --------------------------------------------
+
+
+UserRole.UserId = Kullanıcı
+UserRole.RoleId = Rol

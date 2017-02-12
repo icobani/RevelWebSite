@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"time"
 	"github.com/icobani/RevelWebSite/app"
+	"github.com/revel/revel"
+	"strconv"
 )
 
 type User struct {
@@ -34,7 +36,7 @@ type User struct {
 	Iban                     string `json:"iban" sql:"type:varchar(250);" CaptionML:"enu=IBAN;trk=IBAN"`
 	Language                 string `json:"language" sql:"type:varchar(250);" CaptionML:"enu=Language;trk=Dil"`
 	MobilePhone              string `json:"mobile_phone" sql:"type:varchar(250);" CaptionML:"enu=Mobile Phone;trk=Cep Telefonu"`
-	Country                  string	` CaptionML:"enu=Country;trk=Ülke"`
+	Country                  string  ` CaptionML:"enu=Country;trk=Ülke"`
 	DistanceUnit             string `json:"distance_unit" sql:"type:varchar(50);" CaptionML:"enu=Distance Unit;trk=Uzaklık Birimi"`
 	DateFormat               string `json:"date_format" sql:"type:varchar(50);" CaptionML:"enu=Date Format;trk=Tarih Formatı"`
 	DecimalSeparator         string `json:"decimal_separator" sql:"type:varchar(50);" CaptionML:"enu=Decimal Separator;trk=Ondalık Ayıracı"`
@@ -71,11 +73,36 @@ type User struct {
 	//DeletedAt time.Time `json:"-"`
 }
 
+func Me(c *revel.Controller) User {
+
+
+
+	user := User{}
+
+	uid := c.Session["uid"]
+
+	if uid == ""{
+		return User{}
+	}
+
+
+	i, _ := strconv.ParseInt(uid, 10, 64)
+	user.Id = i
+	app.DB.Find(&user)
+
+	if user.Id == 0{
+		return User{}
+	}
+
+	return user
+}
+
 func (this User) CreateTable() {
 	app.DB.DropTable(this)
 	fmt.Println("User Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("User Table Created")
+	app.MakeCaptionML(this)
 }
 
 type UserRole struct {
@@ -88,6 +115,7 @@ func (this UserRole) CreateTable() {
 	fmt.Println("UserRole Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("UserRole Table Created")
+	app.MakeCaptionML(this)
 }
 
 type UserProject struct {
@@ -100,6 +128,7 @@ func (this UserProject) CreateTable() {
 	fmt.Println("UserProject Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("UserProject Table Created")
+	app.MakeCaptionML(this)
 }
 
 type UserGroup struct {
@@ -112,5 +141,6 @@ func (this UserGroup) CreateTable() {
 	fmt.Println("UserGroup Table Dropped")
 	app.DB.CreateTable(this)
 	fmt.Println("UserGroup Table Created")
+	app.MakeCaptionML(this)
 }
 
