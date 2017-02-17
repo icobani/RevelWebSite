@@ -1,0 +1,75 @@
+{{set . "Title" "Departments"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <div class="panel-heading">
+    <ul class="breadcrumb">
+      <li><a href="/HomePage">Ana Sayfa</a></li>
+      <li>Şubeler</li>
+    </ul>
+    <div class="pull-right">
+      <div class="col-xs-12">
+        <button id="show-modal" class="btn btn-primary btn-cons" onclick="javascript: window.location.href = '/Branches/Add';"><i class="fa fa-plus"></i> Ekle
+        </button>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    {{if .flash.error}}
+    <div style="color: orangered">
+      {{.flash.error}}
+    </div>
+    {{end}}
+
+  </div>
+
+
+
+  <table class="table table-hover table-condensed dataTable no-footer" id="condensedTable" role="grid">
+    <thead>
+    <tr role="row">
+      <th style="width:30px" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
+          aria-sort="ascending" aria-label="Title: activate to sort column descending">Kod
+      </th>
+      <th style="width:30%" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
+          aria-sort="ascending" aria-label="Title: activate to sort column descending">Şube Adı
+      </th>
+      <th style="width: 50px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
+          aria-label="Key: activate to sort column ascending" align="right">Döviz
+      </th>
+      <th style="width: 55px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
+          aria-label="Condensed: activate to sort column ascending" align="right">Tarih
+      </th>
+      <th style="width: 65px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
+          aria-label="Condensed: activate to sort column ascending" align="right">
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    {{range .Branches}}
+    <tr role="row" class="odd" ondblclick="javascript: window.location.href = '/Branches/Edit/?id={{.Id}}';">
+      <td class="v-align-middle semi-bold sorting_1">{{.Code}}</td>
+      <td class="v-align-middle semi-bold sorting_1">{{.Name}}</td>
+      <td class="v-align-middle" align="right">{{.CurrencyCode}}</td>
+      <td class="v-align-middle" align="right">{{dateDDMMYY .CreatedAt}}</td>
+      <td class="v-align-middle" align="right">
+        <div class="btn-group">
+          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/Branches/Edit/?id={{.Id}}';"><i class="fa fa-pencil"></i>
+          </button>
+          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/Branches/Delete/?id={{.Id}}';"><i class="fa fa-trash-o"></i>
+          </button>
+        </div>
+      </td>
+    </tr>
+    {{end}}
+    </tbody>
+  </table>
+
+
+</div>
+
+
+{{append . "moreScripts" "aexpense/js/Branches/Index.js"}}
+{{template "_footer.html" .}}

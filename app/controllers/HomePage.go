@@ -23,8 +23,8 @@ type HomePage struct {
 }
 
 func (c HomePage) Index() revel.Result {
-	user := model.Me(c.Controller)
-	return c.Render(user)
+	User := model.Me(c.Controller)
+	return c.Render(User)
 }
 
 func (c HomePage) checkUser() revel.Result {

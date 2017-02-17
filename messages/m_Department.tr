@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Department] table defination for Turkish
-# Dev : Ibrahim COBANI 2017-02-11 22:36:54
+# Dev : Ibrahim COBANI 2017-02-14 19:14:54
 # --------------------------------------------
 
 
@@ -12,3 +12,5 @@ Department.Name = Adı
 Department.Code = Code
 Department.Branch = Şube
 Department.Members = Personeller
+Department.CreatedAt =  Oluşturulma Tarihi
+Department.UpdatedAt = Güncelleme Tarihi

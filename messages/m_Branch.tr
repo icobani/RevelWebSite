@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Branch] table defination for Turkish
-# Dev : Ibrahim COBANI 2017-02-11 22:36:54
+# Dev : Ibrahim COBANI 2017-02-14 19:14:53
 # --------------------------------------------
 
 
@@ -11,9 +11,7 @@ Branch.Code = Kod
 Branch.Name = Ad
 Branch.Address = Adres
 Branch.PostalCode = Posta Kodu
-Branch.CityId = Şehir ID
 Branch.City = Şehir
-Branch.CountryCode = Ülke Kodu
 Branch.Country = Ülke
 Branch.CurrencyCode = Döviz Kodu
 Branch.Currency = Döviz

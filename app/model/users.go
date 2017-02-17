@@ -133,7 +133,7 @@ func (this UserProject) CreateTable() {
 
 type UserGroup struct {
 	UserId  int64 `sql:"index" CaptionML:"enu=User;trk=Kullanıcı"`
-	GroupId int64 `sql:"index" CaptionML:"enu=Group;trk="`
+	GroupId int64 `sql:"index" CaptionML:"enu=Group;trk=Grup"`
 }
 
 func (this UserGroup) CreateTable() {

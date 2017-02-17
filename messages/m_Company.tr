@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Company] table defination for Turkish
-# Dev : Ibrahim COBANI 2017-02-11 22:36:54
+# Dev : Ibrahim COBANI 2017-02-14 19:14:53
 # --------------------------------------------
 
 
@@ -10,7 +10,7 @@ Company.VatNumber = Vergi No.
 Company.VatArea = Vergi Dairesi
 Company.Address = Adres
 Company.PostalCode = Posta Kodu
-Company.CityId = Şehir
+Company.City = Şehir
 Company.Country = Ülke
 Company.StartDateFiscalYear = Mali Yıl Başlangıç Tarihi
 Company.ContactPerson = İlgili Kişi
@@ -25,5 +25,12 @@ Company.Color = Renk
 Company.Active = Aktif
 Company.Logo = Logo
 Company.LogoUrl = Logo URL
+Company.IsCategoryFieldRequired = Kategory Alanı Zorunlu
+Company.IsProjectFieldRequired = Proje Kodu Zorunlu
+Company.IsPaidWithFieldRequired =
+Company.ActiveApprovalModule =
+Company.ActiveControllerModule =
+Company.RemoveProjectField =
+Company.ActivateAllowances =
 Company.CreatedAt =  Oluşturulma Tarihi
 Company.UpdatedAt = Güncelleme Tarihi

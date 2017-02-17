@@ -84,7 +84,7 @@ type Import struct {
 	Id        int64     `json:"id"`
 	UserId    int64     `json:"-"`
 	File      string    `json:"-"`
-	Errors    string    `json:"errors" sql:"type:longtext"`
+	Errors    string    `json:"errors" sql:"type:text"`
 	Done      bool      `json:"done"`
 	CreatedAt time.Time `json:"created_at"`
 }

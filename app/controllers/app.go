@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"net/http"
 	"github.com/icobani/RevelWebSite/app/model"
-	"github.com/icobani/RevelWebSite/app"
 )
 
 type App struct {
@@ -53,96 +52,15 @@ func (c App) QuickRegister_POST() revel.Result {
 	fmt.Println("--------------------")
 	fmt.Println(quick)
 
-	//Şirket bilgileri oluşturuluyor.
-	var company = model.Company{}
-	app.DB.Where("name = ?", quick.Company).First(&company)
-	if company.Id == 0 {
-		company.Name = quick.Company
-		app.DB.Create(&company)
-
-
-		// Şubeler açılıyor
-		var branches []string = quick.GetBranches()
-
-		for _, branchname := range branches {
-			var branch = model.Branch{}
-			branch.Name = branchname
-			branch.CompanyId = company.Id
-			app.DB.Create(&branch)
-
-
-			//Her bir şube için belirtilen departmanlar açılıyor.
-			var departments []string = quick.GetDepartments()
-
-			for _, departmentname := range departments {
-				var department = model.Department{}
-				department.CompanyId = company.Id
-				department.BranchId = branch.Id
-				department.Name = departmentname
-				app.DB.Create(&department)
-
-			} // departments loop
-		} // branches loop
-
-
-		// Masraf kategorilerini ekleyelim.
-		var expensecats []string = quick.GetExpenseCategories()
-
-		for _, expensecatname := range expensecats {
-			var expensecategory = model.ExpenseCategory{}
-			expensecategory.CompanyId = company.Id
-			expensecategory.Name = expensecatname
-			app.DB.Create(&expensecategory)
-		}
-
-		// Projeler oluşturulur.
-		var projects []string = quick.GetProjects()
-
-		for _, projectname := range projects {
-			var project = model.Project{}
-			project.CompanyId = company.Id
-			project.Name = projectname
-			app.DB.Create(&project)
-		}
-
-
-
-
-		//Admin kullanısı ekleniyor.
-		var user = model.User{}
-		user.CompanyId = company.Id
-		user.Name = quick.Name
-		user.Email = quick.Email
-		user.Country = quick.Country
-		user.MobilePhone = quick.PhoneNumber
-		user.Password = quick.Password
-		user.Hash = app.GetMD5Hash(quick.Password)
-		user.IsCompanyAdmin = true
-		app.DB.Create(&user)
-
-		var invites []string = quick.GetInvites()
-		for _, invitemailaddress := range invites {
-			var user = model.User{}
-			user.CompanyId = company.Id
-			user.Email = invitemailaddress
-			user.Verified = false
-			app.DB.Create(&user)
-		}
-
-	} // company control
-
-	fmt.Println("--------------------")
+	quick.Save()
 
 	return c.RenderTemplate("Login/Index.html")
 }
-
-
 
 func (c App) AutoMigrate() revel.Result {
 
 	model.Company{}.CreateTable()
 	model.Branch{}.CreateTable()
-	model.CompanySettings{}.CreateTable()
 	model.Currency{}.CreateTable()
 	model.Department{}.CreateTable()
 	model.UserDepartment{}.CreateTable()
@@ -152,8 +70,6 @@ func (c App) AutoMigrate() revel.Result {
 	model.Import{}.CreateTable()
 	model.ExpenseUser{}.CreateTable()
 	model.Export{}.CreateTable()
-	model.Country{}.CreateTable()
-	model.City{}.CreateTable()
 	model.Group{}.CreateTable()
 	model.MileageCategory{}.CreateTable()
 	model.PaymentType{}.CreateTable()
@@ -172,7 +88,22 @@ func (c App) AutoMigrate() revel.Result {
 	model.UserProject{}.CreateTable()
 	model.UserGroup{}.CreateTable()
 
-	return c.Redirect("/QuickRegister")
+	var quick model.QuickSettingUp
+	// First Demo Referance Records
+	quick.Company = "B1 Yönetim Sistemleri"
+	quick.Name = "Ibrahim ÇOBANİ"
+	quick.Email = "ibrahim@imaconsult.com"
+	quick.Country = "90"
+	quick.PhoneNumber = "532 540 1194"
+	quick.ExpenseCategories = "Yemek,Taksi,Otopark,Otel,Diğer"
+	quick.Branches = "Esentepe,Maslak"
+	quick.Projects = "B1,DO&CO,Saint Gobain Rigips,Lifewath,Manfred Geldbach,LMG,Mardav,Parge,Saygın,Tora Petrol,Sodexo"
+	quick.Departments = "Yazılım,Danışmanlık Servisleri,Dijital"
+	quick.Invites = "gokhan@imaconsult.com,bahadir@b1.com.tr,basak@imaconsult.com,aycan@b1.com.tr"
+	quick.Password = "azura777"
+
+	quick.Save()
+	return c.Redirect("/Login")
 }
 
 

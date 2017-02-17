@@ -1,0 +1,118 @@
+{{set . "Title" "Branches"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <!-- START PAGE CONTENT -->
+    <!-- START CONTAINER FLUID -->
+    <form class="" role="form" method="post" action="/Branches/Add">
+      <input type="hidden" name="Branch.Id" value={{.Branch.Id}}>
+      <div class="container-fluid container-fixed-lg">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- START PANEL -->
+            <div class="panel panel-default">
+              <div class="content">
+
+              <div class="panel-body">
+                <p>
+                <ul class="breadcrumb">
+                  <li><a href="/HomePage">Ana Sayfa</a></li>
+                  <li><a href="/Branches">Şubeler</a></li>
+                  <li>{{.Branch.Name}}</li>
+                </ul>
+                </p>
+
+                {{if .errors}}
+                <div style="color: orangered">
+                  <ul>
+                    {{range .errors}}
+                    <li>{{.Key}} - {{.Message}}</li>
+                    {{end}}
+                  </ul>
+                </div>
+                {{end}}
+
+
+                <!-- Row 1 -->
+                <div class="row">
+
+                  <div class="col-sm-3">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Branch.Code"}}</label>
+                      <input name="Branch.Code" type="text" class="form-control input-sm" value={{.Branch.Code}}>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default required">
+                      <label class="label-sm fade">{{msg . "Branch.Name"}}</label>
+                      <input name="Branch.Name" type="text" class="form-control input-sm" value={{.Branch.Name}}>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Branch.CurrencyCode"}}</label>
+                      <input name="Branch.CurrencyCode" type="text" class="form-control input-sm"
+                             value={{.Branch.CurrencyCode}}>
+                    </div>
+                  </div>
+                </div>
+                <!-- Row 1 END -->
+
+                <!-- Row 2 -->
+                <div class="row">
+
+                  <div class="col-sm-7">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Branch.Address"}}</label>
+                      <input name="Branch.Address" type="text" class="form-control input-sm" value={{.Branch.Address}}>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="form-group form-group-default required">
+                      <label class="label-sm fade">{{msg . "Branch.PostalCode"}}</label>
+                      <input name="Branch.PostalCode" type="text" class="form-control input-sm"
+                             value={{.Branch.PostalCode}}>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Branch.City"}}</label>
+                      <input name="Branch.City" type="text" class="form-control input-sm" value={{.Branch.City}}>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-1">
+                    <div class="form-group form-group-default">
+                      <label class="label-sm fade">{{msg . "Branch.Country"}}</label>
+                      <input name="Branch.Country" type="text" class="form-control input-sm" value={{.Branch.Country}}>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Row 2 END -->
+
+                <div class="row">
+                  <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+                </div>
+
+                .
+              </div>
+            </div>
+            <!-- END PANEL -->
+          </div>
+
+        </div>
+      </div>
+    </form>
+    <!-- END CONTAINER FLUID -->
+  </div>
+  <!-- END PAGE CONTENT -->
+
+
+</div>
+
+
+{{append . "moreScripts" "aexpense/js/Branches/Edit.js"}}
+{{template "_footer.html" .}}

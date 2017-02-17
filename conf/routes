@@ -43,6 +43,23 @@ GET     /MySettings                             MySettings.Index
 POST    /MySettings                             MySettings.Post
 
 
+# Braches
+GET     /Branches                               Branches.Index
+GET     /Branches/Edit/:id                      Branches.Edit
+POST    /Branches/Post                          Branches.Post
+GET     /Branches/Add                           Branches.Add
+POST    /Branches/Add                           Branches.AddPost
+
+
+
+
+
+
+
+
+
+
+
 # Ignore favicon requests
 GET     /favicon.ico                            Static.Serve("public/favicon.ico")
 

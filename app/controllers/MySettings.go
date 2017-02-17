@@ -45,6 +45,16 @@ func (c MySettings)Index() revel.Result {
 func (c MySettings) Post() revel.Result {
 	var UserForm model.User
 	c.Params.Bind(&UserForm, "User")
+	//TODO: Bu şekilde kaydettiğimiz zaman formda gelen bilgiler db içindeki değerleri eziyor. bununun için belki form viewleri ayrı tasarlamak lazım.
 	app.DB.Save(&UserForm)
 	return c.Redirect("/MySettings")
+}
+
+func (c MySettings) checkUser4MySettings() revel.Result {
+	fmt.Println("Hello from intercept method")
+	user := model.Me(c.Controller)
+	if user.Id == 0 {
+		return c.Redirect(Login.Index)
+	}
+	return nil
 }

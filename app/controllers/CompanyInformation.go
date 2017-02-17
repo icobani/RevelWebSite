@@ -17,6 +17,7 @@ import (
 	"github.com/icobani/RevelWebSite/app/model"
 	"github.com/icobani/RevelWebSite/app"
 	"github.com/icobani/RevelWebSite/app/modelViews"
+	"fmt"
 )
 
 type CompanyInformation struct {
@@ -24,10 +25,10 @@ type CompanyInformation struct {
 }
 
 func (c CompanyInformation) Index() revel.Result {
-	user := model.Me(c.Controller)
+	User := model.Me(c.Controller)
 
 	Company := model.Company{}
-	Company.Id = user.CompanyId
+	Company.Id = User.CompanyId
 	app.DB.Find(&Company)
 	if Company.StandardDateFormat == "" {
 		Company.StandardDateFormat = "DayMonth"
@@ -44,7 +45,7 @@ func (c CompanyInformation) Index() revel.Result {
 		},
 	}
 
-	return c.Render(user, Company, StandartDateFormats)
+	return c.Render(User, Company, StandartDateFormats)
 }
 
 func (c CompanyInformation) Post() revel.Result {
@@ -52,4 +53,13 @@ func (c CompanyInformation) Post() revel.Result {
 	c.Params.Bind(&cInfo, "Company")
 	app.DB.Save(&cInfo)
 	return c.Redirect("/CompanyInformation")
+}
+
+func (c CompanyInformation) checkUser4CompanyInfo() revel.Result {
+	fmt.Println("Hello from intercept method")
+	user := model.Me(c.Controller)
+	if user.Id == 0 {
+		return c.Redirect(Login.Index)
+	}
+	return nil
 }

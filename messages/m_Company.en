@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Company] table defination for English
-# Dev : Ibrahim COBANI 2017-02-11 22:36:54
+# Dev : Ibrahim COBANI 2017-02-14 19:14:53
 # --------------------------------------------
 
 
@@ -10,7 +10,7 @@ Company.VatNumber = VAT Number
 Company.VatArea = VAT Area
 Company.Address = Address
 Company.PostalCode = Postal Code
-Company.CityId = City
+Company.City = City
 Company.Country = Country
 Company.StartDateFiscalYear = Start Date Fiscal Year
 Company.ContactPerson = Contact Person
@@ -25,5 +25,12 @@ Company.Color = Color
 Company.Active = Active
 Company.Logo = Logo
 Company.LogoUrl = Logo URL
+Company.IsCategoryFieldRequired = Is Category Field Required
+Company.IsProjectFieldRequired = Make the project field required
+Company.IsPaidWithFieldRequired = Is Paid With Field Required
+Company.ActiveApprovalModule =
+Company.ActiveControllerModule =
+Company.RemoveProjectField =
+Company.ActivateAllowances =
 Company.CreatedAt = Created At
 Company.UpdatedAt = Updated At

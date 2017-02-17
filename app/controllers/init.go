@@ -20,4 +20,7 @@ import (
 func init() {
 	fmt.Println("Hello from controller init method")
 	revel.InterceptMethod(HomePage.checkUser, revel.BEFORE)
+	revel.InterceptMethod(CompanyInformation.checkUser4CompanyInfo, revel.BEFORE)
+	revel.InterceptMethod(MySettings.checkUser4MySettings, revel.BEFORE)
+	revel.InterceptMethod(Branches.checkUser4Branches, revel.BEFORE)
 }

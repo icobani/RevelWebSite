@@ -27,6 +27,15 @@ type Login struct {
 
 func (c Login) Index() revel.Result {
 	fmt.Println("Login")
+
+	//TODO: Aşağıdaki kod özel bir kod sonrasında kaldırılacak.
+	user := model.User{Id:1}
+	app.DB.Find(&user)
+	user.Hash = app.GetMD5Hash("azura777")
+	user.CompanyId = 1
+	app.DB.Save(&user)
+
+
 	return c.Render()
 }
 

@@ -3,7 +3,10 @@ package model
 import (
 	"fmt"
 	"github.com/icobani/RevelWebSite/app"
+	"time"
 )
+//TODO: bu tabloda created_at modified_at alanları eksik.
+//TODO: Entity Referance diye bir struct oluşturup bunun içinde id ve Name alanını referans tablolarına ekleyelim.
 
 type Department struct {
 	Id        int64    `json:"id" option:"id" CaptionML:"enu=ID;trk=ID"`
@@ -13,6 +16,11 @@ type Department struct {
 	Code      string   `json:"code" sql:"type:varchar(50);" CaptionML:"enu=Code;trk=Code"`
 	Branch    *SBranch `json:"branch,omitempty" sql:"-" ss:"-" CaptionML:"enu=Branch;trk=Şube"`
 	Members   *[]SUser `json:"members,omitempty" sql:"-" ss:"-" CaptionML:"enu=Members;trk=Personeller"`
+
+
+
+	CreatedAt                time.Time `json:"-" CaptionML:"enu=Created At;trk= Oluşturulma Tarihi"`
+	UpdatedAt                time.Time `json:"-" CaptionML:"enu=Updated At;trk=Güncelleme Tarihi"`
 }
 
 func (this Department) CreateTable() {

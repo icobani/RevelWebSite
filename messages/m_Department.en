@@ -1,7 +1,7 @@
 
 # --------------------------------------------
 # [Department] table defination for English
-# Dev : Ibrahim COBANI 2017-02-11 22:36:54
+# Dev : Ibrahim COBANI 2017-02-14 19:14:54
 # --------------------------------------------
 
 
@@ -12,3 +12,5 @@ Department.Name = Name
 Department.Code = Code
 Department.Branch = Branch
 Department.Members = Members
+Department.CreatedAt = Created At
+Department.UpdatedAt = Updated At

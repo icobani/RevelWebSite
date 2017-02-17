@@ -1,0 +1,178 @@
+{{set . "Title" "Branches"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <!-- START JUMBOTRON -->
+  <div class="jumbotron" data-pages="parallax">
+    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+      <div class="inner">
+        <!-- START BREADCRUMB -->
+        <ul class="breadcrumb">
+          <li><a href="/HomePage">Ana Sayfa</a></li>
+          <li><a href="/Branches">Şubeler</a></li>
+          <li>{{.Branch.Name}}</li>
+        </ul>
+        <!-- END BREADCRUMB -->
+      </div>
+    </div>
+  </div>
+  <!-- END JUMBOTRON -->
+  <!-- START CONTAINER FLUID -->
+  <div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <form class="" role="form" method="post" action="/Branches/POST">
+      <input type="hidden" name="Branch.Id" value={{.Branch.Id}}>
+
+
+
+        {{if .errors}}
+        <div style="color: orangered">
+          <ul>
+            {{range .errors}}
+            <li>{{.Key}} - {{.Message}}</li>
+            {{end}}
+          </ul>
+        </div>
+        {{end}}
+
+
+        <!-- Row 1 -->
+        <div class="row">
+
+          <div class="col-sm-3">
+            <div class="form-group form-group-default">
+              <label class="label-sm fade">{{msg . "Branch.Code"}}</label>
+              <input autofocus name="Branch.Code" type="text" class="form-control input-sm" value={{.Branch.Code}}>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group form-group-default required">
+              <label class="label-sm fade">{{msg . "Branch.Name"}}</label>
+              <input name="Branch.Name" type="text" class="form-control input-sm" value={{.Branch.Name}}>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group form-group-default">
+              <label class="label-sm fade">{{msg . "Branch.CurrencyCode"}}</label>
+              <input name="Branch.CurrencyCode" type="text" class="form-control input-sm"
+                     value={{.Branch.CurrencyCode}}>
+            </div>
+          </div>
+        </div>
+        <!-- Row 1 END -->
+
+        <!-- Row 2 -->
+        <div class="row">
+
+          <div class="col-sm-7">
+            <div class="form-group form-group-default">
+              <label class="label-sm fade">{{msg . "Branch.Address"}}</label>
+              <input name="Branch.Address" type="text" class="form-control input-sm" value={{.Branch.Address}}>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group form-group-default required">
+              <label class="label-sm fade">{{msg . "Branch.PostalCode"}}</label>
+              <input name="Branch.PostalCode" type="text" class="form-control input-sm"
+                     value={{.Branch.PostalCode}}>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group form-group-default">
+              <label class="label-sm fade">{{msg . "Branch.City"}}</label>
+              <input name="Branch.City" type="text" class="form-control input-sm" value={{.Branch.City}}>
+            </div>
+          </div>
+
+          <div class="col-sm-1">
+            <div class="form-group form-group-default">
+              <label class="label-sm fade">{{msg . "Branch.Country"}}</label>
+              <input name="Branch.Country" type="text" class="form-control input-sm" value={{.Branch.Country}}>
+            </div>
+          </div>
+
+        </div>
+        <!-- Row 2 END -->
+
+        <div class="row">
+          <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+        </div>
+
+        .
+    </form>
+
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapsed" class="collapsed">
+              Departmanlar
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+
+
+
+
+
+            <table class="table table-hover table-condensed dataTable no-footer" id="condensedTable" role="grid">
+              <thead>
+              <tr role="row">
+                <th style="width:60px" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1"
+                    colspan="1"
+                    aria-sort="ascending" aria-label="Title: activate to sort column descending">Kod
+                </th>
+                <th style="width:30%;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1"
+                    colspan="1"
+                    aria-label="Key: activate to sort column ascending" align="right">Açıklama
+                </th>
+                <th style="width: 65px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1"
+                    colspan="1"
+                    aria-label="Condensed: activate to sort column ascending" align="right">
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              {{range .Departments}}
+              <tr role="row" class="odd"
+                  ondblclick="javascript: window.location.href = '/Departments/Edit/?id={{.Id}}';">
+                <td class="v-align-middle semi-bold sorting_1">{{.Code}}</td>
+                <td class="v-align-middle">{{.Name}}</td>
+                <td class="v-align-middle" align="right">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success"
+                            onclick="javascript: window.location.href = '/Departments/Edit/?id={{.Id}}';"><i
+                        class="fa fa-pencil"></i>
+                    </button>
+                    <button type="button" class="btn btn-success"
+                            onclick="javascript: window.location.href = '/Departments/Delete/?id={{.Id}}';"><i
+                        class="fa fa-trash-o"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              {{end}}
+              </tbody>
+            </table>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- END PLACE PAGE CONTENT HERE -->
+  </div>
+  <!-- END CONTAINER FLUID -->
+</div>
+<!-- END PAGE CONTENT -->
+
+
+{{append . "moreScripts" "aexpense/js/Branches/Edit.js"}}
+{{template "_footer.html" .}}
