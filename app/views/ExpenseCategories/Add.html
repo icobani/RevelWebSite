@@ -1,0 +1,158 @@
+{{set . "Title" "Departments"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <!-- START JUMBOTRON -->
+  <div class="jumbotron" data-pages="parallax">
+    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+      <div class="inner">
+        <!-- START BREADCRUMB -->
+        <ul class="breadcrumb">
+          <li><a href="/HomePage">Ana Sayfa</a></li>
+          <li><a href="/ExpenseCategories">Masraf Kategorileri</a></li>
+        </ul>
+        <!-- END BREADCRUMB -->
+      </div>
+    </div>
+  </div>
+  <!-- END JUMBOTRON -->
+  <!-- START CONTAINER FLUID -->
+  <div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <form class="" role="form" method="post" action="/ExpenseCategories/AddPost">
+      {{if .errors}}
+      <div style="color: orangered">
+        <ul>
+          {{range .errors}}
+          <li>{{.Key}} - {{.Message}}</li>
+          {{end}}
+        </ul>
+      </div>
+      {{end}}
+
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group form-group-default required">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.Name"}}</label>
+            <input name="ExpenseCategory.Name" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.Name}}>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.MainCategoryId"}}</label>
+            <input name="ExpenseCategory.MainCategoryId" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.MainCategoryId}}>
+          </div>
+        </div>
+      </div>
+      <!-- Row 1 END -->
+
+      <!-- Row 2 -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.BranchId"}}</label>
+            <input name="ExpenseCategory.BranchId" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.BranchId}}>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.DepartmentId"}}</label>
+            <input name="ExpenseCategory.DepartmentId" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.DepartmentId}}>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default required">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.AccountingNumber"}}</label>
+            <input name="ExpenseCategory.AccountingNumber" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.AccountingNumber}}>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 END-->
+
+      <!-- Row 3 -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.ExpenseTypes"}}</label>
+            <input name="ExpenseCategory.ExpenseTypes" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.ExpenseTypes}}>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.MaximumAmountPerReport"}}</label>
+            <input name="ExpenseCategory.MaximumAmountPerReport" type="text" data-a-dec="," data-a-sep="." data-a-sign=" &#8378;" data-p-sign="s" style="text-align: right" class="autonumeric form-control input-sm"
+                   value={{.ExpenseCategory.MaximumAmountPerReport}}>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.MaximumAmountPerMonth"}}</label>
+            <input name="ExpenseCategory.MaximumAmountPerMonth" type="text" data-a-dec="," data-a-sep="." data-a-sign=" &#8378;" data-p-sign="s" style="text-align: right" class="autonumeric form-control input-sm"
+                   value={{.ExpenseCategory.MaximumAmountPerMonth}}>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Row 3 END -->
+
+
+      <!-- Row 4 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox" checked="checked" value={{.ExpenseCategory.IsPublic}} id="ExpenseCategory.IsPublic" name="ExpenseCategory.IsPublic">
+            <label for="ExpenseCategory.IsPublic">{{msg . "ExpenseCategory.IsPublic"}}</label>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox" checked="checked" value={{.ExpenseCategory.ReceiptsCheck}} id="ExpenseCategory.ReceiptsCheck" name="ExpenseCategory.IsPublic">
+            <label for="ExpenseCategory.ReceiptsCheck">{{msg . "ExpenseCategory.ReceiptsCheck"}}</label>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox" checked="checked" value={{.ExpenseCategory.ProjectCheck}} id="ExpenseCategory.ProjectCheck"
+                   name="ExpenseCategory.ProjectCheck">
+            <label for="ExpenseCategory.ProjectCheck">{{msg . "ExpenseCategory.ProjectCheck"}}</label>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox"  value={{.ExpenseCategory.CommentsCheck}} id="ExpenseCategory.CommentsCheck"
+                   name="ExpenseCategory.CommentsCheck">
+            <label for="ExpenseCategory.CommentsCheck">{{msg . "ExpenseCategory.CommentsCheck"}}</label>
+          </div>
+        </div>
+      </div>
+      <!-- Row 4 END -->
+
+      <div class="row">
+        <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+      </div>
+
+
+    </form>
+
+    <!-- END PLACE PAGE CONTENT HERE -->
+  </div>
+  <!-- END CONTAINER FLUID -->
+</div>
+<!-- END PAGE CONTENT -->
+
+
+{{append . "moreScripts" "aexpense/js/ExpenseCategories/Add.js"}}
+{{template "_footer.html" .}}

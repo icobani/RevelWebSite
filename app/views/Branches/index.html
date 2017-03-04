@@ -9,12 +9,6 @@
       <li><a href="/HomePage">Ana Sayfa</a></li>
       <li>Şubeler</li>
     </ul>
-    <div class="pull-right">
-      <div class="col-xs-12">
-        <button id="show-modal" class="btn btn-primary btn-cons" onclick="javascript: window.location.href = '/Branches/Add';"><i class="fa fa-plus"></i> Ekle
-        </button>
-      </div>
-    </div>
     <div class="clearfix"></div>
 
     {{if .flash.error}}
@@ -24,7 +18,6 @@
     {{end}}
 
   </div>
-
 
 
   <table class="table table-hover table-condensed dataTable no-footer" id="condensedTable" role="grid">
@@ -44,6 +37,11 @@
       </th>
       <th style="width: 65px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
           aria-label="Condensed: activate to sort column ascending" align="right">
+        <div align="right">
+          <button class="btn btn-sm  btn-rounded btn-success"
+                  onclick="javascript: window.location.href = '/Branches/Add';">Ekle
+          </button>
+        </div>
       </th>
     </tr>
     </thead>
@@ -56,9 +54,13 @@
       <td class="v-align-middle" align="right">{{dateDDMMYY .CreatedAt}}</td>
       <td class="v-align-middle" align="right">
         <div class="btn-group">
-          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/Branches/Edit/?id={{.Id}}';"><i class="fa fa-pencil"></i>
+          <button type="button" class="btn btn-success"
+                  onclick="javascript: window.location.href = '/Branches/Edit/?id={{.Id}}';"><i
+              class="fa fa-pencil"></i>
           </button>
-          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/Branches/Delete/?id={{.Id}}';"><i class="fa fa-trash-o"></i>
+          <button type="button" class="btn btn-success"
+                  onclick="javascript: window.location.href = '/Branches/Delete/?id={{.Id}}';"><i
+              class="fa fa-trash-o"></i>
           </button>
         </div>
       </td>

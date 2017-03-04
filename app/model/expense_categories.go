@@ -3,6 +3,7 @@ package model
 import (
 	"fmt"
 	"github.com/icobani/RevelWebSite/app"
+	"github.com/icobani/RevelWebSite/app/modelViews"
 )
 
 type ExpenseCategory struct {
@@ -17,8 +18,9 @@ type ExpenseCategory struct {
 	AccountingNumber       string            `json:"accounting_number" sql:"type:varchar(250);" CaptionML:"enu=Accounting Number;trk=Hesap Kodu"`
 	MaximumAmountPerReport float32           `json:"maximum_amount_per_report" CaptionML:"enu=Maximum Amount Per Report;trk=Maksimum Tutar (Rapor Bazında)"`
 	MaximumAmountPerMonth  float32           `json:"maximum_amount_per_month" CaptionML:"enu=Maximum Amount Per Month;trk=Maksimum Tutar (Aylık)"`
-	Branch                 *SBranch          `json:"branch,omitempty" sql:"-" ss:"-" CaptionML:"enu=Branch;trk=Şube"`
-	Parent                 *SExpenseCategory `json:"parent,omitempty" sql:"-" ss:"-" CaptionML:"enu=Parent Category;trk=Ana Kategori"`
+	Branch                 Branch           `json:"branch,omitempty" sql:"-" ss:"-" CaptionML:"enu=Branch;trk=Şube"`
+	Department             Department       `json:"department,omitempty" sql:"-" ss:"-" CaptionML:"enu=Department;trk=Departman"`
+	Parent                 *ExpenseCategory  `json:"parent,omitempty" sql:"-" ss:"-" CaptionML:"enu=Parent Category;trk=Ana Kategori"`
 	IsPublic               bool              `json:"is_public" CaptionML:"enu=Public;trk=Genel"`
 	ReceiptsCheck          bool              `CaptionML:"enu=Receipts Check;trk=Fiş Eklendi mi ?"`
 	ProjectCheck           bool              `CaptionML:"enu=Project Check;trk=Proje Eklendi mi ?"`
@@ -31,4 +33,29 @@ func (this ExpenseCategory) CreateTable() {
 	app.DB.CreateTable(this)
 	fmt.Println("ExpenseCategory Table Created")
 	app.MakeCaptionML(this)
+}
+
+
+func (this ExpenseCategory) GetComboValues(user User, master *modelViews.ModelReferance) []modelViews.ComboItem {
+	var ExpenseCategories []ExpenseCategory
+	var ComboItems []modelViews.ComboItem
+
+	switch master.LogicalName {
+	case "expense_categories":
+		eCat := ExpenseCategory{Id:master.Id}
+		app.DB.First(&eCat)
+		app.DB.Where(
+			"Company_Id = ? and (Branch_Id = ? OR Branch_Id = 0) and (Department_Id= ? or Department_ID = 0) and Id <> ?",
+			user.CompanyId, eCat.BranchId, eCat.DepartmentId,eCat.Id).Select("Id, Name").Order("code").Find(&ExpenseCategories)
+		fmt.Println(user.CompanyId,eCat.Name, eCat.BranchId, eCat.DepartmentId,eCat.Id)
+		break
+	}
+
+
+
+	ComboItems = append(ComboItems, modelViews.ComboItem{Id:0, Value:"Seçiniz", Selected:this.Id == 0})
+	for _, item := range ExpenseCategories {
+		ComboItems = append(ComboItems, modelViews.ComboItem{Id:item.Id, Value:item.Name, Selected:item.Id == this.Id})
+	}
+	return ComboItems
 }

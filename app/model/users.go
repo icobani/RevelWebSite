@@ -74,17 +74,11 @@ type User struct {
 }
 
 func Me(c *revel.Controller) User {
-
-
-
 	user := User{}
-
 	uid := c.Session["uid"]
-
 	if uid == ""{
 		return User{}
 	}
-
 
 	i, _ := strconv.ParseInt(uid, 10, 64)
 	user.Id = i

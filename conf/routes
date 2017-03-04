@@ -50,6 +50,25 @@ POST    /Branches/Post                          Branches.Post
 GET     /Branches/Add                           Branches.Add
 POST    /Branches/Add                           Branches.AddPost
 
+# Departments
+GET     /Departments                            Departments.Index
+GET     /Departments/Edit/:id                   Departments.Edit
+POST    /Departments/Post                       Departments.Post
+GET     /Departments/Add/:id                    Departments.Add
+POST    /Departments/Add                        Departments.AddPost
+GET     /api/Departments/:branchid              Departments.Api_GetDepartments
+
+# Expense Categories
+
+GET     /ExpenseCategories                      ExpenseCategories.Index
+GET     /ExpenseCategories/Edit/:id             ExpenseCategories.Edit
+POST    /ExpenseCategories/Post                 ExpenseCategories.Post
+GET     /ExpenseCategories/Add/:id              ExpenseCategories.Add
+POST    /ExpenseCategories/Add                  ExpenseCategories.AddPost
+
+
+
+
 
 
 

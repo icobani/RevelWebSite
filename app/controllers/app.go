@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	"github.com/icobani/RevelWebSite/app/model"
+	"github.com/icobani/RevelWebSite/app"
 )
 
 type App struct {
@@ -114,14 +115,29 @@ func (c App) AutoMigrate() revel.Result {
 func (c App)SetLang_TR() revel.Result {
 	new_cookie := &http.Cookie{Name: "REVEL_LANG", Value: "tr"}
 	c.SetCookie(new_cookie)
+
+	User := model.Me(c.Controller)
+	if User.Id != 0 {
+		User.Language = "tr";
+		app.DB.Save(&User)
+	}
+
 	// Return the refered page
 	return c.Redirect(c.Request.Referer())
 }
 
 //Set for English Lang
 func (c App)SetLang_EN() revel.Result {
+
 	new_cookie := &http.Cookie{Name: "REVEL_LANG", Value: "en"}
 	c.SetCookie(new_cookie)
+
+	User := model.Me(c.Controller)
+	if User.Id != 0 {
+		User.Language = "tr";
+		app.DB.Save(&User)
+	}
+
 	// Return the refered page
 	return c.Redirect(c.Request.Referer())
 }

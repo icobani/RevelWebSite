@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/icobani/RevelWebSite/app"
 	"time"
+	"github.com/icobani/RevelWebSite/app/modelViews"
 )
 //TODO: bu tabloda created_at modified_at alanları eksik.
 //TODO: Entity Referance diye bir struct oluşturup bunun içinde id ve Name alanını referans tablolarına ekleyelim.
@@ -14,13 +15,34 @@ type Department struct {
 	BranchId  int64    `json:"-" CaptionML:"enu=Branch ID;trk=Şirket ID"`
 	Name      string   `json:"name" option:"value" sql:"type:varchar(250);" CaptionML:"enu=Name;trk=Adı"`
 	Code      string   `json:"code" sql:"type:varchar(50);" CaptionML:"enu=Code;trk=Code"`
-	Branch    *SBranch `json:"branch,omitempty" sql:"-" ss:"-" CaptionML:"enu=Branch;trk=Şube"`
+	Branch    Branch `json:"branch,omitempty" gorm:"foreignkey:BranchId"  sql:"-" ss:"-" CaptionML:"enu=Branch;trk=Şube"`
 	Members   *[]SUser `json:"members,omitempty" sql:"-" ss:"-" CaptionML:"enu=Members;trk=Personeller"`
 
+	CreatedAt time.Time `json:"-" CaptionML:"enu=Created At;trk= Oluşturulma Tarihi"`
+	UpdatedAt time.Time `json:"-" CaptionML:"enu=Updated At;trk=Güncelleme Tarihi"`
+}
 
 
-	CreatedAt                time.Time `json:"-" CaptionML:"enu=Created At;trk= Oluşturulma Tarihi"`
-	UpdatedAt                time.Time `json:"-" CaptionML:"enu=Updated At;trk=Güncelleme Tarihi"`
+// Combolara çıkacak olan değerler burada hazırlanıyor.
+func (this Department) GetComboValues(user User, master *modelViews.ModelReferance) []modelViews.ComboItem {
+	var Departments []Department
+	var ComboItems []modelViews.ComboItem
+
+	switch master.LogicalName {
+	case "expense_categories":
+		eCat := ExpenseCategory{Id:master.Id}
+		app.DB.First(&eCat)
+		app.DB.Where("Company_Id = ? and Branch_Id = ?", user.CompanyId, eCat.BranchId).Select("Id, Name").Order("code").Find(&Departments)
+		break
+	case "branch":
+		app.DB.Where("Company_Id = ? and Branch_Id = ?", user.CompanyId, master.Id).Select("Id, Name").Order("code").Find(&Departments)
+		break
+	}
+
+	for _, item := range Departments {
+		ComboItems = append(ComboItems, modelViews.ComboItem{Id:item.Id, Value:item.Name, Selected:item.Id == this.Id})
+	}
+	return ComboItems
 }
 
 func (this Department) CreateTable() {

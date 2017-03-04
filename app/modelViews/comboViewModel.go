@@ -13,6 +13,8 @@
 package modelViews
 
 type ComboItem struct{
+	Id int64
 	Code string
 	Value string
+	Selected bool
 }

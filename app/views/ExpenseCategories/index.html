@@ -1,4 +1,4 @@
-{{set . "Title" "Departments"}}
+{{set . "Title" "Expense Categories"}}
 {{template "appheader.html" .}}
 
 
@@ -7,7 +7,7 @@
   <div class="panel-heading">
     <ul class="breadcrumb">
       <li><a href="/HomePage">Ana Sayfa</a></li>
-      <li>Departmanlar</li>
+      <li>Masraf Kategorileri</li>
     </ul>
     <div class="clearfix"></div>
 
@@ -27,39 +27,39 @@
       <th style="width:70px" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
           aria-sort="ascending" aria-label="Title: activate to sort column descending">Şube
       </th>
+      <th style="width:70px" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
+          aria-sort="ascending" aria-label="Title: activate to sort column descending">Departman
+      </th>
       <th style="width:30px" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
           aria-sort="ascending" aria-label="Title: activate to sort column descending">Kod
       </th>
       <th style="width:30%" class="sorting_asc" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
-          aria-sort="ascending" aria-label="Title: activate to sort column descending">Departman
-      </th>
-      <th style="width: 55px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
-          aria-label="Condensed: activate to sort column ascending" align="right">Tarih
+          aria-sort="ascending" aria-label="Title: activate to sort column descending">Açıklama
       </th>
       <th style="width: 75px;" class="sorting" tabindex="0" aria-controls="condensedTable" rowspan="1" colspan="1"
           aria-label="Condensed: activate to sort column ascending" align="right">
-        <!--
+
         <div align="right">
           <button class="btn btn-sm  btn-rounded btn-success"
-                  onclick="javascript: window.location.href = '/Departments/Add';">Ekle
+                  onclick="javascript: window.location.href = '/ExpenseCategories/Add';">Ekle
           </button>
         </div>
-        -->
+
       </th>
     </tr>
     </thead>
     <tbody>
-    {{range .Departments}}
-    <tr role="row" class="odd" ondblclick="javascript: window.location.href = '/Departments/Edit/?id={{.Id}}';">
+    {{range .ExpenseCategories}}
+    <tr role="row" class="odd" ondblclick="javascript: window.location.href = '/ExpenseCategories/Edit/?id={{.Id}}';">
       <td class="v-align-middle semi-bold sorting_1">{{.Branch.Name}}</td>
+      <td class="v-align-middle semi-bold sorting_1">{{.Department.Name}}</td>
       <td class="v-align-middle semi-bold sorting_1">{{.Code}}</td>
       <td class="v-align-middle semi-bold sorting_1">{{.Name}}</td>
-      <td class="v-align-middle" align="right">{{dateDDMMYY .CreatedAt}}</td>
       <td class="v-align-middle" align="right">
         <div class="btn-group">
-          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/Departments/Edit/?id={{.Id}}';"><i class="fa fa-pencil"></i>
+          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/ExpenseCategories/Edit/?id={{.Id}}';"><i class="fa fa-pencil"></i>
           </button>
-          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/Departments/Delete/?id={{.Id}}';"><i class="fa fa-trash-o"></i>
+          <button type="button" class="btn btn-success" onclick="javascript: window.location.href = '/ExpenseCategories/Delete/?id={{.Id}}';"><i class="fa fa-trash-o"></i>
           </button>
         </div>
       </td>
@@ -72,5 +72,5 @@
 </div>
 
 
-{{append . "moreScripts" "aexpense/js/Departments/Index.js"}}
+{{append . "moreScripts" "aexpense/js/ExpenseCategories/Index.js"}}
 {{template "_footer.html" .}}

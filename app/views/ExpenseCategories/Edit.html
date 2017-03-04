@@ -1,0 +1,189 @@
+{{set . "Title" "ExpenseCategoriess"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <!-- START JUMBOTRON -->
+  <div class="jumbotron" data-pages="parallax">
+    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+      <div class="inner">
+        <!-- START BREADCRUMB -->
+        <ul class="breadcrumb">
+          <li><a href="/HomePage">Ana Sayfa</a></li>
+          <li><a href="/ExpenseCategories">Masraf Kategorileri</a></li>
+          <li>{{.ExpenseCategory.Name}}</li>
+        </ul>
+        <!-- END BREADCRUMB -->
+      </div>
+    </div>
+  </div>
+  <!-- END JUMBOTRON -->
+  <!-- START CONTAINER FLUID -->
+  <div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <form class="" role="form" method="post" action="/ExpenseCategories/Post">
+      <input type="hidden" name="ExpenseCategory.Id" value={{.ExpenseCategory.Id}}>
+
+      {{if .errors}}
+      <div style="color: orangered">
+        <ul>
+          {{range .errors}}
+          <li>{{.Key}} - {{.Message}}</li>
+          {{end}}
+        </ul>
+      </div>
+      {{end}}
+
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group form-group-default required">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.Name"}}</label>
+            <input name="ExpenseCategory.Name" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.Name}}>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.MainCategoryId"}}</label>
+
+            {{with $field := field "ExpenseCategory.MainCategoryId" .}}
+            <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
+              {{range $.MainCategoriesComboItems}}
+              {{option $field (printf "%d" .Id) (printf "%s" .Value) }}
+              {{end}}
+            </select>
+            {{end}}
+          </div>
+        </div>
+      </div>
+      <!-- Row 1 END -->
+
+      <!-- Row 2 -->
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.BranchId"}}</label>
+            {{with $field := field "ExpenseCategory.BranchId" .}}
+            <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
+              {{range $.BranchesComboItems}}
+              {{option $field (printf "%d" .Id) (printf "%s" .Value) }}
+              {{end}}
+            </select>
+            {{end}}
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.DepartmentId"}}</label>
+            {{with $field := field "ExpenseCategory.DepartmentId" .}}
+            <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
+              {{range $.DepartmentsComboItems}}
+              {{option $field (printf "%d" .Id) (printf "%s" .Value) }}
+              {{end}}
+            </select>
+            {{end}}
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default required">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.AccountingNumber"}}</label>
+            <input name="ExpenseCategory.AccountingNumber" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.AccountingNumber}}>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 END-->
+
+      <!-- Row 3 -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.ExpenseTypes"}}</label>
+            <input name="ExpenseCategory.ExpenseTypes" type="text" class="form-control input-sm"
+                   value={{.ExpenseCategory.ExpenseTypes}}>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.MaximumAmountPerReport"}}</label>
+            <input name="ExpenseCategory.MaximumAmountPerReport" type="text" data-a-dec="." data-a-sep=","
+                   style="text-align: right" class="autonumeric form-control input-sm"
+                   value={{.ExpenseCategory.MaximumAmountPerReport}}>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group form-group-default">
+            <label class="label-sm fade">{{msg . "ExpenseCategory.MaximumAmountPerMonth"}}</label>
+            <input id="ExpenseCategory.MaximumAmountPerMonth" name="ExpenseCategory.MaximumAmountPerMonth" type="text"
+                   data-a-dec="." data-a-sep="," style="text-align: right" class="autonumeric form-control input-sm"
+                   value={{.ExpenseCategory.MaximumAmountPerMonth}}>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Row 3 END -->
+
+
+      <!-- Row 4 -->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox" {{if .ExpenseCategory.IsPublic}} checked="checked" {{end}}
+                   value={{.ExpenseCategory.IsPublic}}
+                   id="ExpenseCategory.IsPublic" name="ExpenseCategory.IsPublic">
+            <label for="ExpenseCategory.IsPublic">{{msg . "ExpenseCategory.IsPublic"}}</label>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+
+          <div class="checkbox check-success  ">
+            <input type="checkbox" {{if .ExpenseCategory.ReceiptsCheck}} checked="checked" {{end}}
+                   value={{.ExpenseCategory.ReceiptsCheck}} id="ExpenseCategory.ReceiptsCheck"
+                   name="ExpenseCategory.ReceiptsCheck">
+            <label for="ExpenseCategory.ReceiptsCheck">{{msg . "ExpenseCategory.ReceiptsCheck"}}</label>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox" {{if .ExpenseCategory.ProjectCheck}} checked="checked" {{end}}
+                   value={{.ExpenseCategory.ProjectCheck}} id="ExpenseCategory.ProjectCheck"
+                   name="ExpenseCategory.ProjectCheck">
+            <label for="ExpenseCategory.ProjectCheck">{{msg . "ExpenseCategory.ProjectCheck"}}</label>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="checkbox check-success  ">
+            <input type="checkbox" {{if .ExpenseCategory.CommentsCheck}} checked="checked" {{end}}
+                   value={{.ExpenseCategory.CommentsCheck}} id="ExpenseCategory.CommentsCheck"
+                   name="ExpenseCategory.CommentsCheck">
+            <label for="ExpenseCategory.CommentsCheck">{{msg . "ExpenseCategory.CommentsCheck"}}</label>
+          </div>
+        </div>
+      </div>
+      <!-- Row 4 END -->
+
+      <div class="row">
+        <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+      </div>
+
+
+    </form>
+
+
+    <!-- END PLACE PAGE CONTENT HERE -->
+  </div>
+  <!-- END CONTAINER FLUID -->
+</div>
+<!-- END PAGE CONTENT -->
+
+
+{{append . "moreScripts" "aexpense/js/ExpenseCategories/Edit.js"}}
+{{append . "moreScripts" "assets/plugins/jquery-autonumeric/autoNumeric.js"}}
+{{template "_footer.html" .}}

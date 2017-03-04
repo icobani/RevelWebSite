@@ -1,0 +1,75 @@
+{{set . "Title" "Departments"}}
+{{template "appheader.html" .}}
+
+
+<!-- START PAGE CONTENT -->
+<div class="content">
+  <!-- START JUMBOTRON -->
+  <div class="jumbotron" data-pages="parallax">
+    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+      <div class="inner">
+        <!-- START BREADCRUMB -->
+        <ul class="breadcrumb">
+          <li><a href="/HomePage">Ana Sayfa</a></li>
+          <li><a href="/Departments">Departmanlar</a></li>
+          <li>{{.Department.Name}}</li>
+        </ul>
+        <!-- END BREADCRUMB -->
+      </div>
+    </div>
+  </div>
+  <!-- END JUMBOTRON -->
+  <!-- START CONTAINER FLUID -->
+  <div class="container-fluid container-fixed-lg">
+    <!-- BEGIN PlACE PAGE CONTENT HERE -->
+    <form class="" role="form" method="post" action="/Departments/AddPost">
+      <input type="hidden" name="Department.BranchId" value={{.Department.BranchId}}>
+        {{if .errors}}
+        <div style="color: orangered">
+          <ul>
+            {{range .errors}}
+            <li>{{.Key}} - {{.Message}}</li>
+            {{end}}
+          </ul>
+        </div>
+        {{end}}
+
+
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group form-group-default">
+              <label class="label-sm fade">{{msg . "Department.Code"}}</label>
+              <input autofocus name="Department.Code" type="text" class="form-control input-sm" value={{.Department.Code}}>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group form-group-default required">
+              <label class="label-sm fade">{{msg . "Department.Name"}}</label>
+              <input name="Department.Name" type="text" class="form-control input-sm" value={{.Department.Name}}>
+            </div>
+          </div>
+        </div>
+        <!-- Row 1 END -->
+
+
+        <div class="row">
+          <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+        </div>
+
+        .
+    </form>
+
+
+
+
+
+    <!-- END PLACE PAGE CONTENT HERE -->
+  </div>
+  <!-- END CONTAINER FLUID -->
+</div>
+<!-- END PAGE CONTENT -->
+
+
+{{append . "moreScripts" "aexpense/js/Departments/Add.js"}}
+{{template "_footer.html" .}}

@@ -4,6 +4,7 @@ import (
 	"time"
 	"fmt"
 	"github.com/icobani/RevelWebSite/app"
+	"github.com/icobani/RevelWebSite/app/modelViews"
 )
 
 type Branch struct {
@@ -22,13 +23,11 @@ type Branch struct {
 	AccountantId int64       `json:"-" CaptionML:"enu=Accountant ID;trk=Muhasebe ID"`
 	Accountant   *User `json:"accountant,omitempty" gorm:"foreignkey:AccountantId" ss:"-" CaptionML:"enu=Accountant;trk=Muhasebeci"`
 
-	Departments []Department
-
+	Departments  []Department
 
 	CreatedAt    time.Time `json:"-" CaptionML:"enu=Created At;trk=Oluşturma Tarihi"`
 	UpdatedAt    time.Time `json:"-" CaptionML:"enu=Updated Date;trk=Değiştirme Tarihi"`
 }
-
 
 func (this Branch) CreateTable() {
 	if app.DB.HasTable(&Branch{}) {
@@ -39,4 +38,23 @@ func (this Branch) CreateTable() {
 	//app.DB.Model(&this).AddForeignKey("company_id","companies(id)","RESTRICT","NO ACTION")
 	fmt.Println("Branch Table Created")
 	app.MakeCaptionML(this)
+}
+
+func (this Branch) GetBranches(user User) []Branch {
+	var Branches []Branch
+	app.DB.Where("Company_Id = ?", user.CompanyId).Select("Id, Code, Name, Currency_Code, Created_At").Order("code").Find(&Branches)
+	return Branches
+}
+
+// Combolara çıkacak olan değerler burada hazırlanıyor.
+func (this Branch) GetComboValues(user User, master *modelViews.ModelReferance) []modelViews.ComboItem {
+	var Branches []Branch
+	var ComboItems []modelViews.ComboItem
+	app.DB.Where("Company_Id = ?", user.CompanyId).Select("Id, Name").Order("code").Find(&Branches)
+
+	for _, item := range Branches {
+		fmt.Println(this.Id, item.Id)
+		ComboItems = append(ComboItems, modelViews.ComboItem{Id:item.Id, Value:item.Name, Selected:item.Id == this.Id})
+	}
+	return ComboItems
 }

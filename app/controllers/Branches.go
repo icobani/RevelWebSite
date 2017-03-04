@@ -27,10 +27,10 @@ type Branches struct {
 // List Form
 func (c Branches) Index() revel.Result {
 	User := model.Me(c.Controller)
+	Branch := model.Branch{}
 
 	var Branches []model.Branch
-	app.DB.Where("Company_Id = ?", User.CompanyId).Select("Id, Code, Name, Currency_Code, Created_At").Order("code").Find(&Branches)
-
+	Branches = Branch.GetBranches(User)
 	return c.Render(User, Branches)
 }
 
@@ -42,7 +42,7 @@ func (c Branches) Edit(id int64) revel.Result {
 	app.DB.First(&Branch, id)
 
 	var Departments []model.Department
-	app.DB.Where("Company_Id = ? and Branch_Id = ?", User.CompanyId, id).Select("Id, Code, Name").Find(&Departments)
+	app.DB.Where("Company_Id = ? and (Branch_Id = ? OR Branch_Id = 0)", User.CompanyId, id).Select("Id, Code, Name").Order("code").Find(&Departments)
 
 	if Branch.Id != 0 {
 		return c.Render(User, Branch, Departments)
@@ -52,13 +52,9 @@ func (c Branches) Edit(id int64) revel.Result {
 
 }
 
-// Add Form
-func (c Branches) Add() revel.Result {
-	return c.Render()
-}
 
 
-// Edit
+// Edit Post
 func (c Branches) Post() revel.Result {
 	var branchForm model.Branch
 	c.Params.Bind(&branchForm, "Branch")
@@ -77,6 +73,12 @@ func (c Branches) Post() revel.Result {
 
 	app.DB.Save(&branch)
 	return c.Redirect("/Branches")
+}
+
+
+// Add Form
+func (c Branches) Add() revel.Result {
+	return c.Render()
 }
 
 
