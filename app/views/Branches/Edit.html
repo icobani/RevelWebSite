@@ -55,8 +55,16 @@
         <div class="col-sm-3">
           <div class="form-group form-group-default">
             <label class="label-sm fade">{{msg . "Branch.CurrencyCode"}}</label>
-            <input name="Branch.CurrencyCode" type="text" class="form-control input-sm"
-                   value={{.Branch.CurrencyCode}}>
+
+
+            {{with $field := field "Branch.CurrencyCode" .}}
+            <select class="full-width" data-init-plugin="select2" id="{{$field.Name}}" name="{{$field.Name}}">
+              {{range $.CurrencyComboItems}}
+              {{option $field (printf "%s" .Code) (printf "%s" .Value) }}
+              {{end}}
+            </select>
+            {{end}}
+
           </div>
         </div>
       </div>

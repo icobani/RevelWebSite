@@ -43,11 +43,28 @@ func (this ExpenseCategory) GetComboValues(user User, master *modelViews.ModelRe
 	switch master.LogicalName {
 	case "expense_categories":
 		eCat := ExpenseCategory{Id:master.Id}
-		app.DB.First(&eCat)
-		app.DB.Where(
-			"Company_Id = ? and (Branch_Id = ? OR Branch_Id = 0) and (Department_Id= ? or Department_ID = 0) and Id <> ?",
-			user.CompanyId, eCat.BranchId, eCat.DepartmentId,eCat.Id).Select("Id, Name").Order("code").Find(&ExpenseCategories)
-		fmt.Println(user.CompanyId,eCat.Name, eCat.BranchId, eCat.DepartmentId,eCat.Id)
+		if master.Id != 0 {
+			app.DB.First(&eCat)
+		}
+
+
+		app.DB.
+			Where(
+				`
+				Company_Id = ? and
+				(Branch_Id = ? OR Branch_Id = 0) and
+				(Department_Id= ? or Department_ID = 0) and
+				Id <> ?
+
+				`,
+				user.CompanyId,
+				eCat.BranchId,
+				eCat.DepartmentId,
+				eCat.Id).
+			Select("Id, Name").
+			Order("code").
+			Find(&ExpenseCategories)
+
 		break
 	}
 

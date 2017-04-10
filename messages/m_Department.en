@@ -6,8 +6,8 @@
 
 
 Department.Id = ID
-Department.CompanyId = Company ID
-Department.BranchId = Branch ID
+Department.CompanyId = Company
+Department.BranchId = Branch
 Department.Name = Name
 Department.Code = Code
 Department.Branch = Branch

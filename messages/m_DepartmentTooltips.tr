@@ -1,0 +1,11 @@
+
+# --------------------------------------------
+# [Department] table defination for English
+# Dev : Ibrahim COBANI 2017-03-10 17:03:04
+# --------------------------------------------
+
+
+
+Department.BranchId.Tooltip = Bu Departmanın hangi şubeye dahil olduğunu bu bölümde seçiniz. Lütfen boş bırakmayınız.
+Department.Name.Tooltip = Departman Kodunu giriniz. Bu alan özellikle muhasebe boyut dönüşümlerinde kullanılacağından boş bırakmayınız.
+Department.Code.Tooltip = Departman adını bu bölümde giriniz. Lütfen bu alanı boş bırakmayınız.

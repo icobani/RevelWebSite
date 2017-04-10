@@ -39,14 +39,30 @@
         <!-- Row 1 -->
         <div class="row">
           <div class="col-sm-3">
+            <div class="form-group form-group-default" required>
+              <label class="label-sm fade">{{msg . "Department.BranchId"}}</label>
+              <p class="help">{{msg . "Department.BranchId.Tooltip"}}</p>
+              {{with $field := field "Department.BranchId" .}}
+              <select class="full-width" data-init-plugin="select2" id="{{$field.Name}}" name="{{$field.Name}}">
+                {{range $.BranchesComboItems}}
+                {{option $field (printf "%d" .Id) (printf "%s" .Value) }}
+                {{end}}
+              </select>
+              {{end}}
+
+            </div>
+          </div>
+          <div class="col-sm-3">
             <div class="form-group form-group-default">
               <label class="label-sm fade">{{msg . "Department.Code"}}</label>
+              <p class="help">{{msg . "Department.Code.Tooltip"}}</p><br>
               <input autofocus name="Department.Code" type="text" class="form-control input-sm" value={{.Department.Code}}>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="form-group form-group-default required">
               <label class="label-sm fade">{{msg . "Department.Name"}}</label>
+              <p class="help">{{msg . "Department.Name.Tooltip"}}</p><br>
               <input name="Department.Name" type="text" class="form-control input-sm" value={{.Department.Name}}>
             </div>
           </div>
@@ -55,7 +71,7 @@
 
 
         <div class="row">
-          <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+          <button class="btn btn-primary btn-cons m-t-10" type="submit">{{msg . "Save"}}</button>
         </div>
 
         .

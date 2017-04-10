@@ -18,6 +18,7 @@ import (
 	"github.com/icobani/RevelWebSite/app"
 	"fmt"
 	"github.com/icobani/RevelWebSite/app/modelViews"
+	"strconv"
 )
 
 type Departments struct {
@@ -45,8 +46,21 @@ func (c Departments) Edit(id int64) revel.Result {
 
 	app.DB.First(&Department, id)
 
+
 	if Department.Id != 0 {
-		return c.Render(User, Department)
+		master := modelViews.ModelReferance{LogicalName:"departments", Id:Department.Id, Name:Department.Name }
+
+		// Şubeler
+		Branch := model.Branch{Id:Department.BranchId}
+		var BranchesComboItems []modelViews.ComboItem
+		BranchesComboItems = Branch.GetComboValues(User, &master)
+
+		flash := map[string]string{
+			"Department.BranchId": strconv.FormatInt(Department.BranchId, 10),
+		}
+
+
+		return c.Render(User, Department, BranchesComboItems,flash)
 	} else {
 		return c.NotFound("Kayıt bulunamadı.")
 	}
@@ -62,6 +76,9 @@ func (c Departments) Post() revel.Result {
 	var department model.Department
 	app.DB.First(&department, departmentForm.Id)
 
+
+	fmt.Println(department.BranchId)
+	department.BranchId = departmentForm.BranchId
 	department.Code = departmentForm.Code
 	department.Name = departmentForm.Name
 

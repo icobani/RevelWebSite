@@ -29,7 +29,7 @@ type ExpenseCategories struct {
 // List Form
 func (c ExpenseCategories) Index() revel.Result {
 	User := model.Me(c.Controller)
-
+	fmt.Println("Hello")
 	var ExpenseCategories []model.ExpenseCategory
 	app.DB.Where("Company_Id = ?", User.CompanyId).Select("Id, Code, Name, department_id,branch_id, expense_types,main_category_id, accounting_number").Order("branch_id,code").Find(&ExpenseCategories)
 
@@ -119,7 +119,26 @@ func (c ExpenseCategories) Add(branchId int64) revel.Result {
 	var Department model.Department
 	Department.BranchId = branchId
 	fmt.Println(branchId)
-	return c.Render(User, Department)
+
+	master := modelViews.ModelReferance{LogicalName:"expense_categories", Id:0, Name:"" }
+
+
+	// Şubeler
+	Branch := model.Branch{Id:branchId}
+	var BranchesComboItems []modelViews.ComboItem
+	BranchesComboItems = Branch.GetComboValues(User, &master)
+
+	// Departmanlar
+
+	var DepartmentsComboItems []modelViews.ComboItem
+	DepartmentsComboItems = Department.GetComboValues(User, &master)
+
+	// Ana Kategoriler
+	ECat := model.ExpenseCategory{Id:0}
+	var MainCategoriesComboItems []modelViews.ComboItem
+	MainCategoriesComboItems = ECat.GetComboValues(User, &master)
+
+	return c.Render(User, Department, BranchesComboItems, DepartmentsComboItems, MainCategoriesComboItems)
 }
 
 
@@ -144,8 +163,10 @@ func (c ExpenseCategories) AddPost() revel.Result {
 	}
 
 	app.DB.NewRecord(department)
-
-	return c.Redirect(fmt.Sprintf("/Branches/Edit/?id=%d", department.Id))
+	fmt.Println(c.Request.Referer())
+	//return c.Redirect(fmt.Sprintf("/Branches/Edit/?id=%d", department.Id))
+	return c.Redirect(fmt.Sprintf("/ExpenseCategories"))
+	//return c.Redirect(c.Request.Referer())
 }
 
 func (c ExpenseCategories) Delete(id int64) revel.Result {

@@ -22,6 +22,7 @@
   <!-- START CONTAINER FLUID -->
   <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
+
     <form class="" role="form" method="post" action="/ExpenseCategories/Post">
       <input type="hidden" name="ExpenseCategory.Id" value={{.ExpenseCategory.Id}}>
 
@@ -35,20 +36,36 @@
       </div>
       {{end}}
 
+      <blockquote class="margin-top-20">
+        <h3 class="font-montserrat no-margin text-uppercase demo-fs-23">Masraf Kategorileri ({{.ExpenseCategory.Name}})</h3>
+        <p>Masraf Kategorileri personeliniz tarafından girilen masrafların aysonu/yılsonu raporlarınızda
+          izlemenize yardımcı olur.</p>
+        <small>Örnek : Taksi, Otel, Yemek, Otopark, Kırtasiye vs.</small>
+      </blockquote>
+
 
       <!-- Row 1 -->
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <div class="form-group form-group-default required">
             <label class="label-sm fade">{{msg . "ExpenseCategory.Name"}}</label>
-            <input name="ExpenseCategory.Name" type="text" class="form-control input-sm"
+            <p class="help">Tanımlamak istediğiniz Masraf Kategorisini bu bölümde belirtiniz.</p>
+            <input name="ExpenseCategory.Name" type="text" class="form-control input-sm" autofocus
                    value={{.ExpenseCategory.Name}}>
           </div>
         </div>
-        <div class="col-sm-6">
+
+      </div>
+      <!-- Row 1 END -->
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-sm-12">
           <div class="form-group form-group-default">
             <label class="label-sm fade">{{msg . "ExpenseCategory.MainCategoryId"}}</label>
-
+            <p class="help">Bu bölümde tanımlayacağınız Ana Kategori masrafların raporlamasında kırılım sağlamanıza
+              yardımcı olur.
+              <br>Örnek : Business Class Uçak Masrafı & Uçak Masrafı </p>
             {{with $field := field "ExpenseCategory.MainCategoryId" .}}
             <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
               {{range $.MainCategoriesComboItems}}
@@ -59,16 +76,19 @@
           </div>
         </div>
       </div>
-      <!-- Row 1 END -->
+      <!-- Row 2 END -->
 
-      <!-- Row 2 -->
+      <!-- Row 3 -->
       <div class="row">
 
         <div class="col-sm-4">
           <div class="form-group form-group-default">
             <label class="label-sm fade">{{msg . "ExpenseCategory.BranchId"}}</label>
+            <p class="help">Tanımlamış olduğunuz Masraf Kategorisi hangi şubelerde geçerli olacaktır.
+              Boş burakmanız durumunda, tüm şubelerde bu masraf kategorisi seçilebilir olacaktır. </p>
             {{with $field := field "ExpenseCategory.BranchId" .}}
-            <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
+            <select class="full-width" data-init-plugin="select2" id="{{$field.Name}}" name="{{$field.Name}}"
+                    onchange="BranchChanged(this);">
               {{range $.BranchesComboItems}}
               {{option $field (printf "%d" .Id) (printf "%s" .Value) }}
               {{end}}
@@ -80,8 +100,10 @@
         <div class="col-sm-4">
           <div class="form-group form-group-default">
             <label class="label-sm fade">{{msg . "ExpenseCategory.DepartmentId"}}</label>
+            <p class="help">Tanımlamış olduğunuz Masraf Kategorisi hangi Departmanlarda geçerli olacaktır.
+              Boş bırakmanız durumunda, tüm departmanlarda bu masraf kategorisi seçilebilir olacaktır..</p>
             {{with $field := field "ExpenseCategory.DepartmentId" .}}
-            <select class="full-width" data-init-plugin="select2" name="{{$field.Name}}">
+            <select class="full-width" data-init-plugin="select2" id="{{$field.Name}}" name="{{$field.Name}}">
               {{range $.DepartmentsComboItems}}
               {{option $field (printf "%d" .Id) (printf "%s" .Value) }}
               {{end}}
@@ -92,25 +114,25 @@
         <div class="col-sm-4">
           <div class="form-group form-group-default required">
             <label class="label-sm fade">{{msg . "ExpenseCategory.AccountingNumber"}}</label>
+            <p class="help">Tanımlamış olduğunuz Masraf Kategorisi hangi hesapla ilişkili olduğunu belirtiniz.
+              Böylelikle kullandığınız ERP/Muhasebe yazılımı için oluşturulacak fiş kaydında ilgili hesap
+              çalışacaktır.</p><br>
             <input name="ExpenseCategory.AccountingNumber" type="text" class="form-control input-sm"
                    value={{.ExpenseCategory.AccountingNumber}}>
           </div>
         </div>
       </div>
-      <!-- Row 2 END-->
+      <!-- Row 3 END-->
 
-      <!-- Row 3 -->
+      <!-- Row 4 -->
       <div class="row">
         <div class="col-sm-4">
-          <div class="form-group form-group-default">
-            <label class="label-sm fade">{{msg . "ExpenseCategory.ExpenseTypes"}}</label>
-            <input name="ExpenseCategory.ExpenseTypes" type="text" class="form-control input-sm"
-                   value={{.ExpenseCategory.ExpenseTypes}}>
-          </div>
-        </div>
-        <div class="col-sm-4">
+
           <div class="form-group form-group-default">
             <label class="label-sm fade">{{msg . "ExpenseCategory.MaximumAmountPerReport"}}</label>
+            <p class="help">Rapor bazında bu bölümde belirttiğiniz tutar maksiumum olarak belirlenecektir. Böylece bu
+              tutardan büyük bir
+              tutarın rapor bazında kullanıcı tarafından girilmesine sistem tarafından izin verilmeyecektir. </p>
             <input name="ExpenseCategory.MaximumAmountPerReport" type="text" data-a-dec="." data-a-sep=","
                    style="text-align: right" class="autonumeric form-control input-sm"
                    value={{.ExpenseCategory.MaximumAmountPerReport}}>
@@ -119,6 +141,8 @@
         <div class="col-sm-4">
           <div class="form-group form-group-default">
             <label class="label-sm fade">{{msg . "ExpenseCategory.MaximumAmountPerMonth"}}</label>
+            <p class="help">Raporun girildiği ayda girilecek tutar maksiumum olarak belirlenecektir. Böylece bu tutardan
+              büyük bir tutarın rapor bazında kullanıcı tarafından girilmesine sistem tarafından izin verilmeyecektir. </p>
             <input id="ExpenseCategory.MaximumAmountPerMonth" name="ExpenseCategory.MaximumAmountPerMonth" type="text"
                    data-a-dec="." data-a-sep="," style="text-align: right" class="autonumeric form-control input-sm"
                    value={{.ExpenseCategory.MaximumAmountPerMonth}}>
@@ -127,50 +151,46 @@
 
 
       </div>
-      <!-- Row 3 END -->
-
-
-      <!-- Row 4 -->
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="checkbox check-success  ">
-            <input type="checkbox" {{if .ExpenseCategory.IsPublic}} checked="checked" {{end}}
-                   value={{.ExpenseCategory.IsPublic}}
-                   id="ExpenseCategory.IsPublic" name="ExpenseCategory.IsPublic">
-            <label for="ExpenseCategory.IsPublic">{{msg . "ExpenseCategory.IsPublic"}}</label>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-
-          <div class="checkbox check-success  ">
-            <input type="checkbox" {{if .ExpenseCategory.ReceiptsCheck}} checked="checked" {{end}}
-                   value={{.ExpenseCategory.ReceiptsCheck}} id="ExpenseCategory.ReceiptsCheck"
-                   name="ExpenseCategory.ReceiptsCheck">
-            <label for="ExpenseCategory.ReceiptsCheck">{{msg . "ExpenseCategory.ReceiptsCheck"}}</label>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="checkbox check-success  ">
-            <input type="checkbox" {{if .ExpenseCategory.ProjectCheck}} checked="checked" {{end}}
-                   value={{.ExpenseCategory.ProjectCheck}} id="ExpenseCategory.ProjectCheck"
-                   name="ExpenseCategory.ProjectCheck">
-            <label for="ExpenseCategory.ProjectCheck">{{msg . "ExpenseCategory.ProjectCheck"}}</label>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="checkbox check-success  ">
-            <input type="checkbox" {{if .ExpenseCategory.CommentsCheck}} checked="checked" {{end}}
-                   value={{.ExpenseCategory.CommentsCheck}} id="ExpenseCategory.CommentsCheck"
-                   name="ExpenseCategory.CommentsCheck">
-            <label for="ExpenseCategory.CommentsCheck">{{msg . "ExpenseCategory.CommentsCheck"}}</label>
-          </div>
-        </div>
-      </div>
       <!-- Row 4 END -->
 
+
+      <!-- Row 5 -->
       <div class="row">
-        <button class="btn btn-primary btn-cons m-t-10" type="submit">Submit</button>
+        <div class="form-group form-group-default">
+          <strong>Kontroller</strong>
+          <p class="help">Masraf girerken özellikle kontrol etmemizi istediğiniz bölümleri lütfen aşağıda işaretleyin.
+            Örneğin Masraf girerken girilen masrafın fişinin resminin mutlaka eklenmesi gerekiyorsa,
+            Fiş eklendimi bölümünü işaretleyin.</p>
+          <div class="col-sm-2">
+            <div class="checkbox check-success  ">
+              <input type="checkbox" {{if .ExpenseCategory.ReceiptsCheck}} checked="checked" {{end}}
+                     value={{.ExpenseCategory.ReceiptsCheck}} id="ExpenseCategory.ReceiptsCheck"
+                     name="ExpenseCategory.ReceiptsCheck">
+              <label for="ExpenseCategory.ReceiptsCheck">{{msg . "ExpenseCategory.ReceiptsCheck"}}</label>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="checkbox check-success  ">
+              <input type="checkbox" {{if .ExpenseCategory.ProjectCheck}} checked="checked" {{end}}
+                     value={{.ExpenseCategory.ProjectCheck}} id="ExpenseCategory.ProjectCheck"
+                     name="ExpenseCategory.ProjectCheck">
+              <label for="ExpenseCategory.ProjectCheck">{{msg . "ExpenseCategory.ProjectCheck"}}</label>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="checkbox check-success  ">
+              <input type="checkbox" {{if .ExpenseCategory.CommentsCheck}} checked="checked" {{end}}
+                     value={{.ExpenseCategory.CommentsCheck}} id="ExpenseCategory.CommentsCheck"
+                     name="ExpenseCategory.CommentsCheck">
+              <label for="ExpenseCategory.CommentsCheck">{{msg . "ExpenseCategory.CommentsCheck"}}</label>
+            </div>
+          </div>
+        </div> <!-- Form Group-->
+      </div>
+      <!-- Row 5 END -->
+
+      <div class="row">
+        <button class="btn btn-primary btn-cons m-t-10" type="submit">Kaydet</button>
       </div>
 
 

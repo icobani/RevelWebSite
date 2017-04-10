@@ -67,6 +67,8 @@ GET     /ExpenseCategories/Add/:id              ExpenseCategories.Add
 POST    /ExpenseCategories/Add                  ExpenseCategories.AddPost
 
 
+#Currencies
+GET     /Currencies/Init                        Currencies.Init
 
 
 

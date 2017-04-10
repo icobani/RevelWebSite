@@ -6,8 +6,8 @@
 
 
 Department.Id = ID
-Department.CompanyId = Şirket ID
-Department.BranchId = Şirket ID
+Department.CompanyId = Şirket
+Department.BranchId = Şube
 Department.Name = Adı
 Department.Code = Code
 Department.Branch = Şube

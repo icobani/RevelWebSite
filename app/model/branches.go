@@ -52,8 +52,8 @@ func (this Branch) GetComboValues(user User, master *modelViews.ModelReferance) 
 	var ComboItems []modelViews.ComboItem
 	app.DB.Where("Company_Id = ?", user.CompanyId).Select("Id, Name").Order("code").Find(&Branches)
 
+	ComboItems = append(ComboItems, modelViews.ComboItem{Id:0, Value:"Seçiniz", Selected:this.Id == 0})
 	for _, item := range Branches {
-		fmt.Println(this.Id, item.Id)
 		ComboItems = append(ComboItems, modelViews.ComboItem{Id:item.Id, Value:item.Name, Selected:item.Id == this.Id})
 	}
 	return ComboItems

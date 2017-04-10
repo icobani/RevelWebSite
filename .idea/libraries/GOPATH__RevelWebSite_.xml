@@ -3,18 +3,20 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../../../google.golang.org" />
       <root url="file://$PROJECT_DIR$/../../../golang.org" />
-      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../bitbucket.org" />
       <root url="file://$PROJECT_DIR$/../../../labix.org" />
       <root url="file://$PROJECT_DIR$/../../../9fans.net" />
       <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../.." />
     </CLASSES>
     <SOURCES>
       <root url="file://$PROJECT_DIR$/../../../google.golang.org" />
       <root url="file://$PROJECT_DIR$/../../../golang.org" />
-      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../bitbucket.org" />
       <root url="file://$PROJECT_DIR$/../../../labix.org" />
       <root url="file://$PROJECT_DIR$/../../../9fans.net" />
       <root url="file://$PROJECT_DIR$/../../../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../.." />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />

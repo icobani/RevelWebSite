@@ -17,6 +17,7 @@ import (
 	"github.com/icobani/RevelWebSite/app/model"
 	"github.com/icobani/RevelWebSite/app"
 	"fmt"
+	"github.com/icobani/RevelWebSite/app/modelViews"
 )
 
 type Branches struct {
@@ -45,7 +46,19 @@ func (c Branches) Edit(id int64) revel.Result {
 	app.DB.Where("Company_Id = ? and (Branch_Id = ? OR Branch_Id = 0)", User.CompanyId, id).Select("Id, Code, Name").Order("code").Find(&Departments)
 
 	if Branch.Id != 0 {
-		return c.Render(User, Branch, Departments)
+
+		master := modelViews.ModelReferance{LogicalName:"branches", Id:Branch.Id, Name:Branch.Name }
+
+		// Döviz Kodları
+		Currency := model.Currency{Code:Branch.CurrencyCode}
+		var CurrencyComboItems []modelViews.ComboItem
+		CurrencyComboItems = Currency.GetComboValues(User, &master)
+
+		flash := map[string]string{
+			"Branch.CurrencyCode": Branch.CurrencyCode,
+		}
+
+		return c.Render(User, Branch, Departments, CurrencyComboItems, flash)
 	} else {
 		return c.Redirect("/Branches")
 	}
@@ -61,7 +74,6 @@ func (c Branches) Post() revel.Result {
 
 	var branch model.Branch
 	app.DB.First(&branch, branchForm.Id)
-
 
 	branch.Code = branchForm.Code
 	branch.Name = branchForm.Name

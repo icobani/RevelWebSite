@@ -2,6 +2,32 @@
  * Created by ibrahimcobani on 11/02/2017.
  */
 
+
+/**
+ * Şube değiştiği zaman departmanları doldurmak için kullanılacak.
+ * @param myselect : şube kodu gelir.
+ * @constructor
+ */
+function BranchChanged(myselect) {
+  //alert(myselect.value);
+  $('#ExpenseCategory\\.DepartmentId').empty();
+
+
+
+  $.getJSON("/api/Departments/" + myselect.value, null, function(result) {
+    $("#ExpenseCategory\\.DepartmentId option").remove(); // Remove all <option> child tags.
+    $.each(result.data, function(index, item) { // Iterates through a collection
+      $("#ExpenseCategory\\.DepartmentId").append( // Append an object to the inside of the select box
+          $("<option></option>") // Yes you can do this.
+              .text(item.Value)
+              .val(item.Id)
+      );
+    });
+  });
+
+
+}
+
 (function ($) {
   'use strict';
 
@@ -22,27 +48,21 @@
   $('.autonumeric').autoNumeric('init');
 
   $(document).ready(function () {
-    $("#ExpenseCategory\\.IsPublic").change(function () {
-      console.log($("#ExpenseCategory\\.IsPublic").is(':checked'));
-      $("#ExpenseCategory\\.IsPublic").val($("#ExpenseCategory\\.IsPublic").is(':checked'));
-    });
-
     $("#ExpenseCategory\\.ReceiptsCheck").change(function () {
-      console.log($("#ExpenseCategory\\.ReceiptsCheck").is(':checked'));
       $("#ExpenseCategory\\.ReceiptsCheck").val($("#ExpenseCategory\\.ReceiptsCheck").is(':checked'));
     });
 
     $("#ExpenseCategory\\.ProjectCheck").change(function () {
-      console.log($("#ExpenseCategory\\.ProjectCheck").is(':checked'));
       $("#ExpenseCategory\\.ProjectCheck").val($("#ExpenseCategory\\.ProjectCheck").is(':checked'));
     });
 
     $("#ExpenseCategory\\.CommentsCheck").change(function () {
-      console.log($("#ExpenseCategory\\.CommentsCheck").is(':checked'));
       $("#ExpenseCategory\\.CommentsCheck").val($("#ExpenseCategory\\.CommentsCheck").is(':checked'));
     });
-
-
   });
+
+
+
+
 
 })(window.jQuery);

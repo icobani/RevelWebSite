@@ -12,7 +12,7 @@ import (
 type Department struct {
 	Id        int64    `json:"id" option:"id" CaptionML:"enu=ID;trk=ID"`
 	CompanyId int64    `json:"-" CaptionML:"enu=Company ID;trk=Şirket ID"`
-	BranchId  int64    `json:"-" CaptionML:"enu=Branch ID;trk=Şirket ID"`
+	BranchId  int64    `json:"-" CaptionML:"enu=Branch;trk=Şube"`
 	Name      string   `json:"name" option:"value" sql:"type:varchar(250);" CaptionML:"enu=Name;trk=Adı"`
 	Code      string   `json:"code" sql:"type:varchar(50);" CaptionML:"enu=Code;trk=Code"`
 	Branch    Branch `json:"branch,omitempty" gorm:"foreignkey:BranchId"  sql:"-" ss:"-" CaptionML:"enu=Branch;trk=Şube"`
@@ -39,6 +39,7 @@ func (this Department) GetComboValues(user User, master *modelViews.ModelReferan
 		break
 	}
 
+	ComboItems = append(ComboItems, modelViews.ComboItem{Id:0, Value:"Seçiniz", Selected:this.Id == 0})
 	for _, item := range Departments {
 		ComboItems = append(ComboItems, modelViews.ComboItem{Id:item.Id, Value:item.Name, Selected:item.Id == this.Id})
 	}
